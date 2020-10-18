@@ -3,4 +3,5 @@
 *.swp
 
 # Node
+build/
 node_modules/

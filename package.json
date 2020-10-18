@@ -2,7 +2,23 @@
   "name": "chonky-website",
   "version": "1.0.0",
   "description": "",
-  "scripts": {},
+  "scripts": {
+    "install:landing": "cd landing && npm ci",
+    "install:1.x_docz": "cd 1.x_docz && npm ci",
+    "install:1.x_storybook": "cd 1.x_storybook && npm ci",
+    "install:1.x": "npm run install:1.x_docz && npm run install:1.x_storybook",
+    "install:all": "npm run install:landing && npm run install:1.x",
+    "build:landing": "cd landing && npm run build",
+    "build:1.x_docz": "cd 1.x_docz && npm run build",
+    "build:1.x_storybook": "cd 1.x_storybook && npm run build",
+    "build:1.x": "npm run build:1.x_docz && npm run build:1.x_storybook",
+    "build:all": "npm run build:landing && npm run build:1.x",
+    "deploy:landing": "aws s3 sync landing/build/ s3://chonky.io/ --delete --exclude \"*docs/*\" --exclude \"*storybook/*\"",
+    "deploy:1.x_docz": "aws s3 sync 1.x_docz/build/ s3://chonky.io/docs/1.x/ --delete",
+    "deploy:1.x_storybook": "aws s3 sync 1.x_storybook/build/ s3://chonky.io/storybook/1.x/ --delete",
+    "deploy:1.x": "npm run deploy:1.x_docz && npm run deploy:1.x_storybook",
+    "deploy:all": "npm run deploy:landing && npm run deploy:1.x"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TimboKZ/chonky-website.git"
@@ -18,9 +34,9 @@
   },
   "homepage": "https://github.com/TimboKZ/chonky-website#readme",
   "dependencies": {
-    "chonky": "^1.1.4"
-  },
-  "devDependencies": {
+    "@types/react": "^16.9.53",
+    "@types/react-dom": "^16.9.8",
+    "chonky": "^1.1.4",
     "eslint": "^6.6.0",
     "eslint-config-prettier": "^6.13.0",
     "eslint-plugin-import": "^2.22.1",
@@ -28,6 +44,9 @@
     "eslint-plugin-react": "^7.21.4",
     "eslint-plugin-react-hooks": "^4.1.2",
     "eslint-plugin-simple-import-sort": "^5.0.3",
-    "prettier": "^2.1.2"
-  }
+    "prettier": "^2.1.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  },
+  "devDependencies": {}
 }
