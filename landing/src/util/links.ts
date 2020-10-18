@@ -1,4 +1,5 @@
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
+import { faDiscord } from '@fortawesome/free-brands-svg-icons/faDiscord';
 import { faNpm } from '@fortawesome/free-brands-svg-icons/faNpm';
 import { faBook } from '@fortawesome/free-solid-svg-icons/faBook';
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons/faLaptopCode';
@@ -25,6 +26,14 @@ export const NpmLink: LinkData = {
     url: 'https://www.npmjs.com/package/chonky',
     color: '#01a3a4',
     icon: faNpm,
+};
+
+export const DiscordLink: LinkData = {
+    title: 'Discord',
+    description: '',
+    url: 'https://discord.gg/4HJaFn9',
+    color: '#3e3c62',
+    icon: faDiscord,
 };
 
 export const Docs1x: LinkData = {

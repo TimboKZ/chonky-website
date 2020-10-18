@@ -4,7 +4,6 @@
  * @license MIT
  */
 
-import { faLaptopCode } from '@fortawesome/free-solid-svg-icons/faLaptopCode';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Button from '@material-ui/core/Button';
 import { Theme } from '@material-ui/core/styles/createMuiTheme';

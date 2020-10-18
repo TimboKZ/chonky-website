@@ -13,6 +13,7 @@ import React from 'react';
 import { LinkButton } from '../components/LinkButton';
 import { Title } from '../components/Title';
 import {
+    DiscordLink,
     GitHubLink,
     MostRecentDocs,
     MostRecentStorybook,
@@ -57,6 +58,7 @@ export const Links: React.FC<LinksProps> = (props) => {
                 <LinkButton linkData={NpmLink} />
                 <LinkButton linkData={MostRecentDocs} />
                 <LinkButton linkData={MostRecentStorybook} />
+                <LinkButton linkData={DiscordLink} />
             </Box>
         </>
     );
