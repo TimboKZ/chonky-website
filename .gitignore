@@ -1,3 +1,6 @@
 # JetBrains IDEs, Vim swap files
 .idea/
 *.swp
+
+# Node
+node_modules/

@@ -1,0 +1,33 @@
+{
+  "name": "chonky-website",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimboKZ/chonky-website.git"
+  },
+  "author": {
+    "name": "Timur Kuzhagaliyev",
+    "email": "tim.kuzh@gmail.com",
+    "url": "https://foxypanda.me/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TimboKZ/chonky-website/issues"
+  },
+  "homepage": "https://github.com/TimboKZ/chonky-website#readme",
+  "dependencies": {
+    "chonky": "^1.1.4"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.13.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.4",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "eslint-plugin-simple-import-sort": "^5.0.3",
+    "prettier": "^2.1.2"
+  }
+}
