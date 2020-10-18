@@ -7,7 +7,7 @@
     "install:1.x_docz": "cd 1.x_docz && npm install && npm install chonky@latest",
     "install:1.x_storybook": "cd 1.x_storybook && npm install && npm install chonky@latest",
     "install:1.x": "npm run install:1.x_docz && npm run install:1.x_storybook",
-    "install:all": "npm run install:landing && npm run install:1.x",
+    "install:all": "npm install && npm run install:landing && npm run install:1.x",
     "build:landing": "cd landing && npm run build",
     "build:1.x_docz": "cd 1.x_docz && npm run build",
     "build:1.x_storybook": "cd 1.x_storybook && npm run build",
@@ -44,6 +44,7 @@
     "eslint-plugin-react": "^7.21.4",
     "eslint-plugin-react-hooks": "^4.1.2",
     "eslint-plugin-simple-import-sort": "^5.0.3",
+    "noty": "^3.2.0-beta",
     "prettier": "^2.1.2"
   },
   "devDependencies": {}
