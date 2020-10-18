@@ -19,6 +19,7 @@
     "@mdx-js/mdx": "^1.6.16",
     "chonky": "^1.1.4",
     "docz": "latest",
+    "noty": "^3.2.0-beta",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "tsdef": "0.0.14"
