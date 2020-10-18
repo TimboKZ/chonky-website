@@ -1,0 +1,72 @@
+---
+name: Introduction
+route: /
+---
+
+## Description
+
+Chonky is a file browser component for React. It tries to recreate the native file
+browsing experience in your browser. This means your users can make selections, drag &
+drop files, toggle between List and Grid file views, use keyboard shortcuts, and much
+more!
+
+## Features
+
+-   [x] Backend-agnostic - files can come from any source (remote server, S3, virtual FS).
+-   [x] Supports file sorting.
+-   [x] Supports text search.
+-   [x] Supports drag & drop.
+-   [x] Mobile-friendly design.
+-   [x] Supports image thumbnails.
+-   [x] Supports keyboard shortcuts.
+-   [x] Supports _List_ and _Grid_ file views.
+-   [x] Supports common and custom file actions.
+-   [x] Provides unique icons for each file extension.
+-   [x] Supports file selections (excluding drag selection, _for now_).
+-   [x] Supports loading animations and async thumbnail generation.
+-   [x] Performs well with large file collections thanks to
+        [virtualization](https://github.com/bvaughn/react-virtualized).
+
+## Notes about 1.x
+
+-   Chonky `1.x` is a complete rewrite of `0.x`, now using hooks under the hood!
+-   Chonky `1.x` package is 5 times smaller than `0.x` version when minified & gzipped!
+-   Internal state management is done using [Recoil](https://recoiljs.org/).
+-   Keyboard shortcuts are implemented using [HotKeys.js](https://wangchujiang.com/hotkeys/).
+-   File sorting functionality uses [fast-sort](https://www.npmjs.com/package/fast-sort).
+-   Text search is implemented using [fuzzy-search](https://www.npmjs.com/package/fuzzy-search).
+-   Drag & drop uses [react-dnd](https://github.com/react-dnd/react-dnd).
+-   TypeScript declarations are dynamically embedded into documentation using
+    [markdown-dynamic-codeblock-loader](https://github.com/TimboKZ/markdown-dynamic-codeblock-loader).
+
+## Philosophy behind Chonky
+
+Please read this section to understand what Chonky is and is not.
+
+### 1. Chonky is the presentation layer.
+
+Chonky takes a list of files and shows them to the user. It does not and should not
+know where the files come from, nor should it know how file operations are carried out.
+
+That said, when it comes to file browser UI, **Chonky tries to cover as many _UI_
+features as possible.**
+
+### 2. Chonky is just the tip of the FS iceberg. You will need to implement many things yourself.
+
+Chonky saves you **a lot** of time by providing a pretty file browser UI for your
+users. However, apart from a pretty UI, working with the file system requires a lot of
+custom business logic. **You will have to implement this business logic yourself.**
+
+In the future, Chonky might provide extensions like S3 or FTP adapters, but this is
+not the case today.
+
+### 3. Developing file browsers is hard. Each use case is unique.
+
+It is not possible for Chonky to address _all_ use cases explicitly. To solve this
+problem, Chonky was written to be very flexible, and _all_ internal interfaces and
+contexts are exported in some way. **Feel free to dive into the source code of Chonky
+and customise logic as necessary**.
+
+However, before you start making adjustments to Chonky's source code, please
+[create an issue](https://github.com/TimboKZ/Chonky/issues) on GitHub describing your
+use case. There's a good chance your use case is supported, just not documented.
