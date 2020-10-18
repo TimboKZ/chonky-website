@@ -1,7 +1,7 @@
 import chonkyPackage from 'chonky/package.json';
 
 export default {
-    title: `Chonky v${chonkyPackage.version}`,
+    title: `Chonky v${chonkyPackage.version} Docs`,
     base: '/docs/1.x/',
     src: 'src/',
     dest: 'dist/',
