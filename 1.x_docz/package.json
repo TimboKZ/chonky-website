@@ -17,6 +17,7 @@
     "@emotion/core": "^10.0.14",
     "@emotion/styled": "^10.0.14",
     "@mdx-js/mdx": "^1.6.16",
+    "chonky": "^1.1.5",
     "docz": "latest",
     "noty": "^3.2.0-beta",
     "react": "^16.13.1",

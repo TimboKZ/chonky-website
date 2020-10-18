@@ -1,18 +1,24 @@
+/**
+ * @author Timur Kuzhagaliyev <tim.kuzh@gmail.com>
+ * @copyright 2020
+ * @license MIT
+ */
+
+import Container from '@material-ui/core/Container';
+import 'chonky/style/main.css';
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Demo } from './sections/Demo';
+import { Docs } from './sections/Docs';
+import { Header } from './sections/Header';
+import { Links } from './sections/Links';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Chonky - WIP Landing page.
-        </p>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+export const App: React.FC = () => {
+    return (
+        <Container maxWidth="md">
+            <Header />
+            <Links />
+            <Demo />
+            <Docs />
+        </Container>
+    );
+};

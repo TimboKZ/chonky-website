@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "install:landing": "cd landing && npm ci",
-    "install:1.x_docz": "cd 1.x_docz && npm ci",
-    "install:1.x_storybook": "cd 1.x_storybook && npm ci",
+    "install:landing": "cd landing && npm install && npm install chonky@latest",
+    "install:1.x_docz": "cd 1.x_docz && npm install && npm install chonky@latest",
+    "install:1.x_storybook": "cd 1.x_storybook && npm install && npm install chonky@latest",
     "install:1.x": "npm run install:1.x_docz && npm run install:1.x_storybook",
     "install:all": "npm run install:landing && npm run install:1.x",
     "build:landing": "cd landing && npm run build",
@@ -34,9 +34,9 @@
   },
   "homepage": "https://github.com/TimboKZ/chonky-website#readme",
   "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
-    "chonky": "^1.1.4",
     "eslint": "^6.6.0",
     "eslint-config-prettier": "^6.13.0",
     "eslint-plugin-import": "^2.22.1",
@@ -44,9 +44,7 @@
     "eslint-plugin-react": "^7.21.4",
     "eslint-plugin-react-hooks": "^4.1.2",
     "eslint-plugin-simple-import-sort": "^5.0.3",
-    "prettier": "^2.1.2",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0"
+    "prettier": "^2.1.2"
   },
   "devDependencies": {}
 }
