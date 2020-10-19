@@ -22,6 +22,7 @@
     "noty": "^3.2.0-beta",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "source-loader": "^1.0.0",
     "tsdef": "0.0.14"
   },
   "devDependencies": {
