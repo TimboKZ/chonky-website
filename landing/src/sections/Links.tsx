@@ -16,6 +16,7 @@ import {
     Docs2x,
     GitHubLink,
     MostRecentDocs,
+    MostRecentStorybook,
     NpmLink,
 } from '../util/links';
 
@@ -25,6 +26,8 @@ const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         buttonWrapper: {
             textAlign: 'center',
+            margin: 'auto',
+            maxWidth: 600,
         },
     })
 );
@@ -38,10 +41,10 @@ export const Links: React.FC<LinksProps> = (props) => {
             <Box className={classes.buttonWrapper}>
                 <LinkButton linkData={GitHubLink} />
                 <LinkButton linkData={NpmLink} />
+                <LinkButton linkData={DiscordLink} />
                 <LinkButton linkData={MostRecentDocs} />
                 <LinkButton linkData={Docs2x} />
-                {/*<LinkButton linkData={MostRecentStorybook} />*/}
-                <LinkButton linkData={DiscordLink} />
+                <LinkButton linkData={MostRecentStorybook} />
             </Box>
         </>
     );

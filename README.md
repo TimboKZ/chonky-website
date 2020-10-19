@@ -12,9 +12,12 @@ https://github.com/TimboKZ/Chonky
 
 -   `landing/` - CRA landing page project shared by all versions, available at
     `chonky.io/`.
--   `1.x_docz/` - Docz project for Chonky v1.x, available at `chonky.io/docs/1.x/`.
--   `1.x_storybook/` - Storybook project for Chonky v1.x, available at
-    `chonky.io/storybook/1.x/`.
+-   `2.x_docz/` - Docz project for Chonky v2.x, available at `chonky.io/docs/2.x/`.
+-   `2.x_storybook/` - Storybook project for Chonky v2.x, available at
+    `chonky.io/storybook/2.x/`.
+
+*Notes:* Docs for v0.x and v1.x are available at `chonky.io/docs/0.x/` and
+`chonky.io/docs/1.x/` respectively. They are deployed separately.
 
 ## Building & uploading
 

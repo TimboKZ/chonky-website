@@ -44,8 +44,8 @@ export const Docs2x: LinkData = {
     icon: faBook,
 };
 
-export const Storybook1x: LinkData = {
-    title: '2.x Storybook',
+export const Storybook2x: LinkData = {
+    title: '2.x Storybook (Preview)',
     description: 'Interactive code examples for the current version of Chonky',
     url: 'https://chonky.io/storybook/2.x/',
     color: '#733eda',
@@ -70,4 +70,4 @@ export const Docs0x: LinkData = {
 
 export const MostRecentDocs = Docs1x;
 
-export const MostRecentStorybook = Storybook1x;
+export const MostRecentStorybook = Storybook2x;
