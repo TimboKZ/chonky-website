@@ -36,24 +36,32 @@ export const DiscordLink: LinkData = {
     icon: faDiscord,
 };
 
+export const Docs2x: LinkData = {
+    title: '2.x Docs (Preview)',
+    description: 'Documentation preview for the new version',
+    url: 'https://chonky.io/docs/2.x/',
+    color: '#d12123',
+    icon: faBook,
+};
+
+export const Storybook1x: LinkData = {
+    title: '2.x Storybook',
+    description: 'Interactive code examples for the current version of Chonky',
+    url: 'https://chonky.io/storybook/2.x/',
+    color: '#733eda',
+    icon: faLaptopCode,
+};
+
 export const Docs1x: LinkData = {
-    title: '1.x Docs',
+    title: '1.x Docs (Current)',
     description: 'Documentation for the current Hooks version of Chonky',
     url: 'https://chonky.io/docs/1.x/',
     color: '#2e86de',
     icon: faBook,
 };
 
-export const Storybook1x: LinkData = {
-    title: '1.x Storybook',
-    description: 'Interactive code examples for the current version of Chonky',
-    url: 'https://chonky.io/storybook/1.x/',
-    color: '#733eda',
-    icon: faLaptopCode,
-};
-
 export const Docs0x: LinkData = {
-    title: '0.x Docs',
+    title: '0.x Docs (Legacy)',
     description: 'Documentation for the legacy, pre-Hooks version of Chonky',
     url: 'https://chonky.io/docs/0.x/',
     color: '#777',

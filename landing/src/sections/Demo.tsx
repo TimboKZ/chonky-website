@@ -11,7 +11,13 @@ import { Theme } from '@material-ui/core/styles/createMuiTheme';
 import createStyles from '@material-ui/core/styles/createStyles';
 import makeStyles from '@material-ui/core/styles/makeStyles';
 import { FileBrowser, FileList, FileSearch, FileToolbar } from 'chonky';
-import React from 'react';
+import React, { useState } from 'react';
+import {
+    rootFolderId,
+    useFileActionHandler,
+    useFiles,
+    useFolderChain,
+} from '../util/demo-util';
 import { Title } from '../components/Title';
 
 export interface DemoProps {}
@@ -28,12 +34,22 @@ const useStyles = makeStyles((theme: Theme) =>
 export const Demo: React.FC<DemoProps> = (props) => {
     const classes = useStyles();
 
+    const [currentFolderId, setCurrentFolderId] = useState(rootFolderId);
+    const files = useFiles(currentFolderId);
+    const folderChain = useFolderChain(currentFolderId);
+    const handleFileAction = useFileActionHandler(setCurrentFolderId);
+
     return (
         <>
             <Title>Try it out</Title>
             <Paper className={classes.demoWrapper} elevation={3}>
                 <DndProvider backend={HTML5Backend}>
-                    <FileBrowser files={[]} enableDragAndDrop={true}>
+                    <FileBrowser
+                        files={files}
+                        folderChain={folderChain}
+                        onFileAction={handleFileAction}
+                        enableDragAndDrop={true}
+                    >
                         <FileToolbar />
                         <FileSearch />
                         <FileList />
