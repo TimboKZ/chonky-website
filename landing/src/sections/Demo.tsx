@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         demoWrapper: {
             position: 'relative',
-            height: 600,
+            height: 400,
         },
     })
 );
