@@ -12,13 +12,12 @@ import {
     FileData,
     FileHelper,
     FileList,
+    FileNavbar,
     FileSearch,
     FileToolbar,
 } from 'chonky';
 import 'chonky/style/main.css';
 import React, { useCallback, useMemo, useState } from 'react';
-import { DndProvider } from 'react-dnd';
-import { HTML5Backend } from 'react-dnd-html5-backend';
 
 import { showActionNotification, useStoryLinks } from '../util';
 import DemoFsMap from './demo.fs_map.json';
@@ -83,12 +82,29 @@ export const useFileActionHandler = (
     return handleFileAction;
 };
 
-const storyName = 'Virtual File System';
-export const VirtualFileSystem: React.FC = () => {
+export const VFSBrowser: React.FC = () => {
     const [currentFolderId, setCurrentFolderId] = useState(rootFolderId);
     const files = useFiles(currentFolderId);
     const folderChain = useFolderChain(currentFolderId);
     const handleFileAction = useFileActionHandler(setCurrentFolderId);
+    return (
+        <div style={{ height: 400 }}>
+            <FileBrowser
+                files={files}
+                folderChain={folderChain}
+                onFileAction={handleFileAction}
+            >
+                <FileNavbar />
+                <FileToolbar />
+                <FileSearch />
+                <FileList />
+            </FileBrowser>
+        </div>
+    );
+};
+
+const storyName = 'Virtual File System';
+export const VirtualFileSystem: React.FC = () => {
     return (
         <div className="story-wrapper">
             <div className="story-description">
@@ -114,20 +130,7 @@ export const VirtualFileSystem: React.FC = () => {
                     ])}
                 </div>
             </div>
-            <div style={{ height: 400 }}>
-                <DndProvider backend={HTML5Backend}>
-                    <FileBrowser
-                        files={files}
-                        folderChain={folderChain}
-                        onFileAction={handleFileAction}
-                        enableDragAndDrop={true}
-                    >
-                        <FileToolbar />
-                        <FileSearch />
-                        <FileList />
-                    </FileBrowser>
-                </DndProvider>
-            </div>
+            <VFSBrowser />
         </div>
     );
 };

@@ -20,8 +20,6 @@ import {
 import 'chonky/style/main.css';
 import path from 'path';
 import React, { useCallback, useEffect, useState } from 'react';
-import { DndProvider } from 'react-dnd';
-import { HTML5Backend } from 'react-dnd-html5-backend';
 import { useStoryLinks } from '../util';
 
 // The AWS credentials below only have read-only access to the Chonky demo bucket.
@@ -165,18 +163,16 @@ export const S3Browser: React.FC = () => {
                 )}
             </div>
             <div style={{ height: 400 }}>
-                <DndProvider backend={HTML5Backend}>
-                    <FileBrowser
-                        files={files}
-                        folderChain={folderChain}
-                        onFileAction={handleFileAction}
-                    >
-                        <FileNavbar />
-                        <FileToolbar />
-                        <FileSearch />
-                        <FileList />
-                    </FileBrowser>
-                </DndProvider>
+                <FileBrowser
+                    files={files}
+                    folderChain={folderChain}
+                    onFileAction={handleFileAction}
+                >
+                    <FileNavbar />
+                    <FileToolbar />
+                    <FileSearch />
+                    <FileList />
+                </FileBrowser>
             </div>
         </div>
     );
