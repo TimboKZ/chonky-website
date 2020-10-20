@@ -21,6 +21,7 @@
     "typescript": "~3.7.2"
   },
   "scripts": {
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
@@ -42,6 +43,7 @@
     ]
   },
   "devDependencies": {
-    "react-app-rewired": "^2.1.6"
+    "react-app-rewired": "^2.1.6",
+    "source-map-explorer": "^2.5.0"
   }
 }
