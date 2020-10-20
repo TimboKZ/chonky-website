@@ -13,6 +13,7 @@ import {
     FileBrowser,
     FileData,
     FileList,
+    FileNavbar,
     FileSearch,
     FileToolbar,
 } from 'chonky';
@@ -170,6 +171,7 @@ export const S3Browser: React.FC = () => {
                         folderChain={folderChain}
                         onFileAction={handleFileAction}
                     >
+                        <FileNavbar />
                         <FileToolbar />
                         <FileSearch />
                         <FileList />
