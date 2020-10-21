@@ -13,7 +13,6 @@ import {
     FileHelper,
     FileList,
     FileNavbar,
-    FileSearch,
     FileToolbar,
 } from 'chonky';
 import 'chonky/style/main.css';
@@ -96,7 +95,6 @@ export const VFSBrowser: React.FC = () => {
             >
                 <FileNavbar />
                 <FileToolbar />
-                <FileSearch />
                 <FileList />
             </FileBrowser>
         </div>

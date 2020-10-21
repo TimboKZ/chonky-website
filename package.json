@@ -5,7 +5,7 @@
   "scripts": {
     "install:landing": "cd landing && npm install && npm install chonky@latest",
     "install:2.x_docz": "cd 2.x_docz && npm install && npm install chonky@latest",
-    "install:2.x_storybook": "cd 2.x_storybook && npm install && npm install chonky@latest",
+    "install:2.x_storybook": "cd 2.x_storybook && npm install && npm install chonky@canary",
     "install:2.x": "npm run install:2.x_docz && npm run install:2.x_storybook",
     "install:all": "npm install && npm run install:landing && npm run install:2.x",
     "build:landing": "cd landing && rm -rf build/ && npm run build",

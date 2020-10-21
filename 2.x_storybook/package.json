@@ -12,7 +12,7 @@
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "aws-sdk": "^2.774.0",
-    "chonky": "^1.1.5",
+    "chonky": "^2.0.0-alpha.7",
     "react": "^16.14.0",
     "react-dnd": "^11.1.3",
     "react-dnd-html5-backend": "^11.1.3",

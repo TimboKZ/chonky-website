@@ -14,7 +14,6 @@ import {
     FileData,
     FileList,
     FileNavbar,
-    FileSearch,
     FileToolbar,
 } from 'chonky';
 import 'chonky/style/main.css';
@@ -170,7 +169,6 @@ export const S3Browser: React.FC = () => {
                 >
                     <FileNavbar />
                     <FileToolbar />
-                    <FileSearch />
                     <FileList />
                 </FileBrowser>
             </div>
