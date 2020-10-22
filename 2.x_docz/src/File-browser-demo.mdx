@@ -2,16 +2,9 @@
 name: File Browser demo
 ---
 
-import { useState, useCallback } from 'react';
+import { useState } from 'react';
 import { Playground } from 'docz';
-import {
-    ChonkyActions,
-    FileHelper,
-    FileBrowser,
-    FileToolbar,
-    FileSearch,
-    FileList,
-} from 'chonky';
+import { FileBrowser, FileList, FileNavbar, FileToolbar } from 'chonky';
 import {
     rootFolderId,
     useFileActionHandler,
@@ -22,7 +15,7 @@ import {
 # File Browser demo
 
 The live example below shows some basic thing Chonky can do. For more detailed examples,
-check out Chonky's storybook (link coming soon!).
+check out [Chonky's storybook](https://chonky.io/storybook/2.x/).
 
 Some things you can try:
 
@@ -51,13 +44,11 @@ Some things you can try:
                     onFileAction={handleFileAction}
                     enableDragAndDrop={true}
                 >
+                    <FileNavbar />
                     <FileToolbar />
-                    <FileSearch />
                     <FileList />
                 </FileBrowser>
             </div>
         );
     }}
 </Playground>
-
-## S3 bucket browser

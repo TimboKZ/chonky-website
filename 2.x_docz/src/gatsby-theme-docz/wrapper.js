@@ -7,7 +7,11 @@ const Wrapper = ({ children, doc }) => (
     <React.Fragment>
         <Helmet>
             <meta charSet="utf-8" />
-            <link rel="icon" type="image/png" href="/static/favicon.png" />
+            <link
+                rel="icon"
+                type="image/png"
+                href="https://chonky.io/chonky-sphere-v2.png"
+            />
         </Helmet>
         <DndProvider backend={HTML5Backend}>{children}</DndProvider>
     </React.Fragment>

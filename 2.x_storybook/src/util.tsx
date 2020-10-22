@@ -1,8 +1,7 @@
+import { ChonkyActions, FileAction, FileActionData, FileData } from 'chonky';
+import Noty from 'noty';
 import 'noty/lib/noty.css';
 import 'noty/lib/themes/relax.css';
-
-import { ChonkyActions, FileAction, FileActionData } from 'chonky';
-import Noty from 'noty';
 import React, { ReactElement, useMemo } from 'react';
 
 export const showActionNotification = (params: {
@@ -23,8 +22,8 @@ export const showActionNotification = (params: {
         textParts.push(`<b>Target:</b> <code>${data.target.name}</code>`);
     }
     if (data.files) {
-        const fileNames = data.files.map((f) => f.name);
-        const fileComps = fileNames.map((name) => `<code>${name}</code>`);
+        const fileNames = data.files.map((f: FileData) => f.name);
+        const fileComps = fileNames.map((name: string) => `<code>${name}</code>`);
         const fileCount = fileComps.length;
         const fileTitle = `${fileCount} ${fileCount === 1 ? 'file' : 'files'}:`;
         textParts.push(`<b>${fileTitle}</b> [${fileComps.join(', ')}]`);
