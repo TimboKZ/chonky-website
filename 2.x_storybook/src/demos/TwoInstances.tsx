@@ -27,8 +27,12 @@ export const TwoInstances: React.FC = () => {
                 </div>
             </div>
             <div style={{ display: 'flex' }}>
-                <VFSBrowser />
-                <VFSBrowser />
+                <div style={{ flex: 1, width: 0, paddingRight: 4 }}>
+                    <VFSBrowser instanceId={`${storyName}-left`} />
+                </div>
+                <div style={{ flex: 1, width: 0, paddingLeft: 4 }}>
+                    <VFSBrowser instanceId={`${storyName}-right`} />
+                </div>
             </div>
         </div>
     );

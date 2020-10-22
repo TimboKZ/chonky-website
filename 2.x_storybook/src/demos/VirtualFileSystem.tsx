@@ -30,7 +30,7 @@ export const useFiles = (currentFolderId: string): FileArray => {
     return useMemo(() => {
         const currentFolder = fileMap[currentFolderId];
         const files = currentFolder.childrenIds
-            ? currentFolder.childrenIds.map((fileId) => fileMap[fileId] ?? null)
+            ? currentFolder.childrenIds.map((fileId: string) => fileMap[fileId] ?? null)
             : [];
         return files;
     }, [currentFolderId]);
@@ -81,7 +81,7 @@ export const useFileActionHandler = (
     return handleFileAction;
 };
 
-export const VFSBrowser: React.FC = () => {
+export const VFSBrowser: React.FC<{ instanceId: string }> = (props) => {
     const [currentFolderId, setCurrentFolderId] = useState(rootFolderId);
     const files = useFiles(currentFolderId);
     const folderChain = useFolderChain(currentFolderId);
@@ -89,9 +89,13 @@ export const VFSBrowser: React.FC = () => {
     return (
         <div style={{ height: 400 }}>
             <FileBrowser
+                instanceId={props.instanceId}
                 files={files}
                 folderChain={folderChain}
                 onFileAction={handleFileAction}
+                thumbnailGenerator={(file: FileData) =>
+                    file.thumbnailUrl ? `https://chonky.io${file.thumbnailUrl}` : null
+                }
             >
                 <FileNavbar />
                 <FileToolbar />
@@ -128,7 +132,7 @@ export const VirtualFileSystem: React.FC = () => {
                     ])}
                 </div>
             </div>
-            <VFSBrowser />
+            <VFSBrowser instanceId={storyName} />
         </div>
     );
 };

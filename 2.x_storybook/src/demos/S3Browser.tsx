@@ -163,6 +163,7 @@ export const S3Browser: React.FC = () => {
             </div>
             <div style={{ height: 400 }}>
                 <FileBrowser
+                    instanceId={storyName}
                     files={files}
                     folderChain={folderChain}
                     onFileAction={handleFileAction}

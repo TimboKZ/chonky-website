@@ -22,6 +22,10 @@ export const About: React.FC = () => {
                 <div className="story-links">
                     {useStoryLinks([
                         {
+                            name: 'Chonky home page',
+                            url: 'https://chonky.io/',
+                        },
+                        {
                             name: 'Chonky v2.x Docs',
                             url: 'https://chonky.io/docs/2.x/',
                         },
