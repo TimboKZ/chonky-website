@@ -24,6 +24,17 @@ export const Scratchpad: React.FC = () => {
         ],
         []
     );
+    const files: FileArray = useMemo(
+        () => [
+            {
+                id: 'cvb',
+                name: 'Data URI thumbnail',
+                thumbnailUrl:
+                    'data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/XBs/fNwfjZ0frl3/zy7////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAABAALAAAAAAQABAAAAVVICSOZGlCQAosJ6mu7fiyZeKqNKToQGDsM8hBADgUXoGAiqhSvp5QAnQKGIgUhwFUYLCVDFCrKUE1lBavAViFIDlTImbKC5Gm2hB0SlBCBMQiB0UjIQA7',
+            },
+        ],
+        []
+    );
 
     return (
         <div className="story-wrapper">
@@ -36,7 +47,7 @@ export const Scratchpad: React.FC = () => {
                     ])}
                 </div>
             </div>
-            <FileBrowser files={[]} folderChain={folderChain}>
+            <FileBrowser files={files} folderChain={folderChain}>
                 <FileNavbar />
                 <FileToolbar />
                 <FileList />

@@ -7,5 +7,18 @@ export default {
     dest: 'build/',
     public: 'static/',
     typescript: true,
-    menu: ['Introduction', 'Installation & usage', 'Immutability', 'File Browser demo'],
+    menu: [
+        'Introduction',
+        'Installation & usage',
+        'File Browser demo',
+        {
+            name: 'Basics',
+            menu: [
+                'Immutability',
+                'The files array',
+                'Current folder',
+                'File thumbnails',
+            ],
+        },
+    ],
 };
