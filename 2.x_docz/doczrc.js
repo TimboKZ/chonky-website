@@ -11,7 +11,7 @@ export default {
         'Introduction',
         'Installation & usage',
         'Migrating from 1.x',
-        'File Browser demo',
+        'File Browser demos',
         {
             name: 'Basics',
             menu: [
