@@ -3,53 +3,6 @@ name: File Browser demos
 route: /demos
 ---
 
-import { useState } from 'react';
-import { Playground } from 'docz';
-import { FileBrowser, FileList, FileNavbar, FileToolbar } from 'chonky';
-import {
-    rootFolderId,
-    useFileActionHandler,
-    useFiles,
-    useFolderChain,
-} from './demo/demo-util';
+# Demos
 
-# File Browser demo
-
-The live example below shows some basic thing Chonky can do. For more detailed examples,
-check out [Chonky's storybook](https://chonky.io/storybook/2.x/).
-
-Some things you can try:
-
--   Try opening files and entering folders.
--   Try keyboard navigation - use `Tab`, `Space`, `Enter` and `Backspace` keys.
--   Try selecting files by clicking on them or pressing `Ctrl+A`.
--   Try dragging & dropping files.
--   Try using search, by pressing the search button or `Ctrl+F`.
--   Try sorting files using the `Sort` dropdown.
--   Try toggling hidden files using the `Options` dropdown.
--   Try switching between _List_ and _Grid_ file views using the buttons in the toolbar.
-
-## Virtual file system example
-
-<Playground>
-    {() => {
-        const [currentFolderId, setCurrentFolderId] = useState(rootFolderId);
-        const files = useFiles(currentFolderId);
-        const folderChain = useFolderChain(currentFolderId);
-        const handleFileAction = useFileActionHandler(setCurrentFolderId);
-        return (
-            <div style={{ height: 600 }}>
-                <FileBrowser
-                    files={files}
-                    folderChain={folderChain}
-                    onFileAction={handleFileAction}
-                    enableDragAndDrop={true}
-                >
-                    <FileNavbar />
-                    <FileToolbar />
-                    <FileList />
-                </FileBrowser>
-            </div>
-        );
-    }}
-</Playground>
+[**Click here to view demos in Chonky 2.x storybook**](https://chonky.io/storybook/2.x/)

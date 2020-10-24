@@ -3,7 +3,13 @@ name: Installation & usage
 route: /installation-usage
 ---
 
-import { FileBrowser, FileList, FileNavbar, FileToolbar } from 'chonky';
+import {
+    FileBrowser,
+    FileContextMenu,
+    FileList,
+    FileNavbar,
+    FileToolbar,
+} from 'chonky';
 import { Playground } from 'docz';
 
 # Installation & usage
@@ -36,6 +42,7 @@ Note that `@canary` tag is required since 2.x is still in alpha.
                 <FileNavbar />
                 <FileToolbar />
                 <FileList />
+                <FileContextMenu />
             </FileBrowser>
         );
     }}

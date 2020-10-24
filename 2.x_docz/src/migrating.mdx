@@ -5,25 +5,39 @@ route: /migrating-1.x
 
 # Migrating from 1.x
 
-## Component hierarchy
+## Components
 
+-   ⚠️ Explicit TypeScript types for component props are no longer exported. If you
+    need the prop type of some component, use `Component['props']` notation, e.g.
+    `FileBrowser['props']`.
 -   FileNavbar component was added. The folder chain is now displayed in FileNavbar
     instead of `FileToolbar`.
--   FileSearch component was removed. The search input was moved into FileToolbar.
+-   ⚠️ FileSearch component was removed. The search input was moved into FileToolbar.
 
 ## Icons
 
--   The built-in FontAwesome icons were moved into a separate package to decrease
+-   ⚠️ The built-in FontAwesome icons were moved into a separate package to decrease
     bundle size. It is now possible to provide custom icon implementations (WIP).
 
 ## File actions
 
--   `toolbarButton` field was renamed into `button`.
+-   ⚠️ `EssentialFileActions` were introduced. These are file actions required by Chonky
+    to function correctly. They are always enabled. `DefaultFileActions` now only
+    contain non-essential actions, and users can still disable them.
+-   ⚠️ `toolbarButton` field was renamed into `button`.
 -   `button` field now requires `toolbar` or `contextMenu` to be set.
+-   `specialActionToDispatch` field was removed. In fact, "special" actions were
+    completely deprecated. Instead, Chonky now allows actions to define the `effect`
+    function that has access to Chonky's Redux state.
+
+## File action handler
+
+-   ⚠️ The signature of file action handler has changed completely. Each file action
+    now defines its own payload type.
 
 ## Styling
 
--   Chonky now uses a CSS-in-JSS library called JSS. Thanks to this, you no longer
+-   ⚠️ Chonky now uses a CSS-in-JSS library called JSS. Thanks to this, you no longer
     need to import Chonky CSS manually. You can remove this line from your project:
     ```js
     // No longer needed; will throw error.

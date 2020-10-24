@@ -10,8 +10,8 @@ export default {
     menu: [
         'Introduction',
         'Installation & usage',
-        'Migrating from 1.x',
         'File Browser demos',
+        'Migrating from 1.x',
         {
             name: 'Basics',
             menu: [
