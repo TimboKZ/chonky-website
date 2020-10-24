@@ -6,9 +6,11 @@
 
 import {
     ChonkyActions,
+    ChonkyFileActionData,
     FileActionHandler,
     FileArray,
     FileBrowser,
+    FileContextMenu,
     FileData,
     FileHelper,
     FileList,
@@ -59,26 +61,26 @@ export const useFolderChain = (currentFolderId: string): FileArray => {
 
 export const useFileActionHandler = (
     setCurrentFolderId: (folderId: string) => void
-): FileActionHandler => {
-    const handleFileAction = useCallback(
-        (action, actionData) => {
-            if (action.id === ChonkyActions.OpenFiles.id) {
-                let targetFile = null;
-                if (actionData.target) {
-                    targetFile = actionData.target;
-                } else if (actionData.files && actionData.files.length === 1) {
-                    targetFile = actionData.files[0];
+) => {
+    return useCallback<FileActionHandler>(
+        (data: ChonkyFileActionData) => {
+            if (data.id === ChonkyActions.OpenFiles.id) {
+                const { targetFile, files } = data.payload;
+                let fileToOpen = null;
+                if (targetFile) {
+                    fileToOpen = targetFile;
+                } else if (files && files.length === 1) {
+                    fileToOpen = files[0];
                 }
-                if (targetFile && FileHelper.isDirectory(targetFile)) {
-                    setCurrentFolderId(targetFile.id);
+                if (fileToOpen && FileHelper.isDirectory(fileToOpen)) {
+                    setCurrentFolderId(fileToOpen.id);
                     return;
                 }
             }
-            showActionNotification({ action, data: actionData });
+            showActionNotification(data);
         },
         [setCurrentFolderId]
     );
-    return handleFileAction;
 };
 
 export const VFSBrowser: React.FC<{ instanceId: string }> = (props) => {
@@ -100,6 +102,7 @@ export const VFSBrowser: React.FC<{ instanceId: string }> = (props) => {
                 <FileNavbar />
                 <FileToolbar />
                 <FileList />
+                <FileContextMenu />
             </FileBrowser>
         </div>
     );

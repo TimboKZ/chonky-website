@@ -7,8 +7,7 @@
 import AWS from 'aws-sdk';
 import {
     ChonkyActions,
-    FileAction,
-    FileActionData,
+    ChonkyFileActionData,
     FileArray,
     FileBrowser,
     FileData,
@@ -120,12 +119,12 @@ export const S3Browser: React.FC = () => {
     }, [folderPrefix]);
 
     const handleFileAction = useCallback(
-        (action: FileAction, data: FileActionData) => {
-            if (action.id === ChonkyActions.OpenFiles.id) {
-                if (data.files && data.files.length !== 1) return;
-                if (!data.target || !data.target.isDir) return;
+        (data: ChonkyFileActionData) => {
+            if (data.id === ChonkyActions.OpenFiles.id) {
+                if (data.payload.files && data.payload.files.length !== 1) return;
+                if (!data.payload.targetFile || !data.payload.targetFile.isDir) return;
 
-                const newPrefix = `${data.target.id.replace(/\/*$/, '')}/`;
+                const newPrefix = `${data.payload.targetFile.id.replace(/\/*$/, '')}/`;
                 console.log(`Key prefix: ${newPrefix}`);
                 setKeyPrefix(newPrefix);
             }
