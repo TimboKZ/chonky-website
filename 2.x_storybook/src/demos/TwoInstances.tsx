@@ -8,7 +8,7 @@ import 'chonky/style/main.css';
 import React from 'react';
 
 import { useStoryLinks } from '../util';
-import { VFSBrowser } from './VirtualFileSystem';
+import { VFSBrowser } from './VFSReadOnly';
 
 const storyName = 'Two Browser Instances';
 export const TwoInstances: React.FC = () => {

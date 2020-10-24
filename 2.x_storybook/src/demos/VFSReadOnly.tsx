@@ -7,7 +7,6 @@
 import {
     ChonkyActions,
     ChonkyFileActionData,
-    FileActionHandler,
     FileArray,
     FileBrowser,
     FileContextMenu,
@@ -62,21 +61,17 @@ export const useFolderChain = (currentFolderId: string): FileArray => {
 export const useFileActionHandler = (
     setCurrentFolderId: (folderId: string) => void
 ) => {
-    return useCallback<FileActionHandler>(
+    return useCallback(
         (data: ChonkyFileActionData) => {
             if (data.id === ChonkyActions.OpenFiles.id) {
                 const { targetFile, files } = data.payload;
-                let fileToOpen = null;
-                if (targetFile) {
-                    fileToOpen = targetFile;
-                } else if (files && files.length === 1) {
-                    fileToOpen = files[0];
-                }
+                const fileToOpen = targetFile ?? files[0];
                 if (fileToOpen && FileHelper.isDirectory(fileToOpen)) {
                     setCurrentFolderId(fileToOpen.id);
                     return;
                 }
             }
+
             showActionNotification(data);
         },
         [setCurrentFolderId]
@@ -108,12 +103,14 @@ export const VFSBrowser: React.FC<{ instanceId: string }> = (props) => {
     );
 };
 
-const storyName = 'Virtual File System';
-export const VirtualFileSystem: React.FC = () => {
+const storyName = 'VFS (Read Only)';
+export const ReadOnlyVirtualFileSystem: React.FC = () => {
     return (
         <div className="story-wrapper">
             <div className="story-description">
-                <h1 className="story-title">{storyName}</h1>
+                <h1 className="story-title">
+                    {storyName.replace('VFS', 'Virtual File System')}
+                </h1>
                 <p>
                     This example simulates a file system on client-side, without any
                     backend interactions. The "file system" is represented as a file map
@@ -121,13 +118,14 @@ export const VirtualFileSystem: React.FC = () => {
                     <code>FileData</code> type.
                 </p>
                 <p>
-                    When you delete files or move them between folders, the file map is
-                    updated in memory. You can use the control bars at bottom of the
-                    page to reset the file map to initial state.
+                    This example shows a <strong>read-only</strong> file system - you
+                    can open and enter folders, but you can't change the state of the
+                    file system in any way. Drag & drop will also <em>not</em> move any
+                    files.
                 </p>
                 <div className="story-links">
                     {useStoryLinks([
-                        { gitPath: '2.x_storybook/src/demos/VirtualFileSystem.tsx' },
+                        { gitPath: '2.x_storybook/src/demos/VFSReadOnly.tsx' },
                         {
                             name: 'File map source code',
                             gitPath: '2.x_storybook/src/demos/demo.fs_map.json',
@@ -139,4 +137,4 @@ export const VirtualFileSystem: React.FC = () => {
         </div>
     );
 };
-(VirtualFileSystem as any).storyName = storyName;
+(ReadOnlyVirtualFileSystem as any).storyName = storyName;

@@ -24,8 +24,9 @@ route: /migrating-1.x
 -   ⚠️ `EssentialFileActions` were introduced. These are file actions required by Chonky
     to function correctly. They are always enabled. `DefaultFileActions` now only
     contain non-essential actions, and users can still disable them.
--   ⚠️ `toolbarButton` field was renamed into `button`.
--   `button` field now requires `toolbar` or `contextMenu` to be set.
+-   ⚠️ `toolbarButton` field was renamed into `button`. `button` field now requires
+    `toolbar` or `contextMenu` to be displayed. The `dropdown` field of `button` was
+    deprecated, and presence/absence of `group` field is used instead.
 -   `specialActionToDispatch` field was removed. In fact, "special" actions were
     completely deprecated. Instead, Chonky now allows actions to define the `effect`
     function that has access to Chonky's Redux state.

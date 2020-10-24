@@ -18,7 +18,7 @@ export const showActionNotification = (data: ChonkyFileActionData) => {
 
     const textParts: string[] = [];
 
-    if (data.action.id === ChonkyActions.MoveFiles.id) {
+    if (data.id === ChonkyActions.MoveFiles.id) {
         textParts.push(
             `You moved ${data.payload.files.length} file(s) from ` +
                 `${data.payload.source ? data.payload.source.name : '~'} ` +
@@ -26,7 +26,7 @@ export const showActionNotification = (data: ChonkyFileActionData) => {
         );
     }
 
-    if (data.action.id === ChonkyActions.OpenFiles.id) {
+    if (data.id === ChonkyActions.OpenFiles.id) {
         const fileNames = data.payload.files.map((f) => f.name);
         textParts.push(`You opened multiple files:<br/>${fileNames.join(', ')}.`);
     }

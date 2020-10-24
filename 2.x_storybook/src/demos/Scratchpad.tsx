@@ -7,7 +7,6 @@
 import {
     ChonkyActions,
     ChonkyFileActionData,
-    FileActionHandler,
     FileArray,
     FileBrowser,
     FileList,
@@ -32,7 +31,7 @@ export const Scratchpad: React.FC = () => {
         []
     );
 
-    const handleFileAction: FileActionHandler = (data: ChonkyFileActionData) => {
+    const handleFileAction = (data: ChonkyFileActionData) => {
         if (data.id === ChonkyActions.ChangeSelection.id) {
             setSelectionString(
                 JSON.stringify(Array.from(data.payload.selection), null, 4)
