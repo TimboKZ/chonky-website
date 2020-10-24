@@ -142,8 +142,8 @@ export const S3Browser: React.FC = () => {
                     requests being sent in real-time as you enter different folders.
                 </p>
                 <p>
-                    Note that the AWS SDK in this example is configured to have
-                    read-only access to Chonky's demo bucket, called{' '}
+                    Note that the AWS SDK in this example is configured to have{' '}
+                    <strong>read-only</strong> access to Chonky's demo bucket, called
                     <code>{BUCKET_NAME}</code>. To use a custom bucket, you will need to
                     setup appropriate IAM roles and permissions. Please remember to
                     restrict public access to your data!
