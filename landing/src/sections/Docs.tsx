@@ -30,6 +30,9 @@ export const Docs: React.FC<DocsProps> = (props) => {
                     <LinkCard linkData={Docs0x} />
                 </Grid>
             </Grid>
+            <br/>
+            <br/>
+            <br/>
         </>
     );
 };

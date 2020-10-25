@@ -9,6 +9,7 @@ import 'chonky/style/main.css';
 import React from 'react';
 import { Demo } from './sections/Demo';
 import { Docs } from './sections/Docs';
+import { Features } from './sections/Features';
 import { Header } from './sections/Header';
 import { Links } from './sections/Links';
 
@@ -17,6 +18,7 @@ export const App: React.FC = () => {
         <Container maxWidth="md">
             <Header />
             <Links />
+            <Features />
             <Demo />
             <Docs />
         </Container>

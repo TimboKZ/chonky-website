@@ -62,6 +62,7 @@ export const useCustomFileMap = () => {
                             childrenCount: newChildrenIds.length,
                         };
                     }
+                    return undefined;
                 });
                 return newFileMap;
             }),
@@ -100,6 +101,7 @@ export const useCustomFileMap = () => {
                         ...file,
                         parentId: destination.id,
                     };
+                    return undefined;
                 });
                 return newFileMap;
             }),

@@ -9,7 +9,7 @@ import {
     ChonkyFileActionData,
     ChonkyIconName,
     defineFileAction,
-    FileAction, FileActionEffect,
+    FileAction,
     FileArray,
     FileBrowser,
     FileContextMenu,
@@ -53,7 +53,7 @@ const useFileActions = (
                             icon: ChonkyIconName.config,
                         },
                     } as const,
-                    ({ state }: Parameters<FileActionEffect>) => {
+                    ({ state }) => {
                         if (state.contextMenuTriggerFile) {
                             setName(i, state.contextMenuTriggerFile.name);
                         }
