@@ -9,7 +9,7 @@ import {
     ChonkyFileActionData,
     ChonkyIconName,
     defineFileAction,
-    FileAction,
+    FileAction, FileActionEffect,
     FileArray,
     FileBrowser,
     FileContextMenu,
@@ -34,6 +34,35 @@ const useFiles = () => {
         files.push(null);
         return files;
     }, []);
+};
+
+const useFileActions = (
+    nameCount: number,
+    setName: (index: number, name: string | null) => void
+) => {
+    return useMemo(() => {
+        const fileActions: FileAction[] = [];
+        for (let i = 0; i < nameCount; ++i) {
+            fileActions.push(
+                defineFileAction(
+                    {
+                        id: `choose_file_${i + 1}`,
+                        button: {
+                            name: `Choose file #${i + 1}`,
+                            contextMenu: true,
+                            icon: ChonkyIconName.config,
+                        },
+                    } as const,
+                    ({ state }: Parameters<FileActionEffect>) => {
+                        if (state.contextMenuTriggerFile) {
+                            setName(i, state.contextMenuTriggerFile.name);
+                        }
+                    }
+                )
+            );
+        }
+        return fileActions;
+    }, [nameCount, setName]);
 };
 
 const useFilePickerLogic = () => {
@@ -76,35 +105,6 @@ const useFilePickerLogic = () => {
     };
 };
 
-const useFileActions = (
-    nameCount: number,
-    setName: (index: number, name: string | null) => void
-) => {
-    return useMemo(() => {
-        const fileActions: FileAction[] = [];
-        for (let i = 0; i < nameCount; ++i) {
-            fileActions.push(
-                defineFileAction(
-                    {
-                        id: `choose_file_${i + 1}`,
-                        button: {
-                            name: `Choose file #${i + 1}`,
-                            contextMenu: true,
-                            icon: ChonkyIconName.config,
-                        },
-                    } as const,
-                    ({ state }) => {
-                        if (state.contextMenuTriggerFile) {
-                            setName(i, state.contextMenuTriggerFile.name);
-                        }
-                    }
-                )
-            );
-        }
-        return fileActions;
-    }, [nameCount, setName]);
-};
-
 const FilePicker = () => {
     const files = useFiles();
     const { handleFileAction, names, setName } = useFilePickerLogic();
@@ -117,7 +117,8 @@ const FilePicker = () => {
             !name && names.slice(0, index).filter((n) => n === null).length !== 0;
         return (
             <div key={`picker-${index}`} style={{ marginBottom: 10 }}>
-                <em>File {numStr}:</em>{'  '}
+                <em>File {numStr}:</em>
+                {'  '}
                 {isWaiting ? (
                     'Waiting...'
                 ) : (
@@ -126,7 +127,8 @@ const FilePicker = () => {
                             `Please double click on file ${numStr} ` +
                                 `(or use context menu)`}
                     </strong>
-                )}{'  '}
+                )}
+                {'  '}
                 {name && <button onClick={() => setName(index, null)}>Reset</button>}
             </div>
         );
