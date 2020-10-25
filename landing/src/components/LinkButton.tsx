@@ -17,7 +17,7 @@ export interface LinkButtonProps {
     linkData: LinkData;
 }
 
-const getButtonStyles = (theme: Theme, color: string): CSSProperties => ({
+export const getButtonStyles = (theme: Theme, color: string): CSSProperties => ({
     color: theme.palette.getContrastText(color),
     backgroundColor: color,
     '&:hover': {

@@ -1,4 +1,5 @@
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
+import { faCode } from '@fortawesome/free-solid-svg-icons/faCode';
 import { faDiscord } from '@fortawesome/free-brands-svg-icons/faDiscord';
 import { faNpm } from '@fortawesome/free-brands-svg-icons/faNpm';
 import { faBook } from '@fortawesome/free-solid-svg-icons/faBook';
@@ -50,6 +51,14 @@ export const Storybook2x: LinkData = {
     url: 'https://chonky.io/storybook/2.x/',
     color: '#733eda',
     icon: faLaptopCode,
+};
+
+export const DemoSource2x: LinkData = {
+    title: '2.x Demo Source Code',
+    description: '',
+    url: 'https://github.com/TimboKZ/chonky-website/blob/master/2.x_storybook/src/demos/VFSMutable.tsx',
+    color: '#733eda',
+    icon: faCode,
 };
 
 export const Docs1x: LinkData = {
