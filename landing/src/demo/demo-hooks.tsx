@@ -12,7 +12,7 @@ import {
     FileHelper,
 } from 'chonky';
 import 'chonky/style/main.css';
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 
 import { showActionNotification } from './demo-util';
 import DemoFsMap from './demo.fs_map.json';

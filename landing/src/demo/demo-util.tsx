@@ -2,7 +2,6 @@ import { ChonkyActions, ChonkyFileActionData } from 'chonky';
 import Noty from 'noty';
 import 'noty/lib/noty.css';
 import 'noty/lib/themes/relax.css';
-import React from 'react';
 
 // We ignore some actions to avoid creating noise
 const ignoredActions = new Set<String>();
