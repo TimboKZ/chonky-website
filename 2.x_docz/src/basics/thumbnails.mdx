@@ -29,7 +29,7 @@ const files = [
 This is useful when you know the URLs for all thumbnails beforehand. Chonky will
 automatically load the image from `thumbnailUrl` and display it as the thumbnail. [Data
 URIs](https://css-tricks.com/data-uris/) are also supported, in case you want generate
-thumbnails dynamically. See below for a live example.
+thumbnails on client-side. See below for a live example.
 
 <Playground>
     {() => {
@@ -84,8 +84,8 @@ const thumbnailGenerator = (file) => {
 };
 
 <FileBrowser files={files} thumbnailGenerator={thumbnailGenerator}>
+    <FileNavbar />
     <FileToolbar />
-    <FileSearch />
     <FileList />
 </FileBrowser>;
 ```
@@ -105,7 +105,7 @@ to display many files (>10,000), but don't want to generate 10,000 thumbnails at
 same time.
 
 Example below shows a thumbnail generator that generates random thumbnail for each
-image.
+file.
 
 <Playground>
     {() => {

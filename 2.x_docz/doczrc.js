@@ -14,6 +14,7 @@ export default {
         'Installation & usage',
         'File Browser demos',
         'Migrating from 1.x',
+        'FAQ',
         {
             name: 'Basics',
             menu: [
@@ -22,6 +23,19 @@ export default {
                 'Displaying files',
                 'Setting current folder',
                 'File thumbnails',
+                'File browser handle',
+                'Default configuration',
+            ],
+        },
+        {
+            name: 'File actions',
+            menu: [
+                'File action basics',
+                'Defining an action handler',
+                'Built-in actions',
+                'Defining custom actions',
+                'Understanding effects',
+                'Ways to trigger an action',
             ],
         },
         {
