@@ -4,7 +4,6 @@
  * @license MIT
  */
 
-import 'chonky/style/main.css';
 import React from 'react';
 
 import { useStoryLinks } from '../util';

@@ -15,12 +15,15 @@ import {
     FileList,
     FileNavbar,
     FileToolbar,
+    setChonkyDefaults,
 } from 'chonky';
-import 'chonky/style/main.css';
+import { ChonkyIconFA } from 'chonky-icon-fontawesome';
 import React, { useCallback, useMemo, useState } from 'react';
 
 import { showActionNotification, useStoryLinks } from '../util';
 import DemoFsMap from './demo.fs_map.json';
+
+setChonkyDefaults({ iconComponent: ChonkyIconFA });
 
 const rootFolderId = DemoFsMap.rootFolderId;
 const fileMap = (DemoFsMap.fileMap as unknown) as {

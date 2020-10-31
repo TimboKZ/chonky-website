@@ -16,11 +16,14 @@ import {
     FileList,
     FileNavbar,
     FileToolbar,
+    setChonkyDefaults,
 } from 'chonky';
-import 'chonky/style/main.css';
+import { ChonkyIconFA } from 'chonky-icon-fontawesome';
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 
 import { useStoryLinks } from '../util';
+
+setChonkyDefaults({ iconComponent: ChonkyIconFA });
 
 const useFiles = () => {
     return useMemo(() => {

@@ -13,6 +13,7 @@ module.exports = {
         const chonkyPath = path.resolve(__dirname, '..', '..', '..', 'Chonky');
         const chonkyCheckedOut = fs.existsSync(chonkyPath);
 
+        return config;
         if (chonkyCheckedOut && config.mode !== 'production') {
             // If Chonky is checked out, import files directly from it instead of
             // using the Chonky package installed locally. Note that we are

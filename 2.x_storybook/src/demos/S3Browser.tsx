@@ -14,11 +14,14 @@ import {
     FileList,
     FileNavbar,
     FileToolbar,
+    setChonkyDefaults,
 } from 'chonky';
-import 'chonky/style/main.css';
+import { ChonkyIconFA } from 'chonky-icon-fontawesome';
 import path from 'path';
 import React, { useCallback, useEffect, useState } from 'react';
 import { useStoryLinks } from '../util';
+
+setChonkyDefaults({ iconComponent: ChonkyIconFA });
 
 // The AWS credentials below only have read-only access to the Chonky demo bucket.
 // You will need to create custom credentials for your bucket.
