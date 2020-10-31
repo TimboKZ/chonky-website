@@ -16,6 +16,7 @@ import makeStyles from '@material-ui/core/styles/makeStyles';
 import Typography from '@material-ui/core/Typography';
 import AllInclusiveIcon from '@material-ui/icons/AllInclusive';
 import CodeIcon from '@material-ui/icons/Code';
+import ControlCameraIcon from '@material-ui/icons/ControlCamera';
 import DirectionsRunIcon from '@material-ui/icons/DirectionsRun';
 import KeyboardIcon from '@material-ui/icons/Keyboard';
 import MenuOpenIcon from '@material-ui/icons/MenuOpen';
@@ -197,6 +198,7 @@ const userFeatures: FeatureData[] = [
     },
     { icon: <MenuOpenIcon />, title: 'Toolbar & context menus', description: '' },
     { icon: <KeyboardIcon />, title: 'Keyboard shortcuts', description: '' },
+    { icon: <ControlCameraIcon />, title: 'Drag and drop', description: '' },
     { icon: <PhotoSizeSelectSmallIcon />, title: 'File selections', description: '' },
     { icon: <DirectionsRunIcon />, title: 'Virtualization', description: '' },
     { icon: <PhoneAndroidIcon />, title: 'Mobile friendly UI', description: '' },

@@ -11,7 +11,6 @@ import {
     FileData,
     FileHelper,
 } from 'chonky';
-import 'chonky/style/main.css';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 
 import { showActionNotification } from './demo-util';

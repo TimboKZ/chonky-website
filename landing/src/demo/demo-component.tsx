@@ -13,7 +13,9 @@ import {
     FileList,
     FileNavbar,
     FileToolbar,
+    setChonkyDefaults,
 } from 'chonky';
+import { ChonkyIconFA } from 'chonky-icon-fontawesome';
 import React, { useCallback, useMemo } from 'react';
 import { getButtonStyles } from '../components/LinkButton';
 import { DemoSource2x, MostRecentStorybook } from '../util/links';
@@ -23,6 +25,8 @@ import {
     useFiles,
     useFolderChain,
 } from './demo-hooks';
+
+setChonkyDefaults({ iconComponent: ChonkyIconFA });
 
 export const DemoComponent: React.FC = () => {
     const {

@@ -5,7 +5,6 @@
  */
 
 import Container from '@material-ui/core/Container';
-import 'chonky/style/main.css';
 import React from 'react';
 import { Demo } from './sections/Demo';
 import { Docs } from './sections/Docs';
