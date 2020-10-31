@@ -3,43 +3,42 @@ name: Introduction
 route: /
 ---
 
+import { Playground } from 'docz';
+
 <div style={{ textAlign: 'center' }}>
     <img
         src="https://chonky.io/chonky-logo-v2.png"
         alt="Chonky logo"
         style={{ maxWidth: 500, width: '100%', margin: 'auto', display: 'block' }}
     />
-    <a href="https://www.npmjs.com/package/chonky" target="_blank">
-        <img alt="NPM package" src="https://img.shields.io/npm/v/chonky.svg" />
-    </a>
-    <a
-        href="https://tldrlegal.com/license/mit-license"
-        style={{ marginLeft: 5 }}
-        target="_blank"
-    >
-        <img alt="MIT license" src="https://img.shields.io/npm/l/chonky" />
-    </a>
-    <a
-        href="https://www.npmjs.com/package/chonky"
-        style={{ marginLeft: 5 }}
-        target="_blank"
-    >
-        <img alt="NPM downloads" src="https://img.shields.io/npm/dt/chonky" />
-    </a>
-    <a
-        href="https://github.com/TimboKZ/Chonky"
-        style={{ marginLeft: 5 }}
-        target="_blank"
-    >
+    <a href="https://www.npmjs.com/package/chonky" style={{ marginLeft: 5 }}>
         <img
-            alt="GitHub stars"
-            src="https://img.shields.io/github/stars/TimboKZ/Chonky"
+            alt="NPM package"
+            src="https://img.shields.io/npm/v/chonky.svg?style=flat&colorB=ffac5c"
         />
     </a>
-    <a href="https://discord.gg/4HJaFn9" style={{ marginLeft: 5 }} target="_blank">
+    <a href="https://tldrlegal.com/license/mit-license" style={{ marginLeft: 5 }}>
+        <img
+            alt="MIT license"
+            src="https://img.shields.io/npm/l/chonky?style=flat&colorB=dcd67a"
+        />
+    </a>
+    <a href="https://www.npmjs.com/package/chonky" style={{ marginLeft: 5 }}>
+        <img
+            alt="NPM downloads"
+            src="https://img.shields.io/npm/dt/chonky?style=flat&colorB=aef498"
+        />
+    </a>
+    <a href="https://github.com/TimboKZ/Chonky" style={{ marginLeft: 5 }}>
+        <img
+            alt="GitHub stars"
+            src="https://img.shields.io/github/stars/TimboKZ/Chonky?style=flat&colorB=50f4cc"
+        />
+    </a>
+    <a href="https://discord.gg/4HJaFn9" style={{ marginLeft: 5 }}>
         <img
             alt="Chat on Discord"
-            src="https://img.shields.io/discord/696033621986770957?label=Chat%20on%20Discord"
+            src="https://img.shields.io/discord/696033621986770957?label=discord&style=flat&colorB=08acee"
         />
     </a>
 </div>
@@ -51,67 +50,67 @@ browsing experience in your browser. This means your users can make selections, 
 drop files, toggle between List and Grid file views, use keyboard shortcuts, and much
 more!
 
-## Features
+## Available resources
 
--   [x] Backend-agnostic - files can come from any source (remote server, S3, virtual FS).
--   [x] Supports file sorting.
--   [x] Supports text search.
--   [x] Supports drag & drop.
--   [x] Mobile-friendly design.
--   [x] Supports image thumbnails.
--   [x] Supports keyboard shortcuts.
--   [x] Supports _List_ and _Grid_ file views.
--   [x] Supports common and custom file actions.
--   [x] Provides unique icons for each file extension.
--   [x] Supports file selections (excluding drag selection, _for now_).
--   [x] Supports loading animations and async thumbnail generation.
--   [x] Performs well with large file collections thanks to
-        [virtualization](https://github.com/bvaughn/react-virtualized).
+Chonky v2.x documentation consists of three parts:
 
----
+1.  [Landing page](https://chonky.io/). This page contains the list of features Chonky
+    supports, and a simple File Browser demo.
+2.  [Documentation site](https://chonky.io/docs/2.x/) **(you are here)**. This site
+    contains detailed documentation of Chonky features and some short code snippets.
+3.  [Storybook](https://chonky.io/storybook/2.x/). This site contains real world
+    examples of how Chonky can be used. It also showcases advanced usage of Chonky
+    components.
+
+### Live examples
+
+This documentation site includes many live examples of Chonky components. You can see
+the code by clicking the `<>` button under the example. You can also edit it to update
+the component in real time. Try it with the button below!
+
+<Playground>
+    <button>Edit Me!</button>
+</Playground>
 
 ## Philosophy behind Chonky
 
 Please read this section to understand what Chonky is and is not.
 
-### 1. Chonky is the presentation layer.
+---
 
-Chonky takes a list of files and shows them to the user. It does not and should not
-know where the files come from, nor should it know how file operations are carried out.
+1. **Chonky is the presentation layer.**
 
-That said, when it comes to file browser UI, **Chonky tries to cover as many _UI_
-features as possible.**
+    Chonky takes a list of files and shows them to the user. It does not and should not
+    know where the files come from or how file operations are executed.
 
-### 2. Chonky is just the tip of the FS iceberg. You will need to implement many things yourself.
-
-Chonky saves you **a lot** of time by providing a pretty file browser UI for your
-users. However, apart from a pretty UI, working with the file system requires a lot of
-custom business logic. **You will have to implement this business logic yourself.**
-
-In the future, Chonky might provide extensions like S3 or FTP adapters, but this is
-not the case today.
-
-### 3. Developing file browsers is hard. Each use case is unique.
-
-It is not possible for Chonky to address _all_ use cases explicitly. To solve this
-problem, Chonky was written to be very flexible, and _all_ internal interfaces and
-contexts are exported in some way. **Feel free to dive into the source code of Chonky
-and customise logic as necessary**.
-
-However, before you start making adjustments to Chonky's source code, please
-[create an issue](https://github.com/TimboKZ/Chonky/issues) on GitHub describing your
-use case. There's a good chance your use case is supported, just not documented.
+    That said, when it comes to file browser UI, Chonky tries to cover as many _UI_
+    features as possible.
 
 ---
 
-## Notes about 1.x
+2. **Chonky is just the tip of the FS iceberg. You will need to implement many things
+   yourself.**
 
--   Chonky `1.x` is a complete rewrite of `0.x`, now using hooks under the hood!
--   Chonky `1.x` package is 5 times smaller than `0.x` version when minified & gzipped!
--   Internal state management is done using [Recoil](https://recoiljs.org/).
--   Keyboard shortcuts are implemented using [HotKeys.js](https://wangchujiang.com/hotkeys/).
--   File sorting functionality uses [fast-sort](https://www.npmjs.com/package/fast-sort).
--   Text search is implemented using [fuzzy-search](https://www.npmjs.com/package/fuzzy-search).
--   Drag & drop uses [react-dnd](https://github.com/react-dnd/react-dnd).
--   TypeScript declarations are dynamically embedded into documentation using
-    [markdown-dynamic-codeblock-loader](https://github.com/TimboKZ/markdown-dynamic-codeblock-loader).
+    Chonky saves you _a lot_ of time by providing a pretty file browser UI
+    for your users. However, apart from a pretty UI, working with the file system
+    requires a lot of custom business logic. **You will have to implement this business
+    logic yourself.**
+
+    In the future, Chonky might provide extensions like S3 or FTP
+    adapters, but this is not the case today.
+
+---
+
+3. **Developing file browsers is hard. Each use case is unique.**
+
+    While it is not possible for Chonky to address every use case explicitly, it
+    provides a very powerful file action framework. This framework lets you customize
+    and tweak Chonky's behaviour without having to change the source code directly.
+
+    Unfortunately this power comes from understanding how Chonky works internally, so
+    you might still find it necessary to familiarise yourself with Chonky's source code.
+    If you're not sure how something can be done, please [create an
+    issue](https://github.com/TimboKZ/Chonky/issues) describing your use case. I'll be
+    happy to show you some code examples.
+
+---

@@ -1,5 +1,4 @@
 import React from 'react';
-import { useStoryLinks } from '../util';
 
 export default {
     title: 'Introduction',
@@ -15,22 +14,26 @@ export const About: React.FC = () => {
                     different Chonky use cases. Please use the sidebar to choose a
                     relevant story.
                 </p>
-                <p>
-                    Code examples do not include an in-depth documentation. If you're
-                    looking for documentation, please follow links below.
-                </p>
-                <div className="story-links">
-                    {useStoryLinks([
-                        {
-                            name: 'Chonky home page',
-                            url: 'https://chonky.io/',
-                        },
-                        {
-                            name: 'Chonky v2.x Docs',
-                            url: 'https://chonky.io/docs/2.x/',
-                        },
-                    ])}
-                </div>
+                <h2 className="story-title">Available resources</h2>
+                <p>Chonky v2.x documentation consists of three parts:</p>
+                <ol>
+                    <li>
+                        <a href="https://chonky.io/">Landing page</a>. This page
+                        contains the list of features Chonky supports, and a simple File
+                        Browser demo.
+                    </li>
+                    <li>
+                        <a href="https://chonky.io/docs/2.x/">Documentation site</a>.
+                        This site contains detailed documentation of Chonky features and
+                        some short code snippets.
+                    </li>
+                    <li className="css-q43a5f">
+                        <a href="https://chonky.io/storybook/2.x/">Storybook</a>{' '}
+                        <strong>(you are here)</strong>. This site contains real world
+                        examples of how Chonky can be used. It also showcases advanced
+                        usage of Chonky components.
+                    </li>
+                </ol>
             </div>
         </div>
     );

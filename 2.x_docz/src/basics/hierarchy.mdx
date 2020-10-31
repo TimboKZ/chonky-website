@@ -1,0 +1,67 @@
+---
+name: Component hierarchy
+menu: Basics
+route: /basics/hierarchy
+---
+
+# Component hierarchy
+
+Chonky lets you choose what parts of file browser UI you want to include in your
+application. A file browser with all features would look like this:
+
+```tsx
+import {
+    FileBrowser,
+    FileContextMenu,
+    FileList,
+    FileNavbar,
+    FileToolbar,
+} from 'chonky';
+
+export const MyFileBrowser = () => {
+    const files = [];
+    return (
+        <FileBrowser files={files}>
+            <FileNavbar />
+            <FileToolbar />
+            <FileList />
+            <FileContextMenu />
+        </FileBrowser>
+    );
+};
+```
+
+The only required component is `FileBrowser`, which should appear on top level. All
+other components are optional - for example, if you just want to show a list of files,
+without toolbars or navigation, you would use:
+
+```tsx
+<FileBrowser files={[]}>
+    <FileList />
+</FileBrowser>
+```
+
+Power users might also want to provide their own implementations of different
+components. For example, someone could make a custom `MyToolbar` component by cloning
+Chonky's `FileToolbar`:
+
+```tsx
+<FileBrowser files={[]}>
+    <MyToolbar />
+    <FileList />
+</FileBrowser>
+```
+
+## Component breakdown
+
+-   `FileBrowser` - the top level component. It provides several React contexts for
+    its children, including Redux store and JSS theme.
+-   `FileNavbar` - navigation component. It shows the path to the current folder.
+-   `FileToolbar` - main controls component. It contains a search bar and file action
+    buttons.
+-   `FileList` - file list component (duh). It shows files to users and lets them
+    make selection or drag & drop things.
+-   `FileContextMenu` - menu component. It provides the right-click menu with file
+    actions.
+
+![Chonky component hierarchy](https://chonky.io/chonky-v2-breakdown.jpg)

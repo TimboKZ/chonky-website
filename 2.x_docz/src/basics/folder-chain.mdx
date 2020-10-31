@@ -1,5 +1,5 @@
 ---
-name: Current folder
+name: Setting current folder
 menu: Basics
 route: /basics/folder-chain
 ---
@@ -7,7 +7,7 @@ route: /basics/folder-chain
 import { Playground } from 'docz';
 import { FileBrowser, FileList, FileNavbar, FileToolbar } from 'chonky';
 
-# Specifying current folder
+# Setting current folder
 
 Like any other file browser, Chonky can display the path to the current folder in the
 navbar above the files. To enable this functionality, you will need to place the
@@ -15,16 +15,22 @@ navbar above the files. To enable this functionality, you will need to place the
 `FileBrowser`:
 
 ```tsx
-<FileBrowser files={[]} folderChain={[{ id: 'zxc', name: 'Home' }]}>
+const folderChain = [
+    { id: 'zxc', name: 'Home' },
+    null, // Will show loading placeholder
+    { id: 'fgh', name: 'My Documents' },
+];
+
+<FileBrowser files={[]} folderChain={folderChain}>
     <FileNavbar /> {/* <----- */}
     <FileToolbar />
     <FileList />
-</FileBrowser>
+</FileBrowser>;
 ```
 
-Folder chain follows the exact same rules as the `files` array described in
-_Displaying files_ section. It can also contain `null` values to indicate loading
-files, and the objects inside it should follow the `FileData` type. Some notes:
+Folder chain follows the exact same rules as the `files` array from the previous
+section. It can also contain `null` values to indicate loading files, and the objects
+inside it should follow the `FileData` type. Some notes:
 
 -   The files in the `folderChain` array don't need to have `isDir` set to `true`.
 -   Clicking on an item in the folder chain will open it, unless it is `null` or has
@@ -32,7 +38,9 @@ files, and the objects inside it should follow the `FileData` type. Some notes:
 -   The "Go up a directory" button only works when the second-to-last file in the
     folder chain is openable.
 
-### Live example
+### Example folder chain
+
+The live example below shows different possible file configurations.
 
 <Playground>
     {() => {
