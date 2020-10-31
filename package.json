@@ -8,7 +8,7 @@
     "install:2.x_storybook": "cd 2.x_storybook && npm install",
     "install:2.x": "npm run install:2.x_docz && npm run install:2.x_storybook",
     "install:all": "npm install && npm run install:landing && npm run install:2.x",
-    "build:landing": "cd landing && rm -rf build/ && npm run build",
+    "build:landing": "cd landing && rm -rf build/ && npm install chonky@canary && npm run build",
     "build:2.x_docz": "cd 2.x_docz && rm -rf build/ && npm install chonky@canary && npm run build",
     "build:2.x_storybook": "cd 2.x_storybook && rm -rf build/ && npm install chonky@canary && npm run build",
     "build:2.x": "npm run build:2.x_docz && npm run build:2.x_storybook",
