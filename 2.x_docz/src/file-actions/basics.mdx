@@ -4,104 +4,59 @@ menu: File actions
 route: /file-actions/basics
 ---
 
+# File action basics
 
-- What are they
-- What can they do (affect state, dispatch other actions, change sorting)
-- How to pass them to Chonky (simple example)
-
-
-# What are file actions?
+## What are file actions?
 
 File actions are the most powerful feature Chonky has to offer. They allow you to tweak
-file browser behaviour, add custom toolbar & context menu buttons, respond to key
-presses and user input, and much more!
+file browser behaviour, add custom toolbar buttons, respond to key presses and much
+more!
 
-To get a sense of how powerful file actions are, consider this - most of the
-built-in Chonky features, such as file selections & context menu handling, are
-implemented using Chonky file actions. In theory, the definitions for these actions
-could come from user code, but Chonky provides these features out-of-the-box for
-convenience.
+To get a sense of how powerful file actions are, consider this - most of the built-in
+Chonky features, such as file selections & context menu handling, are implemented using
+Chonky file actions. In theory, the definitions for these actions could come from user
+code, but Chonky provides these features out-of-the-box for convenience.
 
-## Quick overview
+## What can they do?
 
-This section contains a very brief overview of different file action concepts. For
-detailed documentation, check out the other pages in _File actions_ category.
+Basic functionality:
 
-### Passing custom file actions to Chonky
+-   Change file sort function.
+-   Change current file view.
+-   Toggle boolean options.
+-   Transform selection.
+-   Add buttons to toolbar or context menu.
+-   Trigger the user-defined action handler.
 
-You can pass custom file actions to Chonky using the `fileActions` props on
-`FileBrowser` component:
+Using action effects, we can go further:
 
-```ts
+-   Read and modify Chonky's internal Redux state.
+-   Dispatch other file actions.
+-   Prevent user-defined action handler from being triggered.
 
-```
+## Enabling file actions
 
-### File action definitions
+You can pass custom file actions to Chonky using the `fileActions` prop on `FileBrowser`
+component:
 
-File actions should follow the `FileAction` type. They can be defined using plain JS
-objects (though this is not recommended):
+```tsx
+import { ChonkyActions, defineFileAction, FileBrowser } from 'chonky';
 
-```ts
-import { FileAction } from 'chonky';
-import { selectFocusSearchInput } from 'chonky/lib/redux/selectors';
+export const MyFileBrowser = () => {
+    const myCustomAction = defineFileAction({
+        /* ... */
+    } as const);
 
-// NOT RECOMMENDED; See next example for better approach.
-export const FocusSearchInput: FileAction = {
-    id: 'focus_search_input',
-    hotkeys: ['ctrl+f'],
-    effect: ({ getReduxState }) => {
-        const focusSearchInput = selectFocusSearchInput(getReduxState());
-        if (focusSearchInput) focusSearchInput();
-    },
+    const myFileActions = [
+        myCustomAction,
+        ChonkyActions.UploadFiles,
+        ChonkyActions.DownloadFiles,
+    ];
+
+    return (
+        <FileBrowser files={[]} fileActions={myFileActions}>
+            {/* ... */}
+        </FileBrowser>
+    );
 };
 ```
-
-A better, more type-safe, and more IntelliSense-friendly way to define file actions is
-to use the `defineFileAction` helper method as shown below. This method does some
-runtime checks under the hood. It can also intelligently infer things like action
-payload type, and pass that information to your action handler to make it type-safe!
-
-```ts
-import { defineFileAction } from 'chonky';
-import { selectFocusSearchInput } from 'chonky/lib/redux/selectors';
-
-// RECOMMENDED
-const FocusSearchInput = defineFileAction(
-    {
-        id: 'focus_search_input',
-        hotkeys: ['ctrl+f'],
-    } as const,
-    ({ getReduxState }) => {
-        const focusSearchInput = selectFocusSearchInput(getReduxState());
-        if (focusSearchInput) focusSearchInput();
-    }
-);
-```
-
-## Built-in vs custom file actions
-
-_Built-in_ file actions are file actions that Chonky provides out-of-the-box. _Custom_
-file actions are actions defined by the user (i.e. you).
-
-Built-in file actions are exactly the same as custom file actions - they
-extend the same `FileAction` type, they have the same permissions, and they are executed
-in the exact same way. The only difference is that some built-in actions are enabled
-by default, while custom actions have to be enabled explicitly.
-
-Chonky separates built-in actions into 3 categories:
-
-1.  **Essential file actions.** These are the file actions Chonky requires to function
-    correctly. They are always enabled, and there is no way to disable them. If you know
-    what you are doing, you can override an essential file action by defining a custom
-    file action with the same action ID. [Click here to see essential acton
-    definitions.](https://github.com/TimboKZ/Chonky/blob/2.x/packages/chonky/src/action-definitions/essential.ts)
-2.  **Default file actions.** These are file Chonky provides for user convenience. They
-    cover common features like file sorting, toggling hidden files, and changing file
-    view. They are enabled by default, but can be easily disabled by setting
-    `disableDefaultFileActions` prop on `FileBrowser` to `true`.
-3.  **"Other" file actions.** These are file actions that ship with Chonky but are
-    not enabled default. They cover less common scenarios like downloading files or
-    creating folders. Users can enable the explicitly if they want.
-
-If you want see the formal definition of these file action categories, [click
-here](https://github.com/TimboKZ/Chonky/blob/2.x/packages/chonky/src/action-definitions/index.ts).

@@ -31,11 +31,11 @@ export default {
             name: 'File actions',
             menu: [
                 'File action basics',
-                'Defining an action handler',
                 'Built-in actions',
+                'Defining an action handler',
+                'Triggering actions',
                 'Defining custom actions',
                 'Understanding effects',
-                'Ways to trigger an action',
             ],
         },
         {

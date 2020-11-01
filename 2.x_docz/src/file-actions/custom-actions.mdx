@@ -10,3 +10,44 @@ route: /file-actions/custom-actions
 - Briefly explain payload type
 - Make not about effect
 
+### File action definitions
+
+File actions should follow the `FileAction` type. They can be defined using plain JS
+objects (though this is not recommended):
+
+```ts
+import { FileAction } from 'chonky';
+import { selectFocusSearchInput } from 'chonky/lib/redux/selectors';
+
+// NOT RECOMMENDED; See next example for better approach.
+export const FocusSearchInput: FileAction = {
+    id: 'focus_search_input',
+    hotkeys: ['ctrl+f'],
+    effect: ({ getReduxState }) => {
+        const focusSearchInput = selectFocusSearchInput(getReduxState());
+        if (focusSearchInput) focusSearchInput();
+    },
+};
+```
+
+A better, more type-safe, and more IntelliSense-friendly way to define file actions is
+to use the `defineFileAction` helper method as shown below. This method does some
+runtime checks under the hood. It can also intelligently infer things like action
+payload type, and pass that information to your action handler to make it type-safe!
+
+```ts
+import { defineFileAction } from 'chonky';
+import { selectFocusSearchInput } from 'chonky/lib/redux/selectors';
+
+// RECOMMENDED
+const FocusSearchInput = defineFileAction(
+    {
+        id: 'focus_search_input',
+        hotkeys: ['ctrl+f'],
+    } as const,
+    ({ getReduxState }) => {
+        const focusSearchInput = selectFocusSearchInput(getReduxState());
+        if (focusSearchInput) focusSearchInput();
+    }
+);
+```
