@@ -1,11 +1,13 @@
+import './index.css';
+
+import { setChonkyDefaults } from 'chonky';
+import { ChonkyIconFA } from 'chonky-icon-fontawesome';
 import React from 'react';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import { Helmet } from 'react-helmet-async';
-import { setChonkyDefaults } from 'chonky';
-import { ChonkyIconFA } from 'chonky-icon-fontawesome';
 
-setChonkyDefaults({ iconComponent: ChonkyIconFA });
+setChonkyDefaults({ iconComponent: ChonkyIconFA, disableDragAndDropProvider: true });
 
 const Wrapper = ({ children, doc }) => (
     <React.Fragment>

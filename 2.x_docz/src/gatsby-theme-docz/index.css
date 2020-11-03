@@ -1,0 +1,25 @@
+.demo-button {
+    margin: 0 10px 10px 0;
+    padding: 6px 12px;
+    font-size: 0.8em;
+}
+
+.prism-code *,
+div[data-testid='live-editor'] * {
+    font-family: Inconsolata, monospace !important;
+    line-height: 17px;
+    font-size: 12px;
+}
+
+h1 {
+    margin-bottom: 30px !important;
+    border-bottom: solid 1px #ccc;
+}
+
+h2 {
+    margin-top: 60px !important;
+}
+
+h1 + h2 {
+    margin-top: 20px !important;
+}

@@ -7,23 +7,26 @@ route: /migrating-1.x
 
 ## Components
 
--   FileNavbar component was added. The folder chain is now displayed in FileNavbar
+-   `FileNavbar` component was added. The folder chain is now displayed in `FileNavbar`
     instead of `FileToolbar`.
--   ⚠️ FileSearch component was removed. The search input was moved into FileToolbar.
+-   ⚠️ `FileSearch` component was removed. The search input was moved into
+    `FileToolbar`.
 
 ## Icons
 
--   ⚠️ The built-in FontAwesome icons were moved into a separate package to decrease
-    bundle size. It is now possible to provide custom icon implementations (WIP).
+-   ⚠️ To decrease the bundle size, the default FontAwesome icon component was moved
+    into a separate package - `chonky-icon-fontawesome`. It is now also possible to
+    provide custom icon component.
 
 ## File actions
 
 -   ⚠️ `EssentialFileActions` were introduced. These are file actions required by Chonky
     to function correctly. They are always enabled. `DefaultFileActions` now only
     contain non-essential actions, and users can still disable them.
--   ⚠️ `toolbarButton` field was renamed into `button`. `button` field now requires
-    `toolbar` or `contextMenu` to be displayed. The `dropdown` field of `button` was
-    deprecated, and presence/absence of `group` field is used instead.
+-   ⚠️ `toolbarButton` field was renamed into `button`. `button` object now
+    needs either `button.toolbar` or `button.contextMenu` to be set to `true` to be
+    displayed in respective parts of the interface. The `button.dropdown` field was
+    deprecated, now `group` being truthy/falsy serves the same purpose.
 -   `specialActionToDispatch` field was removed. In fact, "special" actions were
     completely deprecated. Instead, Chonky now allows actions to define the `effect`
     function that has access to Chonky's Redux state.
@@ -32,9 +35,9 @@ route: /migrating-1.x
 
 ## File action handler
 
--   ⚠️ The signature (type) of the file action handler has changed completely, and the
-    new signature not backwards-compatible. File action handler was changed to be
-    more future proof and type-safe.
+-   ⚠️ The file action handler has changed completely - it is now called differently,
+    and different parameters are passed in. These changes are not backwards-compatible,
+    so you will need to re-define your file action handlers.
 
 ## Styling
 

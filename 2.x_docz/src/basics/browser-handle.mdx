@@ -4,27 +4,13 @@ menu: Basics
 route: /basics/browser-handle
 ---
 
+import { Playground } from 'docz';
+import { FileBrowser, FileList, FileNavbar, FileToolbar } from 'chonky';
+
 # File Browser handle
 
-You can get access to a Chonky instance handle by passing a React ref to the
-`FileBrowser` component:
-
-```tsx
-import { FileBrowser, FileBrowserHandle } from 'chonky';
-
-const MyFileBrowser = () => {
-    // `FileBrowserHandle` is an interface exported from `chonky`.
-    const fileBrowserRef = React.useRef<FileBrowserHandle>(null);
-    return (
-        <FileBrowser ref={fileBrowserRef} files={[]}>
-            {/* ... */}
-        </FileBrowser>
-    );
-};
-```
-
-You can then use the file browser handle to call different methods on the Chonky
-instance. At the moment, the following methods are supported:
+You can use the file browser "handle" to call different methods on the Chonky instance.
+At the moment, the following methods are available:
 
 ```ts
 export interface FileBrowserHandle {
@@ -42,3 +28,75 @@ export interface FileBrowserHandle {
     setFileSelection: (selection: Set<string>, reset?: boolean) => void;
 }
 ```
+
+You can access the file browser handle by passing a React ref to the `FileBrowser
+component:
+
+```tsx
+import { FileBrowser, FileBrowserHandle } from 'chonky';
+
+const MyFileBrowser = () => {
+    // `FileBrowserHandle` is an interface exported from `chonky`.
+    const fileBrowserRef = React.useRef<FileBrowserHandle>(null);
+    return (
+        <FileBrowser ref={fileBrowserRef} files={[]}>
+            {/* ... */}
+        </FileBrowser>
+    );
+};
+```
+
+Live example below shows how the handle can be used.
+
+<Playground>
+    {() => {
+        const files = React.useMemo(
+            () => [
+                { id: 'zxc', name: 'One' },
+                { id: 'dfg', name: 'Two' },
+                { id: 'mds', name: 'Three' },
+                { id: 'asd', name: 'Four' },
+                { id: 'bgr', name: 'Five' },
+                { id: 'ojw', name: 'Six' },
+                { id: 'mew', name: 'Seven' },
+                { id: 'lre', name: 'Eight' },
+            ],
+            []
+        );
+        const fileBrowserRef = React.useRef(null);
+        const selectRandomFiles = React.useCallback(() => {
+            if (!fileBrowserRef.current) return;
+            const newSelection = new Set();
+            for (const file of files) {
+                if (Math.random() > 0.5) newSelection.add(file.id);
+            }
+            fileBrowserRef.current.setFileSelection(newSelection);
+        }, [files]);
+        const invertSelection = React.useCallback(() => {
+            if (!fileBrowserRef.current) return;
+            const oldSelection = fileBrowserRef.current.getFileSelection();
+            const newSelection = new Set();
+            for (const file of files) {
+                if (!oldSelection.has(file.id)) newSelection.add(file.id);
+            }
+            fileBrowserRef.current.setFileSelection(newSelection);
+        }, [files]);
+        return (
+            <>
+                <button className="demo-button" onClick={selectRandomFiles}>
+                    Select random files
+                </button>
+                <button className="demo-button" onClick={invertSelection}>
+                    Invert selection
+                </button>
+                <div style={{ height: 400 }}>
+                    <FileBrowser ref={fileBrowserRef} files={files}>
+                        <FileNavbar />
+                        <FileToolbar />
+                        <FileList />
+                    </FileBrowser>
+                </div>
+            </>
+        );
+    }}
+</Playground>

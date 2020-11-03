@@ -4,3 +4,56 @@ route: /faq
 ---
 
 # Frequently Asked Questions
+
+Have a question that is not covered here? [Create an
+issue](https://github.com/TimboKZ/Chonky/issues) on GitHub.
+
+## How can I set the default file view (grid, list) and sort function?
+
+To set the default file view or sort order, you need to pass a valid action ID to the
+relevant prop on `FileBrowser`:
+
+```tsx
+import { ChonkyActions, FileBrowser } from 'chonky';
+
+<FileBrowser
+    files={[]}
+    defaultFileViewActionId={ChonkyActions.EnableListView.id}
+    defaultSortActionId={ChonkyActions.SortFilesByDate.id}
+>
+    {/* ... */}
+</FileBrowser>;
+```
+
+You can also set the action IDs globally:
+
+```tsx
+import { ChonkyActions, setChonkyDefaults } from 'chonky';
+
+setChonkyDefaults({
+    defaultFileViewActionId: ChonkyActions.EnableListView.id,
+    defaultSortActionId: ChonkyActions.SortFilesByDate.id,
+});
+```
+
+Note that the actions you are using should be enabled (either by default or by you).
+You can use the following default action IDs:
+
+```ts
+ChonkyActions.EnableGridView.id
+ChonkyActions.EnableListView.id
+ChonkyActions.SortFilesByName.id
+ChonkyActions.SortFilesByDate.id
+ChonkyActions.SortFilesBySize.id
+```
+
+## How can I get or set the current file selection?
+
+You have two mechanisms available to you:
+
+1. You can [define a custom action handler](/file-actions/action-handler) and listen
+   for actions with the ID `ChonkyActions.ChangeSelection.id`. This is useful when you
+   want to update React on every selection change.
+2. You can use [the file browser handle](/basics/browser-handle) to get or set the
+   selection at runtime. This is useful when you don't need to update React state when
+   selection changes.

@@ -24,7 +24,8 @@ export default {
                 'Setting current folder',
                 'File thumbnails',
                 'File browser handle',
-                'Default configuration',
+                'Default config',
+                'Drag & drop',
             ],
         },
         {
@@ -45,7 +46,7 @@ export default {
     ],
     themeConfig: {
         showPlaygroundEditor: true,
-        fontSizes: [14, 16, 16, 18, 20, 26, 38, 50],
+        fontSizes: [14, 16, 16, 16, 20, 26, 34, 40],
         styles: {
             Container: {
                 maxWidth: 960,
@@ -57,22 +58,18 @@ export default {
                         ' rgba(220,214,122,1) 25%, rgba(174,244,152,1) 50%,' +
                         ' rgba(80,244,204,1) 75%, rgba(75,169,226,1) 100%)',
                 },
-                'div[data-testid="live-editor"]': {
-                    lineHeight: '18px',
-                    fontSize: '15px',
-                },
+                'div[data-testid="live-editor"]': {},
             },
             inlineCode: {
+                fontFamily: 'Inconsolata, monospace !important',
                 bg: 'rgba(127, 127, 127, 0.15)',
                 borderRadius: '3px',
-                fontSize: '0.9em',
+                fontSize: '0.8em',
                 p: '2px 4px',
                 m: '0px 2px',
             },
             pre: {
                 margin: '10px 0 !important',
-                lineHeight: '18px',
-                fontSize: '15px',
             },
         },
     },
