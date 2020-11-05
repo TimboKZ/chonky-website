@@ -27,13 +27,13 @@ export const Scratchpad: React.FC = () => {
     const files: FileArray = useMemo(
         () => [
             null, // Loading animation will be shown for this file
-            null,
             {
                 id: 'nTe',
                 name: 'Normal file.yml',
                 size: 890,
                 modDate: new Date('2012-01-01'),
             },
+            null,
             {
                 id: 'zxc',
                 name: 'Hidden file.mp4',
@@ -52,18 +52,6 @@ export const Scratchpad: React.FC = () => {
                 isDir: true,
                 isSymlink: true,
                 childrenCount: 0,
-            },
-            {
-                id: 'vfr',
-                name: 'Symlink folder',
-                isDir: true,
-                isSymlink: true,
-                childrenCount: 0,
-            },
-            {
-                id: '7zp',
-                name: 'Encrypted file.7z',
-                isEncrypted: true,
             },
             {
                 id: '7zp',
@@ -126,6 +114,7 @@ export const Scratchpad: React.FC = () => {
                 <FileBrowser
                     files={files}
                     onFileAction={handleFileAction}
+                    defaultSortActionId={null}
                     defaultFileViewActionId={ChonkyActions.EnableListView.id}
                 >
                     <FileNavbar />

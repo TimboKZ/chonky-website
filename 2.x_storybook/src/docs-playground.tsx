@@ -2,13 +2,18 @@
  *
  *
  */
-import { ChonkyActions, setChonkyDefaults } from 'chonky';
+import { ChonkyActions, FileBrowser } from 'chonky';
 
-[
-ChonkyActions.EnableGridView.id
-ChonkyActions.EnableListView.id
-ChonkyActions.SortFilesByName.id
-ChonkyActions.SortFilesByDate.id
-ChonkyActions.SortFilesBySize.id
-]
-
+const myComp = (
+    <FileBrowser
+        files={[]}
+        defaultSortActionId={null}
+        disableDefaultFileActions={[
+            ChonkyActions.SortFilesByName.id,
+            ChonkyActions.SortFilesByDate.id,
+            ChonkyActions.SortFilesBySize.id,
+        ]}
+    >
+        {/* ... */}
+    </FileBrowser>
+);
