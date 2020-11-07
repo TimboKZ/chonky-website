@@ -1,8 +1,17 @@
 .docs-banner {
-    border-left: solid 5px #ddd;
-    background-color: #eee;
+    border-left: solid 5px rgba(127, 127, 127, 0.15);
+    background-color: rgba(127, 127, 127, 0.15);
     padding: 10px 15px;
     margin-top: 80px;
+}
+
+.docs-banner a {
+    color: #0b5fff !important;
+    text-decoration: none;
+}
+
+.docs-banner a:hover {
+    text-decoration: underline;
 }
 
 .demo-button {
