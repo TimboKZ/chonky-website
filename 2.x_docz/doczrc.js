@@ -43,6 +43,7 @@ export default {
             name: 'API Reference',
             menu: [
                 'FileBrowser component',
+                'FileBrowser handle',
                 'FileAction interface',
                 'Built-in actions',
             ],

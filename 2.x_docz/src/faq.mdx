@@ -85,9 +85,9 @@ There are two ways to trigger file actions programatically:
 1. Using [the file browser handle][handle].
 2. Using [file action effects][effects].
 
-Note that in both cases, you should be careful with the action payload. If you don't
-provide a null payload to an action that expects non-null payload, Chonky might throw an
-error
+Note that in both cases, you should be careful with the action payload. If you provide
+an `undefined` payload to an action that expects non-null payload, Chonky might throw an
+error.
 
 [handle]: /basics/browser-handle
 [effects]: /file-actions/effects

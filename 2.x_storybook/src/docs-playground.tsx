@@ -1,1 +1,3 @@
-import {thunkRequestFileAction} from 'chonky/lib/redux/thunks/dispatchers.thunks';
+import { ChonkyActions } from 'chonky';
+
+console.log(ChonkyActions.OpenFiles)
