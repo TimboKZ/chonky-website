@@ -2,6 +2,9 @@ import chonkyPackage from 'chonky/package.json';
 
 export default {
     title: `Chonky v${chonkyPackage.version} Docs`,
+    description:
+        'Chonky is a file browser component for React. It tries to ' +
+        'recreate the native file browsing experience in your web browser.',
     base: '/docs/2.x/',
     src: 'src/',
     dest: 'build/',
