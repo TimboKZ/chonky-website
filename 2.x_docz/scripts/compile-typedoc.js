@@ -1,9 +1,9 @@
 const path = require('path');
 const TypeDoc = require('typedoc');
 
-const scriptPath = path.resolve(__dirname);
+const scriptDir = path.resolve(__dirname);
 const chonkyPath = path.resolve(
-    scriptPath,
+    scriptDir,
     '..',
     '..',
     '..',
@@ -13,7 +13,7 @@ const chonkyPath = path.resolve(
 );
 const chonkyTsconfigPath = path.resolve(chonkyPath, 'tsconfig.build.json');
 const chonkySrcPath = path.resolve(chonkyPath, 'src');
-const typedocJsonPath = path.resolve(scriptPath, '..', 'src', 'typedoc.json');
+const typedocJsonPath = path.resolve(scriptDir, '..', 'src', 'typedoc.json');
 
 const app = new TypeDoc.Application();
 

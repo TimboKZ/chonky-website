@@ -38,8 +38,6 @@
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
     "@typescript-eslint/eslint-plugin": "^4.4.1",
-    "chonky": "^2.0.0-alpha.74",
-    "chonky-icon-fontawesome": "^2.0.0-alpha.74",
     "eslint": "^6.6.0",
     "eslint-config-prettier": "^6.13.0",
     "eslint-plugin-import": "^2.22.1",
