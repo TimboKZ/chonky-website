@@ -9,6 +9,8 @@ import './type-style.css';
 import path from 'path';
 import React, { useMemo } from 'react';
 import ReactMarkdown from 'react-markdown';
+import { Nilable } from 'tsdef';
+import { DeclarationReflection } from 'typedoc';
 
 import { useInterfaceData, useTypeComment } from './type-util';
 import { TypeChild } from './TypeChild';
@@ -17,12 +19,17 @@ export interface InterfaceDocsProps {
     symbol: string;
     overrideChildrenType?: string;
     hideOptionalFlags?: boolean;
+    renderDescription?: (
+        description: Nilable<string>,
+        node: DeclarationReflection
+    ) => string;
 }
 
 export const TypeDocs: React.FC<InterfaceDocsProps> = ({
     symbol,
     overrideChildrenType,
     hideOptionalFlags,
+    renderDescription,
 }) => {
     const { data, children, source } = useInterfaceData(symbol);
     const { kind, name, description } = useTypeComment(data as any);
@@ -44,6 +51,7 @@ export const TypeDocs: React.FC<InterfaceDocsProps> = ({
                     node={node}
                     overrideType={overrideChildrenType}
                     hideOptionalFlags={!!hideOptionalFlags}
+                    renderDescription={renderDescription}
                 />
             )),
         [children]

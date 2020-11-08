@@ -46,6 +46,7 @@ export default {
                 'FileBrowser handle',
                 'FileAction interface',
                 'Built-in actions',
+                'ChonkyIconName enum',
             ],
         },
     ],

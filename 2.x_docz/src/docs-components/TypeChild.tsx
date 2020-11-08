@@ -5,8 +5,9 @@
  */
 
 import { Code } from 'gatsby-theme-docz/src/components/Code';
-import React from 'react';
+import React, { useMemo } from 'react';
 import ReactMarkdown from 'react-markdown';
+import { Nilable } from 'tsdef';
 import { DeclarationReflection } from 'typedoc';
 
 import { renderType, useActionFields, useTypeComment } from './type-util';
@@ -15,16 +16,29 @@ export interface TypeChildProps {
     node: DeclarationReflection;
     overrideType?: string;
     hideOptionalFlags: boolean;
+    renderDescription?: (
+        description: Nilable<string>,
+        node: DeclarationReflection
+    ) => string;
 }
 
 export const TypeChild: React.FC<TypeChildProps> = ({
     node,
     overrideType,
     hideOptionalFlags,
+    renderDescription,
 }) => {
     const { kind, name, description, flags } = useTypeComment(node);
 
     const { payloadCode } = useActionFields(node);
+
+    const descriptionComponent = useMemo(() => {
+        return renderDescription ? (
+            renderDescription(description, node)
+        ) : (
+            <ReactMarkdown>{description}</ReactMarkdown>
+        );
+    }, [renderDescription, description, node]);
 
     return (
         <div className="docs-field">
@@ -45,7 +59,7 @@ export const TypeChild: React.FC<TypeChildProps> = ({
                     ))}
             </div>
             <div className="docs-description">
-                {description && <ReactMarkdown>{description}</ReactMarkdown>}
+                {descriptionComponent}
 
                 {payloadCode && (
                     <div className="docs-description-payload">
