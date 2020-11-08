@@ -3,13 +3,7 @@ name: Installation & usage
 route: /installation-usage
 ---
 
-import {
-    FileBrowser,
-    FileContextMenu,
-    FileList,
-    FileNavbar,
-    FileToolbar,
-} from 'chonky';
+import { FullFileBrowser } from 'chonky';
 import { Playground } from 'docz';
 
 # Installation & usage
@@ -40,13 +34,7 @@ setChonkyDefaults({ iconComponent: ChonkyIconFA });
 Then you can use Chonky anywhere:
 
 ```tsx
-import {
-    FileBrowser,
-    FileContextMenu,
-    FileList,
-    FileNavbar,
-    FileToolbar,
-} from 'chonky';
+import { FullFileBrowser } from 'chonky';
 
 export const MyFileBrowser = () => {
     const files = [
@@ -61,12 +49,7 @@ export const MyFileBrowser = () => {
 
     return (
         <div style={{ height: 300 }}>
-            <FileBrowser files={files} folderChain={folderChain}>
-                <FileNavbar />
-                <FileToolbar />
-                <FileList />
-                <FileContextMenu />
-            </FileBrowser>
+            <FullFileBrowser files={files} folderChain={folderChain} />
         </div>
     );
 };
@@ -88,12 +71,7 @@ the height of its parent container, which in this case is `300px`.
         const folderChain = [{ id: 'xcv', name: 'Demo', isDir: true }];
         return (
             <div style={{ height: 300 }}>
-                <FileBrowser files={files} folderChain={folderChain}>
-                    <FileNavbar />
-                    <FileToolbar />
-                    <FileList />
-                    <FileContextMenu />
-                </FileBrowser>
+                <FullFileBrowser files={files} folderChain={folderChain} />
             </div>
         );
     }}

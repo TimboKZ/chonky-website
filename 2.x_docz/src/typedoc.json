@@ -2749,7 +2749,7 @@
 			]
 		},
 		{
-			"id": 1554,
+			"id": 1558,
 			"name": "ChonkyPresentationLayerProps",
 			"kind": 256,
 			"kindString": "Interface",
@@ -2881,7 +2881,7 @@
 			]
 		},
 		{
-			"id": 1405,
+			"id": 1409,
 			"name": "ClickableWrapperProps",
 			"kind": 256,
 			"kindString": "Interface",
@@ -2890,7 +2890,7 @@
 			},
 			"children": [
 				{
-					"id": 1409,
+					"id": 1413,
 					"name": "onDoubleClick",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2907,12 +2907,12 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 1415,
+						"id": 1419,
 						"name": "MouseClickEventHandler"
 					}
 				},
 				{
-					"id": 1410,
+					"id": 1414,
 					"name": "onKeyboardClick",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2929,12 +2929,12 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 1419,
+						"id": 1423,
 						"name": "KeyboardClickEventHandler"
 					}
 				},
 				{
-					"id": 1408,
+					"id": 1412,
 					"name": "onSingleClick",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2951,12 +2951,12 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 1415,
+						"id": 1419,
 						"name": "MouseClickEventHandler"
 					}
 				},
 				{
-					"id": 1407,
+					"id": 1411,
 					"name": "passthroughProps",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2977,7 +2977,7 @@
 					}
 				},
 				{
-					"id": 1411,
+					"id": 1415,
 					"name": "setFocused",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3002,7 +3002,7 @@
 							{
 								"type": "reflection",
 								"declaration": {
-									"id": 1412,
+									"id": 1416,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
@@ -3011,7 +3011,7 @@
 									},
 									"signatures": [
 										{
-											"id": 1413,
+											"id": 1417,
 											"name": "__call",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -3020,7 +3020,7 @@
 											},
 											"parameters": [
 												{
-													"id": 1414,
+													"id": 1418,
 													"name": "focused",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -3045,7 +3045,7 @@
 					}
 				},
 				{
-					"id": 1406,
+					"id": 1410,
 					"name": "wrapperTag",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3070,12 +3070,12 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						1409,
-						1410,
-						1408,
-						1407,
+						1413,
+						1414,
+						1412,
 						1411,
-						1406
+						1415,
+						1410
 					]
 				}
 			],
@@ -3183,7 +3183,7 @@
 			]
 		},
 		{
-			"id": 1506,
+			"id": 1510,
 			"name": "DnDFileEntryProps",
 			"kind": 256,
 			"kindString": "Interface",
@@ -3192,7 +3192,7 @@
 			},
 			"children": [
 				{
-					"id": 1509,
+					"id": 1513,
 					"name": "children",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3209,7 +3209,7 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 1510,
+							"id": 1514,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
@@ -3218,7 +3218,7 @@
 							},
 							"signatures": [
 								{
-									"id": 1511,
+									"id": 1515,
 									"name": "__call",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -3227,7 +3227,7 @@
 									},
 									"parameters": [
 										{
-											"id": 1512,
+											"id": 1516,
 											"name": "dndState",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -3236,7 +3236,7 @@
 											},
 											"type": {
 												"type": "reference",
-												"id": 1367,
+												"id": 1371,
 												"name": "DndEntryState"
 											}
 										}
@@ -3258,7 +3258,7 @@
 					}
 				},
 				{
-					"id": 1507,
+					"id": 1511,
 					"name": "file",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3285,7 +3285,7 @@
 					}
 				},
 				{
-					"id": 1508,
+					"id": 1512,
 					"name": "selected",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3310,9 +3310,9 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						1509,
-						1507,
-						1508
+						1513,
+						1511,
+						1512
 					]
 				}
 			],
@@ -3325,7 +3325,7 @@
 			]
 		},
 		{
-			"id": 1521,
+			"id": 1525,
 			"name": "DnDFileListDragLayerProps",
 			"kind": 256,
 			"kindString": "Interface",
@@ -3341,7 +3341,7 @@
 			]
 		},
 		{
-			"id": 1430,
+			"id": 1434,
 			"name": "DnDIndicatorProps",
 			"kind": 256,
 			"kindString": "Interface",
@@ -3350,7 +3350,7 @@
 			},
 			"children": [
 				{
-					"id": 1431,
+					"id": 1435,
 					"name": "className",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3370,7 +3370,7 @@
 					}
 				},
 				{
-					"id": 1432,
+					"id": 1436,
 					"name": "dndState",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3386,7 +3386,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 1367,
+						"id": 1371,
 						"name": "DndEntryState"
 					}
 				}
@@ -3396,8 +3396,8 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						1431,
-						1432
+						1435,
+						1436
 					]
 				}
 			],
@@ -3410,7 +3410,7 @@
 			]
 		},
 		{
-			"id": 1367,
+			"id": 1371,
 			"name": "DndEntryState",
 			"kind": 256,
 			"kindString": "Interface",
@@ -3419,7 +3419,7 @@
 			},
 			"children": [
 				{
-					"id": 1370,
+					"id": 1374,
 					"name": "dndCanDrop",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3453,7 +3453,7 @@
 					}
 				},
 				{
-					"id": 1368,
+					"id": 1372,
 					"name": "dndIsDragging",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3487,7 +3487,7 @@
 					}
 				},
 				{
-					"id": 1369,
+					"id": 1373,
 					"name": "dndIsOver",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3526,9 +3526,9 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						1370,
-						1368,
-						1369
+						1374,
+						1372,
+						1373
 					]
 				}
 			],
@@ -3681,7 +3681,7 @@
 			]
 		},
 		{
-			"id": 1697,
+			"id": 1702,
 			"name": "ErrorMessageData",
 			"kind": 256,
 			"kindString": "Interface",
@@ -3690,7 +3690,7 @@
 			},
 			"children": [
 				{
-					"id": 1699,
+					"id": 1704,
 					"name": "bullets",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3713,7 +3713,7 @@
 					}
 				},
 				{
-					"id": 1698,
+					"id": 1703,
 					"name": "message",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3738,8 +3738,8 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						1699,
-						1698
+						1704,
+						1703
 					]
 				}
 			],
@@ -5322,7 +5322,7 @@
 			]
 		},
 		{
-			"id": 1588,
+			"id": 1592,
 			"name": "FileContextMenuProps",
 			"kind": 256,
 			"kindString": "Interface",
@@ -5938,7 +5938,7 @@
 			]
 		},
 		{
-			"id": 1629,
+			"id": 1639,
 			"name": "FileEntryNameProps",
 			"kind": 256,
 			"kindString": "Interface",
@@ -5947,7 +5947,7 @@
 			},
 			"children": [
 				{
-					"id": 1631,
+					"id": 1641,
 					"name": "className",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5977,7 +5977,7 @@
 					}
 				},
 				{
-					"id": 1630,
+					"id": 1640,
 					"name": "file",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6009,8 +6009,8 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						1631,
-						1630
+						1641,
+						1640
 					]
 				}
 			],
@@ -6023,7 +6023,7 @@
 			]
 		},
 		{
-			"id": 1437,
+			"id": 1441,
 			"name": "FileEntryPreviewProps",
 			"kind": 256,
 			"kindString": "Interface",
@@ -6032,7 +6032,7 @@
 			},
 			"children": [
 				{
-					"id": 1438,
+					"id": 1442,
 					"name": "className",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6062,7 +6062,7 @@
 					}
 				},
 				{
-					"id": 1440,
+					"id": 1444,
 					"name": "dndState",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6078,12 +6078,12 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 1367,
+						"id": 1371,
 						"name": "DndEntryState"
 					}
 				},
 				{
-					"id": 1439,
+					"id": 1443,
 					"name": "entryState",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6099,7 +6099,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 1441,
+						"id": 1445,
 						"name": "FileEntryState"
 					}
 				}
@@ -6109,9 +6109,9 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						1438,
-						1440,
-						1439
+						1442,
+						1444,
+						1443
 					]
 				}
 			],
@@ -6124,7 +6124,7 @@
 			]
 		},
 		{
-			"id": 1371,
+			"id": 1375,
 			"name": "FileEntryProps",
 			"kind": 256,
 			"kindString": "Interface",
@@ -6133,7 +6133,7 @@
 			},
 			"children": [
 				{
-					"id": 1375,
+					"id": 1379,
 					"name": "dndState",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6149,12 +6149,12 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 1367,
+						"id": 1371,
 						"name": "DndEntryState"
 					}
 				},
 				{
-					"id": 1372,
+					"id": 1376,
 					"name": "file",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6181,7 +6181,7 @@
 					}
 				},
 				{
-					"id": 1374,
+					"id": 1378,
 					"name": "focused",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6201,7 +6201,7 @@
 					}
 				},
 				{
-					"id": 1373,
+					"id": 1377,
 					"name": "selected",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6226,10 +6226,10 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						1375,
-						1372,
-						1374,
-						1373
+						1379,
+						1376,
+						1378,
+						1377
 					]
 				}
 			],
@@ -6320,7 +6320,7 @@
 			]
 		},
 		{
-			"id": 1658,
+			"id": 1633,
 			"name": "FileListEmptyProps",
 			"kind": 256,
 			"kindString": "Interface",
@@ -6329,7 +6329,7 @@
 			},
 			"children": [
 				{
-					"id": 1660,
+					"id": 1635,
 					"name": "height",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6349,7 +6349,7 @@
 					}
 				},
 				{
-					"id": 1659,
+					"id": 1634,
 					"name": "width",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6374,8 +6374,8 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						1660,
-						1659
+						1635,
+						1634
 					]
 				}
 			],
@@ -6388,7 +6388,7 @@
 			]
 		},
 		{
-			"id": 1664,
+			"id": 1668,
 			"name": "FileListGridProps",
 			"kind": 256,
 			"kindString": "Interface",
@@ -6397,7 +6397,7 @@
 			},
 			"children": [
 				{
-					"id": 1666,
+					"id": 1670,
 					"name": "height",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6417,7 +6417,7 @@
 					}
 				},
 				{
-					"id": 1665,
+					"id": 1669,
 					"name": "width",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6442,8 +6442,8 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						1666,
-						1665
+						1670,
+						1669
 					]
 				}
 			],
@@ -6456,7 +6456,7 @@
 			]
 		},
 		{
-			"id": 1682,
+			"id": 1686,
 			"name": "FileListListProps",
 			"kind": 256,
 			"kindString": "Interface",
@@ -6465,7 +6465,7 @@
 			},
 			"children": [
 				{
-					"id": 1684,
+					"id": 1688,
 					"name": "height",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6485,7 +6485,7 @@
 					}
 				},
 				{
-					"id": 1683,
+					"id": 1687,
 					"name": "width",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6510,8 +6510,8 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						1684,
-						1683
+						1688,
+						1687
 					]
 				}
 			],
@@ -6524,7 +6524,7 @@
 			]
 		},
 		{
-			"id": 1689,
+			"id": 1693,
 			"name": "FileListProps",
 			"kind": 256,
 			"kindString": "Interface",
@@ -6540,7 +6540,7 @@
 			]
 		},
 		{
-			"id": 1615,
+			"id": 1619,
 			"name": "FileNavbarProps",
 			"kind": 256,
 			"kindString": "Interface",
@@ -6556,7 +6556,7 @@
 			]
 		},
 		{
-			"id": 1426,
+			"id": 1430,
 			"name": "FileThumbnailProps",
 			"kind": 256,
 			"kindString": "Interface",
@@ -6565,7 +6565,7 @@
 			},
 			"children": [
 				{
-					"id": 1427,
+					"id": 1431,
 					"name": "className",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6585,7 +6585,7 @@
 					}
 				},
 				{
-					"id": 1428,
+					"id": 1432,
 					"name": "thumbnailUrl",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6616,8 +6616,8 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						1427,
-						1428
+						1431,
+						1432
 					]
 				}
 			],
@@ -6630,7 +6630,7 @@
 			]
 		},
 		{
-			"id": 1627,
+			"id": 1631,
 			"name": "FileToolbarProps",
 			"kind": 256,
 			"kindString": "Interface",
@@ -6646,7 +6646,7 @@
 			]
 		},
 		{
-			"id": 1590,
+			"id": 1594,
 			"name": "FolderChainItem",
 			"kind": 256,
 			"kindString": "Interface",
@@ -6655,7 +6655,7 @@
 			},
 			"children": [
 				{
-					"id": 1592,
+					"id": 1596,
 					"name": "disabled",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6675,7 +6675,7 @@
 					}
 				},
 				{
-					"id": 1591,
+					"id": 1595,
 					"name": "file",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6702,7 +6702,7 @@
 					}
 				},
 				{
-					"id": 1593,
+					"id": 1597,
 					"name": "onClick",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6727,7 +6727,7 @@
 							{
 								"type": "reflection",
 								"declaration": {
-									"id": 1594,
+									"id": 1598,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
@@ -6736,7 +6736,7 @@
 									},
 									"signatures": [
 										{
-											"id": 1595,
+											"id": 1599,
 											"name": "__call",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -6760,9 +6760,9 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						1592,
-						1591,
-						1593
+						1596,
+						1595,
+						1597
 					]
 				}
 			],
@@ -6775,7 +6775,7 @@
 			]
 		},
 		{
-			"id": 1667,
+			"id": 1671,
 			"name": "GridConfig",
 			"kind": 256,
 			"kindString": "Interface",
@@ -6784,7 +6784,7 @@
 			},
 			"children": [
 				{
-					"id": 1669,
+					"id": 1673,
 					"name": "columnCount",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6804,7 +6804,7 @@
 					}
 				},
 				{
-					"id": 1672,
+					"id": 1676,
 					"name": "columnWidth",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6824,7 +6824,7 @@
 					}
 				},
 				{
-					"id": 1670,
+					"id": 1674,
 					"name": "gutter",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6844,7 +6844,7 @@
 					}
 				},
 				{
-					"id": 1668,
+					"id": 1672,
 					"name": "rowCount",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6864,7 +6864,7 @@
 					}
 				},
 				{
-					"id": 1671,
+					"id": 1675,
 					"name": "rowHeight",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6889,11 +6889,11 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						1669,
+						1673,
+						1676,
+						1674,
 						1672,
-						1670,
-						1668,
-						1671
+						1675
 					]
 				}
 			],
@@ -6906,7 +6906,7 @@
 			]
 		},
 		{
-			"id": 1551,
+			"id": 1555,
 			"name": "HotkeyListenerProps",
 			"kind": 256,
 			"kindString": "Interface",
@@ -6915,7 +6915,7 @@
 			},
 			"children": [
 				{
-					"id": 1552,
+					"id": 1556,
 					"name": "fileActionId",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6940,7 +6940,7 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						1552
+						1556
 					]
 				}
 			],
@@ -6953,7 +6953,7 @@
 			]
 		},
 		{
-			"id": 1399,
+			"id": 1403,
 			"name": "KeyboardClickEvent",
 			"kind": 256,
 			"kindString": "Interface",
@@ -6962,7 +6962,7 @@
 			},
 			"children": [
 				{
-					"id": 1402,
+					"id": 1406,
 					"name": "altKey",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6982,7 +6982,7 @@
 					}
 				},
 				{
-					"id": 1403,
+					"id": 1407,
 					"name": "ctrlKey",
 					"kind": 1024,
 					"kindString": "Property",
@@ -7002,7 +7002,7 @@
 					}
 				},
 				{
-					"id": 1400,
+					"id": 1404,
 					"name": "enterKey",
 					"kind": 1024,
 					"kindString": "Property",
@@ -7022,7 +7022,7 @@
 					}
 				},
 				{
-					"id": 1404,
+					"id": 1408,
 					"name": "shiftKey",
 					"kind": 1024,
 					"kindString": "Property",
@@ -7042,7 +7042,7 @@
 					}
 				},
 				{
-					"id": 1401,
+					"id": 1405,
 					"name": "spaceKey",
 					"kind": 1024,
 					"kindString": "Property",
@@ -7067,11 +7067,11 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						1402,
-						1403,
-						1400,
+						1406,
+						1407,
 						1404,
-						1401
+						1408,
+						1405
 					]
 				}
 			],
@@ -7258,7 +7258,7 @@
 			]
 		},
 		{
-			"id": 1395,
+			"id": 1399,
 			"name": "MouseClickEvent",
 			"kind": 256,
 			"kindString": "Interface",
@@ -7267,7 +7267,7 @@
 			},
 			"children": [
 				{
-					"id": 1396,
+					"id": 1400,
 					"name": "altKey",
 					"kind": 1024,
 					"kindString": "Property",
@@ -7287,7 +7287,7 @@
 					}
 				},
 				{
-					"id": 1397,
+					"id": 1401,
 					"name": "ctrlKey",
 					"kind": 1024,
 					"kindString": "Property",
@@ -7307,7 +7307,7 @@
 					}
 				},
 				{
-					"id": 1398,
+					"id": 1402,
 					"name": "shiftKey",
 					"kind": 1024,
 					"kindString": "Property",
@@ -7332,9 +7332,9 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						1396,
-						1397,
-						1398
+						1400,
+						1401,
+						1402
 					]
 				}
 			],
@@ -8340,7 +8340,7 @@
 			]
 		},
 		{
-			"id": 1649,
+			"id": 1659,
 			"name": "SmartFileEntryProps",
 			"kind": 256,
 			"kindString": "Interface",
@@ -8349,7 +8349,7 @@
 			},
 			"children": [
 				{
-					"id": 1651,
+					"id": 1661,
 					"name": "displayIndex",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8369,7 +8369,7 @@
 					}
 				},
 				{
-					"id": 1650,
+					"id": 1660,
 					"name": "fileId",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8395,7 +8395,7 @@
 					}
 				},
 				{
-					"id": 1652,
+					"id": 1662,
 					"name": "fileViewMode",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8421,9 +8421,9 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						1651,
-						1650,
-						1652
+						1661,
+						1660,
+						1662
 					]
 				}
 			],
@@ -8436,7 +8436,7 @@
 			]
 		},
 		{
-			"id": 1611,
+			"id": 1615,
 			"name": "SmartToolbarButtonProps",
 			"kind": 256,
 			"kindString": "Interface",
@@ -8445,7 +8445,7 @@
 			},
 			"children": [
 				{
-					"id": 1612,
+					"id": 1616,
 					"name": "fileActionId",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8455,7 +8455,7 @@
 					"sources": [
 						{
 							"fileName": "src/components/external/ToolbarButton.tsx",
-							"line": 110,
+							"line": 111,
 							"character": 16
 						}
 					],
@@ -8470,20 +8470,20 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						1612
+						1616
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "src/components/external/ToolbarButton.tsx",
-					"line": 109,
+					"line": 110,
 					"character": 40
 				}
 			]
 		},
 		{
-			"id": 1581,
+			"id": 1585,
 			"name": "SmartToolbarDropdownButtonProps",
 			"kind": 256,
 			"kindString": "Interface",
@@ -8492,7 +8492,7 @@
 			},
 			"children": [
 				{
-					"id": 1582,
+					"id": 1586,
 					"name": "fileActionId",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8502,7 +8502,7 @@
 					"sources": [
 						{
 							"fileName": "src/components/external/ToolbarDropdownButton.tsx",
-							"line": 80,
+							"line": 81,
 							"character": 16
 						}
 					],
@@ -8512,7 +8512,7 @@
 					}
 				},
 				{
-					"id": 1583,
+					"id": 1587,
 					"name": "onClickFollowUp",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8523,7 +8523,7 @@
 					"sources": [
 						{
 							"fileName": "src/components/external/ToolbarDropdownButton.tsx",
-							"line": 81,
+							"line": 82,
 							"character": 19
 						}
 					],
@@ -8537,7 +8537,7 @@
 							{
 								"type": "reflection",
 								"declaration": {
-									"id": 1584,
+									"id": 1588,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
@@ -8546,7 +8546,7 @@
 									},
 									"signatures": [
 										{
-											"id": 1585,
+											"id": 1589,
 											"name": "__call",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -8570,15 +8570,15 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						1582,
-						1583
+						1586,
+						1587
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "src/components/external/ToolbarDropdownButton.tsx",
-					"line": 79,
+					"line": 80,
 					"character": 48
 				}
 			]
@@ -8632,7 +8632,7 @@
 			]
 		},
 		{
-			"id": 1376,
+			"id": 1380,
 			"name": "TextPlaceholderProps",
 			"kind": 256,
 			"kindString": "Interface",
@@ -8641,7 +8641,7 @@
 			},
 			"children": [
 				{
-					"id": 1378,
+					"id": 1382,
 					"name": "maxLength",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8661,7 +8661,7 @@
 					}
 				},
 				{
-					"id": 1377,
+					"id": 1381,
 					"name": "minLength",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8686,8 +8686,8 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						1378,
-						1377
+						1382,
+						1381
 					]
 				}
 			],
@@ -8700,7 +8700,7 @@
 			]
 		},
 		{
-			"id": 1598,
+			"id": 1602,
 			"name": "ToolbarButtonProps",
 			"kind": 256,
 			"kindString": "Interface",
@@ -8709,7 +8709,7 @@
 			},
 			"children": [
 				{
-					"id": 1602,
+					"id": 1606,
 					"name": "active",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8743,7 +8743,7 @@
 					}
 				},
 				{
-					"id": 1599,
+					"id": 1603,
 					"name": "className",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8773,7 +8773,7 @@
 					}
 				},
 				{
-					"id": 1609,
+					"id": 1613,
 					"name": "disabled",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8807,7 +8807,7 @@
 					}
 				},
 				{
-					"id": 1610,
+					"id": 1614,
 					"name": "dropdown",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8841,7 +8841,7 @@
 					}
 				},
 				{
-					"id": 1603,
+					"id": 1607,
 					"name": "icon",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8878,7 +8878,7 @@
 					}
 				},
 				{
-					"id": 1604,
+					"id": 1608,
 					"name": "iconOnly",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8912,7 +8912,7 @@
 					}
 				},
 				{
-					"id": 1605,
+					"id": 1609,
 					"name": "onClick",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8937,7 +8937,7 @@
 							{
 								"type": "reflection",
 								"declaration": {
-									"id": 1606,
+									"id": 1610,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
@@ -8946,7 +8946,7 @@
 									},
 									"signatures": [
 										{
-											"id": 1607,
+											"id": 1611,
 											"name": "__call",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -8955,7 +8955,7 @@
 											},
 											"parameters": [
 												{
-													"id": 1608,
+													"id": 1612,
 													"name": "event",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -8986,7 +8986,7 @@
 					}
 				},
 				{
-					"id": 1600,
+					"id": 1604,
 					"name": "text",
 					"kind": 1024,
 					"kindString": "Property",
@@ -9006,7 +9006,7 @@
 					}
 				},
 				{
-					"id": 1601,
+					"id": 1605,
 					"name": "tooltip",
 					"kind": 1024,
 					"kindString": "Property",
@@ -9041,15 +9041,15 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						1602,
-						1599,
-						1609,
-						1610,
+						1606,
 						1603,
+						1613,
+						1614,
+						1607,
+						1608,
+						1609,
 						1604,
-						1605,
-						1600,
-						1601
+						1605
 					]
 				}
 			],
@@ -9062,7 +9062,7 @@
 			]
 		},
 		{
-			"id": 1573,
+			"id": 1577,
 			"name": "ToolbarDropdownButtonProps",
 			"kind": 256,
 			"kindString": "Interface",
@@ -9071,7 +9071,7 @@
 			},
 			"children": [
 				{
-					"id": 1575,
+					"id": 1579,
 					"name": "active",
 					"kind": 1024,
 					"kindString": "Property",
@@ -9105,7 +9105,7 @@
 					}
 				},
 				{
-					"id": 1580,
+					"id": 1584,
 					"name": "disabled",
 					"kind": 1024,
 					"kindString": "Property",
@@ -9139,7 +9139,7 @@
 					}
 				},
 				{
-					"id": 1576,
+					"id": 1580,
 					"name": "icon",
 					"kind": 1024,
 					"kindString": "Property",
@@ -9176,7 +9176,7 @@
 					}
 				},
 				{
-					"id": 1577,
+					"id": 1581,
 					"name": "onClick",
 					"kind": 1024,
 					"kindString": "Property",
@@ -9201,7 +9201,7 @@
 							{
 								"type": "reflection",
 								"declaration": {
-									"id": 1578,
+									"id": 1582,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
@@ -9210,7 +9210,7 @@
 									},
 									"signatures": [
 										{
-											"id": 1579,
+											"id": 1583,
 											"name": "__call",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -9229,7 +9229,7 @@
 					}
 				},
 				{
-					"id": 1574,
+					"id": 1578,
 					"name": "text",
 					"kind": 1024,
 					"kindString": "Property",
@@ -9254,11 +9254,11 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						1575,
+						1579,
+						1584,
 						1580,
-						1576,
-						1577,
-						1574
+						1581,
+						1578
 					]
 				}
 			],
@@ -9271,7 +9271,7 @@
 			]
 		},
 		{
-			"id": 1621,
+			"id": 1625,
 			"name": "ToolbarInfoProps",
 			"kind": 256,
 			"kindString": "Interface",
@@ -9287,7 +9287,7 @@
 			]
 		},
 		{
-			"id": 1624,
+			"id": 1628,
 			"name": "ToolbarSearchProps",
 			"kind": 256,
 			"kindString": "Interface",
@@ -9534,7 +9534,7 @@
 			}
 		},
 		{
-			"id": 1696,
+			"id": 1701,
 			"name": "ChonkyFileActionData",
 			"kind": 4194304,
 			"kindString": "Type alias",
@@ -9544,7 +9544,7 @@
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 48,
+					"line": 49,
 					"character": 32
 				}
 			],
@@ -9647,7 +9647,7 @@
 			}
 		},
 		{
-			"id": 1513,
+			"id": 1517,
 			"name": "DnDFileEntryItem",
 			"kind": 4194304,
 			"kindString": "Type alias",
@@ -9671,7 +9671,7 @@
 					{
 						"type": "reflection",
 						"declaration": {
-							"id": 1514,
+							"id": 1518,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
@@ -9680,7 +9680,7 @@
 							},
 							"children": [
 								{
-									"id": 1515,
+									"id": 1519,
 									"name": "file",
 									"kind": 32,
 									"kindString": "Variable",
@@ -9712,7 +9712,7 @@
 									"title": "Variables",
 									"kind": 32,
 									"children": [
-										1515
+										1519
 									]
 								}
 							],
@@ -10231,7 +10231,7 @@
 			}
 		},
 		{
-			"id": 1695,
+			"id": 1700,
 			"name": "FileActionHandler",
 			"kind": 4194304,
 			"kindString": "Type alias",
@@ -10241,7 +10241,7 @@
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 47,
+					"line": 48,
 					"character": 29
 				}
 			],
@@ -10573,7 +10573,7 @@
 			}
 		},
 		{
-			"id": 1441,
+			"id": 1445,
 			"name": "FileEntryState",
 			"kind": 4194304,
 			"kindString": "Type alias",
@@ -10590,7 +10590,7 @@
 			"type": {
 				"type": "reflection",
 				"declaration": {
-					"id": 1442,
+					"id": 1446,
 					"name": "__type",
 					"kind": 65536,
 					"kindString": "Type literal",
@@ -10599,7 +10599,7 @@
 					},
 					"children": [
 						{
-							"id": 1443,
+							"id": 1447,
 							"name": "childrenCount",
 							"kind": 32,
 							"kindString": "Variable",
@@ -10625,7 +10625,7 @@
 							}
 						},
 						{
-							"id": 1444,
+							"id": 1448,
 							"name": "color",
 							"kind": 32,
 							"kindString": "Variable",
@@ -10645,7 +10645,7 @@
 							}
 						},
 						{
-							"id": 1449,
+							"id": 1453,
 							"name": "focused",
 							"kind": 32,
 							"kindString": "Variable",
@@ -10665,7 +10665,7 @@
 							}
 						},
 						{
-							"id": 1445,
+							"id": 1449,
 							"name": "icon",
 							"kind": 32,
 							"kindString": "Variable",
@@ -10695,7 +10695,7 @@
 							}
 						},
 						{
-							"id": 1447,
+							"id": 1451,
 							"name": "iconSpin",
 							"kind": 32,
 							"kindString": "Variable",
@@ -10715,7 +10715,7 @@
 							}
 						},
 						{
-							"id": 1448,
+							"id": 1452,
 							"name": "selected",
 							"kind": 32,
 							"kindString": "Variable",
@@ -10735,7 +10735,7 @@
 							}
 						},
 						{
-							"id": 1446,
+							"id": 1450,
 							"name": "thumbnailUrl",
 							"kind": 32,
 							"kindString": "Variable",
@@ -10766,13 +10766,13 @@
 							"title": "Variables",
 							"kind": 32,
 							"children": [
-								1443,
-								1444,
-								1449,
-								1445,
 								1447,
 								1448,
-								1446
+								1453,
+								1449,
+								1451,
+								1452,
+								1450
 							]
 						}
 					],
@@ -11636,7 +11636,7 @@
 			}
 		},
 		{
-			"id": 1419,
+			"id": 1423,
 			"name": "KeyboardClickEventHandler",
 			"kind": 4194304,
 			"kindString": "Type alias",
@@ -11653,7 +11653,7 @@
 			"type": {
 				"type": "reflection",
 				"declaration": {
-					"id": 1420,
+					"id": 1424,
 					"name": "__type",
 					"kind": 65536,
 					"kindString": "Type literal",
@@ -11662,7 +11662,7 @@
 					},
 					"signatures": [
 						{
-							"id": 1421,
+							"id": 1425,
 							"name": "__call",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -11671,7 +11671,7 @@
 							},
 							"parameters": [
 								{
-									"id": 1422,
+									"id": 1426,
 									"name": "event",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -11680,7 +11680,7 @@
 									},
 									"type": {
 										"type": "reference",
-										"id": 1399,
+										"id": 1403,
 										"name": "KeyboardClickEvent"
 									}
 								}
@@ -11754,7 +11754,7 @@
 			}
 		},
 		{
-			"id": 1415,
+			"id": 1419,
 			"name": "MouseClickEventHandler",
 			"kind": 4194304,
 			"kindString": "Type alias",
@@ -11771,7 +11771,7 @@
 			"type": {
 				"type": "reflection",
 				"declaration": {
-					"id": 1416,
+					"id": 1420,
 					"name": "__type",
 					"kind": 65536,
 					"kindString": "Type literal",
@@ -11780,7 +11780,7 @@
 					},
 					"signatures": [
 						{
-							"id": 1417,
+							"id": 1421,
 							"name": "__call",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -11789,7 +11789,7 @@
 							},
 							"parameters": [
 								{
-									"id": 1418,
+									"id": 1422,
 									"name": "event",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -11798,7 +11798,7 @@
 									},
 									"type": {
 										"type": "reference",
-										"id": 1395,
+										"id": 1399,
 										"name": "MouseClickEvent"
 									}
 								}
@@ -13011,7 +13011,7 @@
 			}
 		},
 		{
-			"id": 1617,
+			"id": 1621,
 			"name": "ToolbarDropdownProps",
 			"kind": 4194304,
 			"kindString": "Type alias",
@@ -13057,7 +13057,7 @@
 			"defaultValue": "[\n    '3gpp',\n    'aac',\n    'adp',\n    'aif',\n    'aifc',\n    'aiff',\n    'au',\n    'caf',\n    'dra',\n    'dts',\n    'dtshd',\n    'ecelp4800',\n    'ecelp7470',\n    'ecelp9600',\n    'eol',\n    'flac',\n    'kar',\n    'lvp',\n    'm2a',\n    'm3a',\n    'm3u',\n    'm4a',\n    'm4a',\n    'mid',\n    'midi',\n    'mka',\n    'mp2',\n    'mp2a',\n    'mp3',\n    'mp3',\n    'mp4a',\n    'mpga',\n    'oga',\n    'ogg',\n    'pya',\n    'ra',\n    'ra',\n    'ram',\n    'rip',\n    'rmi',\n    'rmp',\n    's3m',\n    'sil',\n    'snd',\n    'spx',\n    'uva',\n    'uvva',\n    'wav',\n    'wav',\n    'wav',\n    'wax',\n    'weba',\n    'wma',\n    'xm',\n]"
 		},
 		{
-			"id": 1359,
+			"id": 1363,
 			"name": "ChonkyBusinessLogic",
 			"kind": 32,
 			"kindString": "Variable",
@@ -13108,7 +13108,7 @@
 			"defaultValue": "React.memo(ChonkyBusinessLogicInner)"
 		},
 		{
-			"id": 1358,
+			"id": 1362,
 			"name": "ChonkyBusinessLogicInner",
 			"kind": 32,
 			"kindString": "Variable",
@@ -13238,7 +13238,7 @@
 			"defaultValue": "[\n    '#bbbbbb',\n    '#d65c5c',\n    '#d6665c',\n    '#d6705c',\n    '#d67a5c',\n    '#d6855c',\n    '#d68f5c',\n    '#d6995c',\n    '#d6a35c',\n    '#d6ad5c',\n    '#d6b85c',\n    '#d6c25c',\n    '#d6cc5c',\n    '#d6d65c',\n    '#ccd65c',\n    '#c2d65c',\n    '#b8d65c',\n    '#add65c',\n    '#a3d65c',\n    '#99d65c',\n    '#8fd65c',\n    '#85d65c',\n    '#7ad65c',\n    '#70d65c',\n    '#66d65c',\n    '#5cd65c',\n    '#5cd666',\n    '#5cd670',\n    '#5cd67a',\n    '#5cd685',\n    '#5cd68f',\n    '#5cd699',\n    '#5cd6a3',\n    '#5cd6ad',\n    '#5cd6b8',\n    '#5cd6c2',\n    '#5cd6cc',\n    '#5cd6d6',\n    '#5cccd6',\n    '#5cc2d6',\n    '#5cb8d6',\n    '#5cadd6',\n    '#5ca3d6',\n    '#5c99d6',\n    '#5c8fd6',\n    '#5c85d6',\n    '#5c7ad6',\n    '#5c70d6',\n    '#5c66d6',\n    '#5c5cd6',\n    '#665cd6',\n    '#705cd6',\n    '#7a5cd6',\n    '#855cd6',\n    '#8f5cd6',\n    '#995cd6',\n    '#a35cd6',\n    '#ad5cd6',\n    '#b85cd6',\n    '#c25cd6',\n    '#cc5cd6',\n    '#d65cd6',\n    '#d65ccc',\n    '#d65cc2',\n    '#d65cb8',\n    '#d65cad',\n    '#d65ca3',\n    '#d65c99',\n    '#d65c8f',\n    '#d65c85',\n    '#d65c7a',\n    '#d65c70',\n    '#d65c66',\n]"
 		},
 		{
-			"id": 1636,
+			"id": 1646,
 			"name": "CompactEntry",
 			"kind": 32,
 			"kindString": "Variable",
@@ -13258,7 +13258,7 @@
 				"typeArguments": [
 					{
 						"type": "reference",
-						"id": 1371,
+						"id": 1375,
 						"name": "FileEntryProps"
 					}
 				],
@@ -15815,7 +15815,7 @@
 			"defaultValue": "[\n    ChonkyActions.OpenSelection,\n    ChonkyActions.SelectAllFiles,\n    ChonkyActions.ClearSelection,\n    ChonkyActions.EnableListView,\n    // TODO: Don't enable until compact view is fully supported\n    // ChonkyActions.EnableCompactView,\n    ChonkyActions.EnableGridView,\n    ChonkyActions.SortFilesByName,\n    ChonkyActions.SortFilesBySize,\n    ChonkyActions.SortFilesByDate,\n    ChonkyActions.ToggleHiddenFiles,\n    ChonkyActions.ToggleShowFoldersFirst,\n    ChonkyActions.FocusSearchInput,\n]"
 		},
 		{
-			"id": 1517,
+			"id": 1521,
 			"name": "DnDFileEntry",
 			"kind": 32,
 			"kindString": "Variable",
@@ -15843,7 +15843,7 @@
 			"defaultValue": "React.memo(\n    ({ file, selected, children }: DnDFileEntryProps) => {\n        const { drop, drag, dndState } = useFileEntryDnD(file, selected);\n        const classes = useStyles();\n        return (\n            <div ref={drop} className={classes.fillParent}>\n                <div\n                    ref={FileHelper.isDraggable(file) ? drag : null}\n                    className={classes.fillParent}\n                >\n                    {children(dndState)}\n                </div>\n            </div>\n        );\n    }\n)"
 		},
 		{
-			"id": 1516,
+			"id": 1520,
 			"name": "DnDFileEntryType",
 			"kind": 32,
 			"kindString": "Variable",
@@ -16700,7 +16700,7 @@
 			"defaultValue": "[\n    ChonkyActions.MouseClickFile,\n    ChonkyActions.KeyboardClickFile,\n    ChonkyActions.StartDragNDrop,\n    ChonkyActions.EndDragNDrop,\n    ChonkyActions.MoveFiles,\n    ChonkyActions.ChangeSelection,\n    ChonkyActions.OpenFiles,\n    ChonkyActions.OpenParentFolder,\n    ChonkyActions.OpenFileContextMenu,\n]"
 		},
 		{
-			"id": 1560,
+			"id": 1564,
 			"name": "FileBrowser",
 			"kind": 32,
 			"kindString": "Variable",
@@ -16729,7 +16729,7 @@
 							{
 								"type": "reflection",
 								"declaration": {
-									"id": 1561,
+									"id": 1565,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
@@ -16738,7 +16738,7 @@
 									},
 									"children": [
 										{
-											"id": 1562,
+											"id": 1566,
 											"name": "children",
 											"kind": 32,
 											"kindString": "Variable",
@@ -16764,7 +16764,7 @@
 											"title": "Variables",
 											"kind": 32,
 											"children": [
-												1562
+												1566
 											]
 										}
 									]
@@ -16789,7 +16789,7 @@
 			"defaultValue": "React.forwardRef<\n    FileBrowserHandle,\n    FileBrowserProps & { children?: ReactNode }\n>((props, ref) => {\n    const { instanceId, iconComponent, children } = props;\n    const disableDragAndDropProvider = getValueOrFallback(\n        props.disableDragAndDropProvider,\n        defaultConfig.disableDragAndDropProvider,\n        'boolean'\n    );\n\n    const chonkyInstanceId = useStaticValue(() => instanceId ?? shortid.generate());\n    const store = useChonkyStore(chonkyInstanceId);\n\n    const isMobileBreakpoint = useIsMobileBreakpoint();\n    const theme = useMemo(() => {\n        return isMobileBreakpoint ? merge(lightTheme, mobileOverrideTheme) : lightTheme;\n    }, [isMobileBreakpoint]);\n\n    const chonkyComps = (\n        <>\n            <ChonkyBusinessLogic ref={ref} {...props} />\n            <ChonkyPresentationLayer>{children}</ChonkyPresentationLayer>\n        </>\n    );\n\n    return (\n        <Provider store={store}>\n            <ThemeProvider theme={theme}>\n                <ChonkyIconContext.Provider\n                    value={\n                        iconComponent ??\n                        defaultConfig.iconComponent ??\n                        ChonkyIconPlaceholder\n                    }\n                >\n                    {disableDragAndDropProvider ? (\n                        chonkyComps\n                    ) : (\n                        <DndProvider backend={HTML5Backend}>{chonkyComps}</DndProvider>\n                    )}\n                </ChonkyIconContext.Provider>\n            </ThemeProvider>\n        </Provider>\n    );\n})"
 		},
 		{
-			"id": 1589,
+			"id": 1593,
 			"name": "FileContextMenu",
 			"kind": 32,
 			"kindString": "Variable",
@@ -16809,7 +16809,7 @@
 				"typeArguments": [
 					{
 						"type": "reference",
-						"id": 1588,
+						"id": 1592,
 						"name": "FileContextMenuProps"
 					}
 				],
@@ -16818,7 +16818,7 @@
 			"defaultValue": "React.memo(() => {\n    const dispatch = useDispatch();\n    useEffect(() => {\n        dispatch(reduxActions.setContextMenuMounted(true));\n        return () => {\n            dispatch(reduxActions.setContextMenuMounted(false));\n        };\n    }, [dispatch]);\n\n    const contextMenuConfig = useSelector(selectContextMenuConfig);\n    const contextMenuItems = useSelector(selectContextMenuItems);\n\n    const hideContextMenu = useContextMenuDismisser();\n    const contextMenuItemComponents = useMemo(() => {\n        const components: ReactElement[] = [];\n        for (let i = 0; i < contextMenuItems.length; ++i) {\n            const item = contextMenuItems[i];\n\n            if (typeof item === 'string') {\n                components.push(\n                    <SmartToolbarDropdownButton\n                        key={`context-menu-item-${item}`}\n                        fileActionId={item}\n                        onClickFollowUp={hideContextMenu}\n                    />\n                );\n            } else {\n                item.fileActionIds.map((id) =>\n                    components.push(\n                        <SmartToolbarDropdownButton\n                            key={`context-menu-item-${item.name}-${id}`}\n                            fileActionId={id}\n                            onClickFollowUp={hideContextMenu}\n                        />\n                    )\n                );\n            }\n        }\n        return components;\n    }, [contextMenuItems, hideContextMenu]);\n\n    const anchorPosition = useMemo(\n        () =>\n            contextMenuConfig\n                ? { top: contextMenuConfig.mouseY, left: contextMenuConfig.mouseX }\n                : undefined,\n        [contextMenuConfig]\n    );\n\n    const classes = useStyles();\n    return (\n        <Menu\n            keepMounted\n            elevation={2}\n            disablePortal\n            onClose={hideContextMenu}\n            transitionDuration={150}\n            open={!!contextMenuConfig}\n            anchorPosition={anchorPosition}\n            anchorReference=\"anchorPosition\"\n            classes={{ list: classes.contextMenuList }}\n        >\n            {contextMenuItemComponents}\n            <ListSubheader component=\"div\" className={classes.browserMenuTooltip}>\n                Browser menu: <strong>Alt + Right Click</strong>\n            </ListSubheader>\n        </Menu>\n    );\n})"
 		},
 		{
-			"id": 1632,
+			"id": 1642,
 			"name": "FileEntryName",
 			"kind": 32,
 			"kindString": "Variable",
@@ -16838,7 +16838,7 @@
 				"typeArguments": [
 					{
 						"type": "reference",
-						"id": 1629,
+						"id": 1639,
 						"name": "FileEntryNameProps"
 					}
 				],
@@ -16847,7 +16847,7 @@
 			"defaultValue": "React.memo(\n    ({ file, className }) => {\n        const modifierIconComponents = useModifierIconComponents(file);\n        const fileNameComponent = useFileNameComponent(file);\n\n        const classes = useStyles();\n        return (\n            <span className={className} title={file ? file.name : undefined}>\n                {modifierIconComponents.length > 0 && (\n                    <span className={classes.modifierIcons}>\n                        {modifierIconComponents}\n                    </span>\n                )}\n                {fileNameComponent}\n            </span>\n        );\n    }\n)"
 		},
 		{
-			"id": 1690,
+			"id": 1694,
 			"name": "FileList",
 			"kind": 32,
 			"kindString": "Variable",
@@ -16867,7 +16867,7 @@
 				"typeArguments": [
 					{
 						"type": "reference",
-						"id": 1689,
+						"id": 1693,
 						"name": "FileListProps"
 					}
 				],
@@ -16876,7 +16876,7 @@
 			"defaultValue": "React.memo(() => {\n    const displayFileIds = useSelector(selectDisplayFileIds);\n    const viewConfig = useSelector(selectFileViewConfig);\n\n    const localClasses = useLocalStyles(viewConfig);\n    const classes = useStyles(viewConfig);\n\n    // In Chonky v0.x, this field was user-configurable. In Chonky v1.x+, we hardcode\n    // this to `true` to simplify configuration. Users can just wrap Chonky in their\n    // own `div` if they want to have finer control over the height.\n    const fillParentContainer = true;\n\n    const listRenderer = useCallback(\n        ({ width, height }: { width: number; height: number }) => {\n            if (displayFileIds.length === 0) {\n                return <FileListEmpty width={width} height={viewConfig.entryHeight} />;\n            } else if (viewConfig.mode === FileViewMode.List) {\n                return <ListContainer width={width} height={height} />;\n            } else {\n                return <GridContainer width={width} height={height} />;\n            }\n        },\n        [displayFileIds, viewConfig]\n    );\n\n    return (\n        <div\n            className={c([classes.fileListWrapper, localClasses.fileListWrapper])}\n            role=\"list\"\n        >\n            <AutoSizer disableHeight={!fillParentContainer}>{listRenderer}</AutoSizer>\n        </div>\n    );\n})"
 		},
 		{
-			"id": 1616,
+			"id": 1620,
 			"name": "FileNavbar",
 			"kind": 32,
 			"kindString": "Variable",
@@ -16896,7 +16896,7 @@
 				"typeArguments": [
 					{
 						"type": "reference",
-						"id": 1615,
+						"id": 1619,
 						"name": "FileNavbarProps"
 					}
 				],
@@ -16905,7 +16905,7 @@
 			"defaultValue": "React.memo(() => {\n    const classes = useStyles();\n    const folderChainItems = useFolderChainItems();\n\n    const folderChainComponents = useMemo(() => {\n        const components: ReactElement[] = [];\n        for (let i = 0; i < folderChainItems.length; ++i) {\n            const { file, disabled, onClick } = folderChainItems[i];\n            const key = `folder-chain-${file ? file.id : i}`;\n            const className = c({\n                [classes.baseBreadcrumb]: true,\n                [classes.disabledBreadcrumb]: disabled,\n                [classes.currentBreadcrumb]: i === folderChainItems.length - 1,\n            });\n            const text = file ? file.name : 'Loading...';\n            const component = (\n                <ToolbarButton\n                    icon={i === 0 ? ChonkyIconName.folder : null}\n                    className={className}\n                    key={key}\n                    text={text}\n                    disabled={disabled}\n                    onClick={onClick}\n                />\n            );\n            components.push(component);\n        }\n        return components;\n    }, [folderChainItems, classes]);\n\n    return (\n        <Box className={classes.navbarWrapper}>\n            <Box className={classes.navbarContainer}>\n                <SmartToolbarButton fileActionId={ChonkyActions.OpenParentFolder.id} />\n                <Breadcrumbs\n                    className={classes.navbarBreadcrumbs}\n                    classes={{ separator: classes.separator }}\n                >\n                    {folderChainComponents}\n                </Breadcrumbs>\n            </Box>\n        </Box>\n    );\n})"
 		},
 		{
-			"id": 1429,
+			"id": 1433,
 			"name": "FileThumbnail",
 			"kind": 32,
 			"kindString": "Variable",
@@ -16925,7 +16925,7 @@
 				"typeArguments": [
 					{
 						"type": "reference",
-						"id": 1426,
+						"id": 1430,
 						"name": "FileThumbnailProps"
 					}
 				],
@@ -16934,7 +16934,7 @@
 			"defaultValue": "React.memo((props) => {\n    const { className, thumbnailUrl } = props;\n\n    const thumbnailStyle: React.CSSProperties = thumbnailUrl\n        ? { backgroundImage: `url('${thumbnailUrl}')` }\n        : {};\n\n    const classes = useStyles();\n    return (\n        <div className={c([className, classes.fileThumbnail])} style={thumbnailStyle} />\n    );\n})"
 		},
 		{
-			"id": 1628,
+			"id": 1632,
 			"name": "FileToolbar",
 			"kind": 32,
 			"kindString": "Variable",
@@ -16954,7 +16954,7 @@
 				"typeArguments": [
 					{
 						"type": "reference",
-						"id": 1627,
+						"id": 1631,
 						"name": "FileToolbarProps"
 					}
 				],
@@ -16963,7 +16963,58 @@
 			"defaultValue": "React.memo(() => {\n    const classes = useStyles();\n    const toolbarItems = useSelector(selectToolbarItems);\n\n    const toolbarItemComponents = useMemo(() => {\n        const components: ReactElement[] = [];\n        for (let i = 0; i < toolbarItems.length; ++i) {\n            const item = toolbarItems[i];\n\n            const key = `toolbar-item-${typeof item === 'string' ? item : item.name}`;\n            const component =\n                typeof item === 'string' ? (\n                    <SmartToolbarButton key={key} fileActionId={item} />\n                ) : (\n                    <ToolbarDropdown\n                        key={key}\n                        name={item.name}\n                        fileActionIds={item.fileActionIds}\n                    />\n                );\n            components.push(component);\n        }\n        return components;\n    }, [toolbarItems]);\n\n    return (\n        <div className={classes.toolbarWrapper}>\n            <div className={classes.toolbarContainer}>\n                <div className={classes.toolbarLeft}>\n                    <ToolbarSearch />\n                    <ToolbarInfo />\n                </div>\n                <div className={classes.toolbarRight}>{toolbarItemComponents}</div>\n            </div>\n        </div>\n    );\n})"
 		},
 		{
-			"id": 1681,
+			"id": 1699,
+			"name": "FullFileBrowser",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isExported": true,
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "src/components/external/FullFileBrowser.tsx",
+					"line": 16,
+					"character": 28
+				}
+			],
+			"type": {
+				"type": "reference",
+				"typeArguments": [
+					{
+						"type": "reference",
+						"typeArguments": [
+							{
+								"type": "intersection",
+								"types": [
+									{
+										"type": "reference",
+										"id": 1229,
+										"name": "FileBrowserProps"
+									},
+									{
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"id": 1217,
+												"name": "FileBrowserHandle"
+											}
+										],
+										"name": "RefAttributes"
+									}
+								]
+							}
+						],
+						"name": "ForwardRefExoticComponent"
+					}
+				],
+				"name": "MemoExoticComponent"
+			},
+			"defaultValue": "React.memo(\n    React.forwardRef<FileBrowserHandle, FileBrowserProps>((props, ref) => {\n        return (\n            <FileBrowser ref={ref} {...props}>\n                <FileNavbar />\n                <FileToolbar />\n                <FileList />\n                <FileContextMenu />\n            </FileBrowser>\n        );\n    })\n)"
+		},
+		{
+			"id": 1685,
 			"name": "GridContainer",
 			"kind": 32,
 			"kindString": "Variable",
@@ -16983,7 +17034,7 @@
 				"typeArguments": [
 					{
 						"type": "reference",
-						"id": 1664,
+						"id": 1668,
 						"name": "FileListGridProps"
 					}
 				],
@@ -16992,7 +17043,7 @@
 			"defaultValue": "React.memo((props) => {\n    const { width, height } = props;\n\n    const viewConfig = useSelector(selectFileViewConfig) as FileViewConfigGrid;\n    const displayFileIds = useSelector(selectDisplayFileIds);\n    const fileCount = useMemo(() => displayFileIds.length, [displayFileIds]);\n\n    const gridRef = useRef<VariableSizeGrid>();\n    const isMobileBreakpoint = useIsMobileBreakpoint();\n\n    // Whenever the grid config changes at runtime, we call a method on the\n    // `VariableSizeGrid` handle to reset column width/row height cache.\n    // !!! Note that we deliberately update the `gridRef` firsts and update the React\n    //     state AFTER that. This is needed to avoid file entries jumping up/down.\n    const [gridConfig, setGridConfig] = useState(\n        getGridConfig(width, fileCount, viewConfig, isMobileBreakpoint)\n    );\n    const gridConfigRef = useRef(gridConfig);\n    useEffect(() => {\n        const oldConf = gridConfigRef.current;\n        const newConf = getGridConfig(width, fileCount, viewConfig, isMobileBreakpoint);\n\n        gridConfigRef.current = newConf;\n        if (gridRef.current) {\n            if (oldConf.rowCount !== newConf.rowCount) {\n                gridRef.current.resetAfterRowIndex(\n                    Math.min(oldConf.rowCount, newConf.rowCount) - 1\n                );\n            }\n            if (oldConf.columnCount !== newConf.columnCount) {\n                gridRef.current.resetAfterColumnIndex(\n                    Math.min(oldConf.columnCount, newConf.rowCount) - 1\n                );\n            }\n            if (oldConf.columnWidth !== newConf.columnWidth) {\n                gridRef.current.resetAfterIndices({ columnIndex: 0, rowIndex: 0 });\n            }\n        }\n\n        setGridConfig(newConf);\n    }, [\n        setGridConfig,\n        gridConfigRef,\n        isMobileBreakpoint,\n        width,\n        viewConfig,\n        fileCount,\n    ]);\n\n    const sizers = useMemo(() => {\n        const gc = gridConfigRef;\n        return {\n            getColumnWidth: (index: number) =>\n                gc.current.columnWidth! +\n                (index === gc.current.columnCount - 1 ? 0 : gc.current.gutter),\n            getRowHeight: (index: number) =>\n                gc.current.rowHeight +\n                (index === gc.current.rowCount - 1 ? 0 : gc.current.gutter),\n        };\n    }, [gridConfigRef]);\n\n    const displayFileIdsRef = useInstanceVariable(useSelector(selectDisplayFileIds));\n    const getItemKey = useCallback(\n        (data: { columnIndex: number; rowIndex: number; data: any }) => {\n            const index =\n                data.rowIndex * gridConfigRef.current.columnCount + data.columnIndex;\n\n            return displayFileIdsRef.current[index] ?? `loading-file-${index}`;\n        },\n        [gridConfigRef, displayFileIdsRef]\n    );\n\n    const cellRenderer = useCallback(\n        (data: { rowIndex: number; columnIndex: number; style: CSSProperties }) => {\n            const gc = gridConfigRef;\n            const index = data.rowIndex * gc.current.columnCount + data.columnIndex;\n            const fileId = displayFileIds[index];\n            if (displayFileIds[index] === undefined) return null;\n\n            const styleWithGutter: CSSProperties = {\n                ...data.style,\n                paddingRight:\n                    data.columnIndex === gc.current.columnCount - 1\n                        ? 0\n                        : gc.current.gutter,\n                paddingBottom:\n                    data.rowIndex === gc.current.rowCount - 1 ? 0 : gc.current.gutter,\n                boxSizing: 'border-box',\n            };\n\n            return (\n                <div style={styleWithGutter}>\n                    <SmartFileEntry\n                        fileId={fileId ?? null}\n                        displayIndex={index}\n                        fileViewMode={viewConfig.mode}\n                    />\n                </div>\n            );\n        },\n        [displayFileIds, viewConfig.mode]\n    );\n\n    const gridComponent = useMemo(() => {\n        return (\n            <VariableSizeGrid\n                ref={gridRef as any}\n                className=\"chonky-file-list-grid-view\"\n                estimatedRowHeight={gridConfig.rowHeight + gridConfig.gutter}\n                rowHeight={sizers.getRowHeight}\n                estimatedColumnWidth={gridConfig.columnWidth + gridConfig.gutter}\n                columnWidth={sizers.getColumnWidth}\n                columnCount={gridConfig.columnCount}\n                height={height}\n                rowCount={gridConfig.rowCount}\n                width={width}\n                itemKey={getItemKey}\n            >\n                {cellRenderer}\n            </VariableSizeGrid>\n        );\n    }, [width, height, gridConfig, sizers, getItemKey, cellRenderer]);\n\n    return gridComponent;\n})"
 		},
 		{
-			"id": 1640,
+			"id": 1650,
 			"name": "GridEntry",
 			"kind": 32,
 			"kindString": "Variable",
@@ -17012,7 +17063,7 @@
 				"typeArguments": [
 					{
 						"type": "reference",
-						"id": 1371,
+						"id": 1375,
 						"name": "FileEntryProps"
 					}
 				],
@@ -17021,7 +17072,7 @@
 			"defaultValue": "React.memo(\n    ({ file, selected, focused, dndState }) => {\n        const isDirectory = FileHelper.isDirectory(file);\n        const entryState = useFileEntryState(file, selected, focused);\n\n        const classes = useFileEntryStyles(entryState);\n        const fileEntryHtmlProps = useFileEntryHtmlProps(file);\n        const entryClassName = c({\n            [classes.gridFileEntry]: true,\n        });\n        return (\n            <div className={entryClassName} {...fileEntryHtmlProps}>\n                {isDirectory ? (\n                    <GridEntryPreviewFolder\n                        className={classes.gridFileEntryPreview}\n                        entryState={entryState}\n                        dndState={dndState}\n                    />\n                ) : (\n                    <GridEntryPreviewFile\n                        className={classes.gridFileEntryPreview}\n                        entryState={entryState}\n                        dndState={dndState}\n                    />\n                )}\n                <div className={classes.gridFileEntryNameContainer}>\n                    <FileEntryName className={classes.gridFileEntryName} file={file} />\n                </div>\n            </div>\n        );\n    }\n)"
 		},
 		{
-			"id": 1433,
+			"id": 1437,
 			"name": "GridEntryDndIndicator",
 			"kind": 32,
 			"kindString": "Variable",
@@ -17041,7 +17092,7 @@
 				"typeArguments": [
 					{
 						"type": "reference",
-						"id": 1430,
+						"id": 1434,
 						"name": "DnDIndicatorProps"
 					}
 				],
@@ -17050,7 +17101,7 @@
 			"defaultValue": "React.memo(\n    (props) => {\n        const { className: externalClassName, dndState } = props;\n        const { dndIconColor, dndIconName } = useDndIcon(dndState);\n        const classes = useStyles(dndIconColor);\n        const ChonkyIcon = useContext(ChonkyIconContext);\n        if (!dndIconName) return null;\n        const className = c({\n            [classes.dndIndicator]: true,\n            [externalClassName]: true,\n        });\n        return (\n            <div className={className}>\n                <ChonkyIcon icon={dndIconName} />\n            </div>\n        );\n    }\n)"
 		},
 		{
-			"id": 1455,
+			"id": 1459,
 			"name": "GridEntryPreviewFile",
 			"kind": 32,
 			"kindString": "Variable",
@@ -17070,7 +17121,7 @@
 				"typeArguments": [
 					{
 						"type": "reference",
-						"id": 1437,
+						"id": 1441,
 						"name": "FileEntryPreviewProps"
 					}
 				],
@@ -17079,7 +17130,7 @@
 			"defaultValue": "React.memo(\n    (props) => {\n        const { className: externalClassName, entryState, dndState } = props;\n\n        const fileClasses = useFileStyles(entryState);\n        const commonClasses = useCommonEntryStyles(entryState);\n        const ChonkyIcon = useContext(ChonkyIconContext);\n        const className = c({\n            [fileClasses.previewFile]: true,\n            [externalClassName || '']: !!externalClassName,\n        });\n        return (\n            <div className={className}>\n                <GridEntryDndIndicator\n                    className={fileClasses.dndIndicator}\n                    dndState={dndState}\n                />\n                <div className={fileClasses.fileIcon}>\n                    <ChonkyIcon icon={entryState.icon} spin={entryState.iconSpin} />\n                </div>\n                <div className={commonClasses.selectionIndicator}></div>\n                <FileThumbnail\n                    className={fileClasses.thumbnail}\n                    thumbnailUrl={entryState.thumbnailUrl}\n                />\n            </div>\n        );\n    }\n)"
 		},
 		{
-			"id": 1450,
+			"id": 1454,
 			"name": "GridEntryPreviewFolder",
 			"kind": 32,
 			"kindString": "Variable",
@@ -17099,7 +17150,7 @@
 				"typeArguments": [
 					{
 						"type": "reference",
-						"id": 1437,
+						"id": 1441,
 						"name": "FileEntryPreviewProps"
 					}
 				],
@@ -17108,7 +17159,7 @@
 			"defaultValue": "React.memo(\n    (props) => {\n        const { className: externalClassName, entryState, dndState } = props;\n\n        const folderClasses = useFolderStyles(entryState);\n        const fileClasses = useFileStyles(entryState);\n        const commonClasses = useCommonEntryStyles(entryState);\n        const className = c({\n            [folderClasses.previewFile]: true,\n            [externalClassName || '']: !!externalClassName,\n        });\n        return (\n            <div className={className}>\n                <div className={folderClasses.folderBackSideMid}>\n                    <div className={folderClasses.folderBackSideTop} />\n                    <div className={folderClasses.folderFrontSide}>\n                        <GridEntryDndIndicator\n                            className={fileClasses.dndIndicator}\n                            dndState={dndState}\n                        />\n                        <div\n                            className={c([\n                                fileClasses.fileIcon,\n                                folderClasses.fileIcon,\n                            ])}\n                        >\n                            {entryState.childrenCount}\n                        </div>\n                        <div className={commonClasses.selectionIndicator}></div>\n                        <FileThumbnail\n                            className={fileClasses.thumbnail}\n                            thumbnailUrl={entryState.thumbnailUrl}\n                        />\n                    </div>\n                </div>\n            </div>\n        );\n    }\n)"
 		},
 		{
-			"id": 1553,
+			"id": 1557,
 			"name": "HotkeyListener",
 			"kind": 32,
 			"kindString": "Variable",
@@ -17128,7 +17179,7 @@
 				"typeArguments": [
 					{
 						"type": "reference",
-						"id": 1551,
+						"id": 1555,
 						"name": "HotkeyListenerProps"
 					}
 				],
@@ -17162,7 +17213,7 @@
 			"defaultValue": "[\n    '3ds',\n    'apng',\n    'azv',\n    'bmp',\n    'bmp',\n    'btif',\n    'cgm',\n    'cmx',\n    'djv',\n    'djvu',\n    'drle',\n    'dwg',\n    'dxf',\n    'emf',\n    'exr',\n    'fbs',\n    'fh',\n    'fh4',\n    'fh5',\n    'fh7',\n    'fhc',\n    'fits',\n    'fpx',\n    'fst',\n    'g3',\n    'gif',\n    'heic',\n    'heics',\n    'heif',\n    'heifs',\n    'ico',\n    'ico',\n    'ief',\n    'jls',\n    'jng',\n    'jp2',\n    'jpe',\n    'jpeg',\n    'jpf',\n    'jpg',\n    'jpg2',\n    'jpm',\n    'jpx',\n    'jxr',\n    'ktx',\n    'mdi',\n    'mmr',\n    'npx',\n    'pbm',\n    'pct',\n    'pcx',\n    'pcx',\n    'pgm',\n    'pic',\n    'png',\n    'pnm',\n    'ppm',\n    'psd',\n    'pti',\n    'ras',\n    'rgb',\n    'rlc',\n    'sgi',\n    'sid',\n    'sub',\n    'svg',\n    'svgz',\n    't38',\n    'tap',\n    'tfx',\n    'tga',\n    'tif',\n    'tiff',\n    'uvg',\n    'uvi',\n    'uvvg',\n    'uvvi',\n    'vtf',\n    'wbmp',\n    'wdp',\n    'webp',\n    'wmf',\n    'xbm',\n    'xif',\n    'xpm',\n    'xwd',\n]"
 		},
 		{
-			"id": 1685,
+			"id": 1689,
 			"name": "ListContainer",
 			"kind": 32,
 			"kindString": "Variable",
@@ -17182,7 +17233,7 @@
 				"typeArguments": [
 					{
 						"type": "reference",
-						"id": 1682,
+						"id": 1686,
 						"name": "FileListListProps"
 					}
 				],
@@ -17191,7 +17242,7 @@
 			"defaultValue": "React.memo((props) => {\n    const { width, height } = props;\n\n    const viewConfig = useSelector(selectFileViewConfig);\n    const displayFileIds = useSelector(selectDisplayFileIds);\n\n    const listRef = useRef<FixedSizeList>();\n\n    const displayFileIdsRef = useInstanceVariable(useSelector(selectDisplayFileIds));\n    const getItemKey = useCallback(\n        (index: number) => displayFileIdsRef.current[index] ?? `loading-file-${index}`,\n        [displayFileIdsRef]\n    );\n\n    const classes = useStyles();\n    const listComponent = useMemo(() => {\n        // When entry size is null, we use List view\n        const rowRenderer = (data: { index: number; style: CSSProperties }) => {\n            return (\n                <div style={data.style}>\n                    <SmartFileEntry\n                        fileId={displayFileIds[data.index] ?? null}\n                        displayIndex={data.index}\n                        fileViewMode={FileViewMode.List}\n                    />\n                </div>\n            );\n        };\n\n        return (\n            <FixedSizeList\n                ref={listRef as any}\n                className={classes.listContainer}\n                itemSize={viewConfig.entryHeight}\n                height={height}\n                itemCount={displayFileIds.length}\n                width={width}\n                itemKey={getItemKey}\n            >\n                {rowRenderer}\n            </FixedSizeList>\n        );\n    }, [\n        classes.listContainer,\n        viewConfig.entryHeight,\n        height,\n        displayFileIds,\n        width,\n        getItemKey,\n    ]);\n\n    return listComponent;\n})"
 		},
 		{
-			"id": 1645,
+			"id": 1655,
 			"name": "ListEntry",
 			"kind": 32,
 			"kindString": "Variable",
@@ -17211,7 +17262,7 @@
 				"typeArguments": [
 					{
 						"type": "reference",
-						"id": 1371,
+						"id": 1375,
 						"name": "FileEntryProps"
 					}
 				],
@@ -17220,7 +17271,7 @@
 			"defaultValue": "React.memo(\n    ({ file, selected, focused, dndState }) => {\n        const entryState: FileEntryState = useFileEntryState(file, selected, focused);\n        const { dndIconColor, dndIconName } = useDndIcon(dndState);\n\n        const dndStyle = useMemo(\n            () =>\n                dndIconName\n                    ? {\n                          color: dndIconColor,\n                      }\n                    : undefined,\n            [dndIconColor, dndIconName]\n        );\n\n        const fileSizeString = FileHelper.getReadableDate(file);\n        const fileDateString = FileHelper.getReadableFileSize(file);\n\n        const classes = useStyles(entryState);\n        const commonClasses = useCommonEntryStyles(entryState);\n        const ChonkyIcon = useContext(ChonkyIconContext);\n        const fileEntryHtmlProps = useFileEntryHtmlProps(file);\n        return (\n            <div\n                className={classes.listFileEntry}\n                {...fileEntryHtmlProps}\n                style={dndStyle}\n            >\n                <div className={commonClasses.focusIndicator}></div>\n                <div\n                    className={c([\n                        commonClasses.selectionIndicator,\n                        classes.listFileEntrySelection,\n                    ])}\n                ></div>\n                <div className={classes.listFileEntryIcon} style={dndStyle}>\n                    <ChonkyIcon\n                        icon={dndIconName ?? entryState.icon}\n                        spin={dndIconName ? false : entryState.iconSpin}\n                        fixedWidth={true}\n                    />\n                </div>\n                <div\n                    className={classes.listFileEntryName}\n                    title={file ? file.name : undefined}\n                >\n                    <FileEntryName file={file} />\n                </div>\n                <div className={classes.listFileEntryProperty}>\n                    {file ? (\n                        fileSizeString ?? <span>—</span>\n                    ) : (\n                        <TextPlaceholder minLength={5} maxLength={15} />\n                    )}\n                </div>\n                <div className={classes.listFileEntryProperty}>\n                    {file ? (\n                        fileDateString ?? <span>—</span>\n                    ) : (\n                        <TextPlaceholder minLength={10} maxLength={20} />\n                    )}\n                </div>\n            </div>\n        );\n    }\n)"
 		},
 		{
-			"id": 1707,
+			"id": 1712,
 			"name": "OldChonkyActions",
 			"kind": 32,
 			"kindString": "Variable",
@@ -17238,7 +17289,7 @@
 			"type": {
 				"type": "reflection",
 				"declaration": {
-					"id": 1708,
+					"id": 1713,
 					"name": "__type",
 					"kind": 65536,
 					"kindString": "Type literal",
@@ -17247,7 +17298,7 @@
 					},
 					"children": [
 						{
-							"id": 1709,
+							"id": 1714,
 							"name": "CopyFiles",
 							"kind": 2097152,
 							"kindString": "Object literal",
@@ -17256,7 +17307,7 @@
 							},
 							"children": [
 								{
-									"id": 1712,
+									"id": 1717,
 									"name": "hotkeys",
 									"kind": 32,
 									"kindString": "Variable",
@@ -17280,7 +17331,7 @@
 									"defaultValue": "['ctrl+c']"
 								},
 								{
-									"id": 1710,
+									"id": 1715,
 									"name": "id",
 									"kind": 32,
 									"kindString": "Variable",
@@ -17301,7 +17352,7 @@
 									"defaultValue": "\"copy_files\""
 								},
 								{
-									"id": 1711,
+									"id": 1716,
 									"name": "requiresSelection",
 									"kind": 32,
 									"kindString": "Variable",
@@ -17322,7 +17373,7 @@
 									"defaultValue": "true"
 								},
 								{
-									"id": 1713,
+									"id": 1718,
 									"name": "button",
 									"kind": 2097152,
 									"kindString": "Object literal",
@@ -17331,7 +17382,7 @@
 									},
 									"children": [
 										{
-											"id": 1716,
+											"id": 1721,
 											"name": "contextMenu",
 											"kind": 32,
 											"kindString": "Variable",
@@ -17352,7 +17403,7 @@
 											"defaultValue": "true"
 										},
 										{
-											"id": 1718,
+											"id": 1723,
 											"name": "dropdown",
 											"kind": 32,
 											"kindString": "Variable",
@@ -17373,7 +17424,7 @@
 											"defaultValue": "true"
 										},
 										{
-											"id": 1717,
+											"id": 1722,
 											"name": "group",
 											"kind": 32,
 											"kindString": "Variable",
@@ -17394,7 +17445,7 @@
 											"defaultValue": "\"Actions\""
 										},
 										{
-											"id": 1719,
+											"id": 1724,
 											"name": "icon",
 											"kind": 32,
 											"kindString": "Variable",
@@ -17416,7 +17467,7 @@
 											"defaultValue": "ChonkyIconName.copy"
 										},
 										{
-											"id": 1714,
+											"id": 1719,
 											"name": "name",
 											"kind": 32,
 											"kindString": "Variable",
@@ -17437,7 +17488,7 @@
 											"defaultValue": "\"Copy selection\""
 										},
 										{
-											"id": 1715,
+											"id": 1720,
 											"name": "toolbar",
 											"kind": 32,
 											"kindString": "Variable",
@@ -17463,12 +17514,12 @@
 											"title": "Variables",
 											"kind": 32,
 											"children": [
-												1716,
-												1718,
-												1717,
+												1721,
+												1723,
+												1722,
+												1724,
 												1719,
-												1714,
-												1715
+												1720
 											]
 										}
 									],
@@ -17490,16 +17541,16 @@
 									"title": "Variables",
 									"kind": 32,
 									"children": [
-										1712,
-										1710,
-										1711
+										1717,
+										1715,
+										1716
 									]
 								},
 								{
 									"title": "Object literals",
 									"kind": 2097152,
 									"children": [
-										1713
+										1718
 									]
 								}
 							],
@@ -17516,7 +17567,7 @@
 							}
 						},
 						{
-							"id": 1720,
+							"id": 1725,
 							"name": "CreateFolder",
 							"kind": 2097152,
 							"kindString": "Object literal",
@@ -17525,7 +17576,7 @@
 							},
 							"children": [
 								{
-									"id": 1721,
+									"id": 1726,
 									"name": "id",
 									"kind": 32,
 									"kindString": "Variable",
@@ -17546,7 +17597,7 @@
 									"defaultValue": "\"create_folder\""
 								},
 								{
-									"id": 1722,
+									"id": 1727,
 									"name": "button",
 									"kind": 2097152,
 									"kindString": "Object literal",
@@ -17555,7 +17606,7 @@
 									},
 									"children": [
 										{
-											"id": 1725,
+											"id": 1730,
 											"name": "contextMenu",
 											"kind": 32,
 											"kindString": "Variable",
@@ -17576,7 +17627,7 @@
 											"defaultValue": "true"
 										},
 										{
-											"id": 1727,
+											"id": 1732,
 											"name": "icon",
 											"kind": 32,
 											"kindString": "Variable",
@@ -17598,7 +17649,7 @@
 											"defaultValue": "ChonkyIconName.folderCreate"
 										},
 										{
-											"id": 1723,
+											"id": 1728,
 											"name": "name",
 											"kind": 32,
 											"kindString": "Variable",
@@ -17619,7 +17670,7 @@
 											"defaultValue": "\"Create folder\""
 										},
 										{
-											"id": 1724,
+											"id": 1729,
 											"name": "toolbar",
 											"kind": 32,
 											"kindString": "Variable",
@@ -17640,7 +17691,7 @@
 											"defaultValue": "true"
 										},
 										{
-											"id": 1726,
+											"id": 1731,
 											"name": "tooltip",
 											"kind": 32,
 											"kindString": "Variable",
@@ -17666,11 +17717,11 @@
 											"title": "Variables",
 											"kind": 32,
 											"children": [
-												1725,
-												1727,
-												1723,
-												1724,
-												1726
+												1730,
+												1732,
+												1728,
+												1729,
+												1731
 											]
 										}
 									],
@@ -17692,14 +17743,14 @@
 									"title": "Variables",
 									"kind": 32,
 									"children": [
-										1721
+										1726
 									]
 								},
 								{
 									"title": "Object literals",
 									"kind": 2097152,
 									"children": [
-										1722
+										1727
 									]
 								}
 							],
@@ -17716,7 +17767,7 @@
 							}
 						},
 						{
-							"id": 1747,
+							"id": 1752,
 							"name": "DeleteFiles",
 							"kind": 2097152,
 							"kindString": "Object literal",
@@ -17725,7 +17776,7 @@
 							},
 							"children": [
 								{
-									"id": 1750,
+									"id": 1755,
 									"name": "hotkeys",
 									"kind": 32,
 									"kindString": "Variable",
@@ -17749,7 +17800,7 @@
 									"defaultValue": "['delete']"
 								},
 								{
-									"id": 1748,
+									"id": 1753,
 									"name": "id",
 									"kind": 32,
 									"kindString": "Variable",
@@ -17770,7 +17821,7 @@
 									"defaultValue": "\"delete_files\""
 								},
 								{
-									"id": 1749,
+									"id": 1754,
 									"name": "requiresSelection",
 									"kind": 32,
 									"kindString": "Variable",
@@ -17791,7 +17842,7 @@
 									"defaultValue": "true"
 								},
 								{
-									"id": 1751,
+									"id": 1756,
 									"name": "button",
 									"kind": 2097152,
 									"kindString": "Object literal",
@@ -17800,7 +17851,7 @@
 									},
 									"children": [
 										{
-											"id": 1754,
+											"id": 1759,
 											"name": "contextMenu",
 											"kind": 32,
 											"kindString": "Variable",
@@ -17821,7 +17872,7 @@
 											"defaultValue": "true"
 										},
 										{
-											"id": 1757,
+											"id": 1762,
 											"name": "dropdown",
 											"kind": 32,
 											"kindString": "Variable",
@@ -17842,7 +17893,7 @@
 											"defaultValue": "true"
 										},
 										{
-											"id": 1755,
+											"id": 1760,
 											"name": "group",
 											"kind": 32,
 											"kindString": "Variable",
@@ -17863,7 +17914,7 @@
 											"defaultValue": "\"Actions\""
 										},
 										{
-											"id": 1758,
+											"id": 1763,
 											"name": "icon",
 											"kind": 32,
 											"kindString": "Variable",
@@ -17885,7 +17936,7 @@
 											"defaultValue": "ChonkyIconName.trash"
 										},
 										{
-											"id": 1752,
+											"id": 1757,
 											"name": "name",
 											"kind": 32,
 											"kindString": "Variable",
@@ -17906,7 +17957,7 @@
 											"defaultValue": "\"Delete files\""
 										},
 										{
-											"id": 1753,
+											"id": 1758,
 											"name": "toolbar",
 											"kind": 32,
 											"kindString": "Variable",
@@ -17927,7 +17978,7 @@
 											"defaultValue": "true"
 										},
 										{
-											"id": 1756,
+											"id": 1761,
 											"name": "tooltip",
 											"kind": 32,
 											"kindString": "Variable",
@@ -17953,13 +18004,13 @@
 											"title": "Variables",
 											"kind": 32,
 											"children": [
-												1754,
+												1759,
+												1762,
+												1760,
+												1763,
 												1757,
-												1755,
 												1758,
-												1752,
-												1753,
-												1756
+												1761
 											]
 										}
 									],
@@ -17981,16 +18032,16 @@
 									"title": "Variables",
 									"kind": 32,
 									"children": [
-										1750,
-										1748,
-										1749
+										1755,
+										1753,
+										1754
 									]
 								},
 								{
 									"title": "Object literals",
 									"kind": 2097152,
 									"children": [
-										1751
+										1756
 									]
 								}
 							],
@@ -18007,7 +18058,7 @@
 							}
 						},
 						{
-							"id": 1736,
+							"id": 1741,
 							"name": "DownloadFiles",
 							"kind": 2097152,
 							"kindString": "Object literal",
@@ -18016,7 +18067,7 @@
 							},
 							"children": [
 								{
-									"id": 1737,
+									"id": 1742,
 									"name": "id",
 									"kind": 32,
 									"kindString": "Variable",
@@ -18037,7 +18088,7 @@
 									"defaultValue": "\"download_files\""
 								},
 								{
-									"id": 1738,
+									"id": 1743,
 									"name": "requiresSelection",
 									"kind": 32,
 									"kindString": "Variable",
@@ -18058,7 +18109,7 @@
 									"defaultValue": "true"
 								},
 								{
-									"id": 1739,
+									"id": 1744,
 									"name": "button",
 									"kind": 2097152,
 									"kindString": "Object literal",
@@ -18067,7 +18118,7 @@
 									},
 									"children": [
 										{
-											"id": 1742,
+											"id": 1747,
 											"name": "contextMenu",
 											"kind": 32,
 											"kindString": "Variable",
@@ -18088,7 +18139,7 @@
 											"defaultValue": "true"
 										},
 										{
-											"id": 1745,
+											"id": 1750,
 											"name": "dropdown",
 											"kind": 32,
 											"kindString": "Variable",
@@ -18109,7 +18160,7 @@
 											"defaultValue": "true"
 										},
 										{
-											"id": 1743,
+											"id": 1748,
 											"name": "group",
 											"kind": 32,
 											"kindString": "Variable",
@@ -18130,7 +18181,7 @@
 											"defaultValue": "\"Actions\""
 										},
 										{
-											"id": 1746,
+											"id": 1751,
 											"name": "icon",
 											"kind": 32,
 											"kindString": "Variable",
@@ -18152,7 +18203,7 @@
 											"defaultValue": "ChonkyIconName.download"
 										},
 										{
-											"id": 1740,
+											"id": 1745,
 											"name": "name",
 											"kind": 32,
 											"kindString": "Variable",
@@ -18173,7 +18224,7 @@
 											"defaultValue": "\"Download files\""
 										},
 										{
-											"id": 1741,
+											"id": 1746,
 											"name": "toolbar",
 											"kind": 32,
 											"kindString": "Variable",
@@ -18194,7 +18245,7 @@
 											"defaultValue": "true"
 										},
 										{
-											"id": 1744,
+											"id": 1749,
 											"name": "tooltip",
 											"kind": 32,
 											"kindString": "Variable",
@@ -18220,13 +18271,13 @@
 											"title": "Variables",
 											"kind": 32,
 											"children": [
-												1742,
+												1747,
+												1750,
+												1748,
+												1751,
 												1745,
-												1743,
 												1746,
-												1740,
-												1741,
-												1744
+												1749
 											]
 										}
 									],
@@ -18248,15 +18299,15 @@
 									"title": "Variables",
 									"kind": 32,
 									"children": [
-										1737,
-										1738
+										1742,
+										1743
 									]
 								},
 								{
 									"title": "Object literals",
 									"kind": 2097152,
 									"children": [
-										1739
+										1744
 									]
 								}
 							],
@@ -18273,7 +18324,7 @@
 							}
 						},
 						{
-							"id": 1728,
+							"id": 1733,
 							"name": "UploadFiles",
 							"kind": 2097152,
 							"kindString": "Object literal",
@@ -18282,7 +18333,7 @@
 							},
 							"children": [
 								{
-									"id": 1729,
+									"id": 1734,
 									"name": "id",
 									"kind": 32,
 									"kindString": "Variable",
@@ -18303,7 +18354,7 @@
 									"defaultValue": "\"upload_files\""
 								},
 								{
-									"id": 1730,
+									"id": 1735,
 									"name": "button",
 									"kind": 2097152,
 									"kindString": "Object literal",
@@ -18312,7 +18363,7 @@
 									},
 									"children": [
 										{
-											"id": 1733,
+											"id": 1738,
 											"name": "contextMenu",
 											"kind": 32,
 											"kindString": "Variable",
@@ -18333,7 +18384,7 @@
 											"defaultValue": "true"
 										},
 										{
-											"id": 1735,
+											"id": 1740,
 											"name": "icon",
 											"kind": 32,
 											"kindString": "Variable",
@@ -18355,7 +18406,7 @@
 											"defaultValue": "ChonkyIconName.upload"
 										},
 										{
-											"id": 1731,
+											"id": 1736,
 											"name": "name",
 											"kind": 32,
 											"kindString": "Variable",
@@ -18376,7 +18427,7 @@
 											"defaultValue": "\"Upload files\""
 										},
 										{
-											"id": 1732,
+											"id": 1737,
 											"name": "toolbar",
 											"kind": 32,
 											"kindString": "Variable",
@@ -18397,7 +18448,7 @@
 											"defaultValue": "true"
 										},
 										{
-											"id": 1734,
+											"id": 1739,
 											"name": "tooltip",
 											"kind": 32,
 											"kindString": "Variable",
@@ -18423,11 +18474,11 @@
 											"title": "Variables",
 											"kind": 32,
 											"children": [
-												1733,
-												1735,
-												1731,
-												1732,
-												1734
+												1738,
+												1740,
+												1736,
+												1737,
+												1739
 											]
 										}
 									],
@@ -18449,14 +18500,14 @@
 									"title": "Variables",
 									"kind": 32,
 									"children": [
-										1729
+										1734
 									]
 								},
 								{
 									"title": "Object literals",
 									"kind": 2097152,
 									"children": [
-										1730
+										1735
 									]
 								}
 							],
@@ -18478,11 +18529,11 @@
 							"title": "Object literals",
 							"kind": 2097152,
 							"children": [
-								1709,
-								1720,
-								1747,
-								1736,
-								1728
+								1714,
+								1725,
+								1752,
+								1741,
+								1733
 							]
 						}
 					]
@@ -18491,7 +18542,7 @@
 			"defaultValue": "validateActionTypes({\n    // Optional actions\n    CopyFiles: {\n        id: 'copy_files',\n        requiresSelection: true,\n        hotkeys: ['ctrl+c'],\n        button: {\n            name: 'Copy selection',\n            toolbar: true,\n            contextMenu: true,\n            group: 'Actions',\n            dropdown: true,\n            icon: ChonkyIconName.copy,\n        },\n    },\n    CreateFolder: {\n        id: 'create_folder',\n        button: {\n            name: 'Create folder',\n            toolbar: true,\n            contextMenu: true,\n            tooltip: 'Create a folder',\n            icon: ChonkyIconName.folderCreate,\n        },\n    },\n    UploadFiles: {\n        id: 'upload_files',\n        button: {\n            name: 'Upload files',\n            toolbar: true,\n            contextMenu: true,\n            tooltip: 'Upload files',\n            icon: ChonkyIconName.upload,\n        },\n    },\n    DownloadFiles: {\n        id: 'download_files',\n        requiresSelection: true,\n        button: {\n            name: 'Download files',\n            toolbar: true,\n            contextMenu: true,\n            group: 'Actions',\n            tooltip: 'Download files',\n            dropdown: true,\n            icon: ChonkyIconName.download,\n        },\n    },\n    DeleteFiles: {\n        id: 'delete_files',\n        requiresSelection: true,\n        hotkeys: ['delete'],\n        button: {\n            name: 'Delete files',\n            toolbar: true,\n            contextMenu: true,\n            group: 'Actions',\n            tooltip: 'Delete files',\n            dropdown: true,\n            icon: ChonkyIconName.trash,\n        },\n    },\n})"
 		},
 		{
-			"id": 1657,
+			"id": 1667,
 			"name": "SmartFileEntry",
 			"kind": 32,
 			"kindString": "Variable",
@@ -18511,7 +18562,7 @@
 				"typeArguments": [
 					{
 						"type": "reference",
-						"id": 1649,
+						"id": 1659,
 						"name": "SmartFileEntryProps"
 					}
 				],
@@ -18520,7 +18571,7 @@
 			"defaultValue": "React.memo(\n    ({ fileId, displayIndex, fileViewMode }) => {\n        const classes = useStyles();\n\n        // Basic properties\n        const file = useParamSelector(selectFileData, fileId);\n        const selected = useParamSelector(selectIsFileSelected, fileId);\n        const dndDisabled = useSelector(selectIsDnDDisabled);\n\n        // Clickable wrapper properties\n        const fileClickHandlers = useFileClickHandlers(file, displayIndex);\n        const [focused, setFocused] = useState(false);\n        const clickableWrapperProps: ClickableWrapperProps = {\n            wrapperTag: 'div',\n            passthroughProps: { className: classes.fileEntryClickableWrapper },\n            ...(FileHelper.isClickable(file) ? fileClickHandlers : undefined),\n            setFocused,\n        };\n\n        // File entry properties\n        const fileEntryProps: Omit<FileEntryProps, 'dndState'> = {\n            file,\n            selected,\n            focused,\n        };\n\n        let EntryComponent: React.FC<FileEntryProps>;\n        if (fileViewMode === FileViewMode.List) EntryComponent = ListEntry;\n        else if (fileViewMode === FileViewMode.Compact) EntryComponent = CompactEntry;\n        else EntryComponent = GridEntry;\n\n        return dndDisabled ? (\n            <ClickableWrapper {...clickableWrapperProps}>\n                <EntryComponent {...fileEntryProps} dndState={disabledDndState} />\n            </ClickableWrapper>\n        ) : (\n            <DnDFileEntry file={file} selected={selected}>\n                {(dndState) => (\n                    <ClickableWrapper {...clickableWrapperProps}>\n                        <EntryComponent {...fileEntryProps} dndState={dndState} />\n                    </ClickableWrapper>\n                )}\n            </DnDFileEntry>\n        );\n    }\n)"
 		},
 		{
-			"id": 1614,
+			"id": 1618,
 			"name": "SmartToolbarButton",
 			"kind": 32,
 			"kindString": "Variable",
@@ -18531,7 +18582,7 @@
 			"sources": [
 				{
 					"fileName": "src/components/external/ToolbarButton.tsx",
-					"line": 113,
+					"line": 114,
 					"character": 31
 				}
 			],
@@ -18540,7 +18591,7 @@
 				"typeArguments": [
 					{
 						"type": "reference",
-						"id": 1611,
+						"id": 1615,
 						"name": "SmartToolbarButtonProps"
 					}
 				],
@@ -18549,7 +18600,7 @@
 			"defaultValue": "React.memo(\n    (props) => {\n        const { fileActionId } = props;\n\n        const action = useParamSelector(selectFileActionData, fileActionId);\n        const triggerAction = useFileActionTrigger(fileActionId);\n        const { icon, active, disabled } = useFileActionProps(fileActionId);\n\n        if (!action) return null;\n        const { button } = action;\n        if (!button) return null;\n\n        return (\n            <ToolbarButton\n                text={button.name}\n                tooltip={button.tooltip}\n                icon={icon}\n                iconOnly={button.iconOnly}\n                active={active}\n                onClick={triggerAction}\n                disabled={disabled}\n            />\n        );\n    }\n)"
 		},
 		{
-			"id": 1587,
+			"id": 1591,
 			"name": "SmartToolbarDropdownButton",
 			"kind": 32,
 			"kindString": "Variable",
@@ -18560,7 +18611,7 @@
 			"sources": [
 				{
 					"fileName": "src/components/external/ToolbarDropdownButton.tsx",
-					"line": 84,
+					"line": 85,
 					"character": 39
 				}
 			],
@@ -18572,7 +18623,7 @@
 						"types": [
 							{
 								"type": "reference",
-								"id": 1581,
+								"id": 1585,
 								"name": "SmartToolbarDropdownButtonProps"
 							},
 							{
@@ -18593,7 +18644,7 @@
 			"defaultValue": "React.forwardRef(\n    (props: SmartToolbarDropdownButtonProps, ref: React.Ref<HTMLLIElement>) => {\n        const { fileActionId, onClickFollowUp } = props;\n\n        const action = useParamSelector(selectFileActionData, fileActionId);\n        const triggerAction = useFileActionTrigger(fileActionId);\n        const { icon, active, disabled } = useFileActionProps(fileActionId);\n\n        // Combine external click handler with internal one\n        const handleClick = useCallback(() => {\n            triggerAction();\n            if (onClickFollowUp) onClickFollowUp();\n        }, [onClickFollowUp, triggerAction]);\n\n        if (!action) return null;\n        const { button } = action;\n        if (!button) return null;\n\n        return (\n            <ToolbarDropdownButton\n                ref={ref}\n                text={button.name}\n                icon={icon}\n                onClick={handleClick}\n                active={active}\n                disabled={disabled}\n            />\n        );\n    }\n)"
 		},
 		{
-			"id": 1383,
+			"id": 1387,
 			"name": "TextPlaceholder",
 			"kind": 32,
 			"kindString": "Variable",
@@ -18613,7 +18664,7 @@
 				"typeArguments": [
 					{
 						"type": "reference",
-						"id": 1376,
+						"id": 1380,
 						"name": "TextPlaceholderProps"
 					}
 				],
@@ -18622,7 +18673,7 @@
 			"defaultValue": "React.memo((props) => {\n    const { minLength, maxLength } = props;\n\n    const placeholderLength = getRandomInt(minLength, maxLength);\n    const whitespace = '&nbsp;'.repeat(placeholderLength);\n\n    const classes = useStyles();\n    return (\n        <span\n            className={classes.textPlaceholder}\n            dangerouslySetInnerHTML={{ __html: whitespace }}\n        />\n    );\n})"
 		},
 		{
-			"id": 1613,
+			"id": 1617,
 			"name": "ToolbarButton",
 			"kind": 32,
 			"kindString": "Variable",
@@ -18642,7 +18693,7 @@
 				"typeArguments": [
 					{
 						"type": "reference",
-						"id": 1598,
+						"id": 1602,
 						"name": "ToolbarButtonProps"
 					}
 				],
@@ -18651,7 +18702,7 @@
 			"defaultValue": "React.memo((props) => {\n    const {\n        className: externalClassName,\n        text,\n        tooltip,\n        active,\n        icon,\n        iconOnly,\n        onClick,\n        disabled,\n        dropdown,\n    } = props;\n    const classes = useStyles();\n    const ChonkyIcon = useContext(ChonkyIconContext);\n\n    const iconComponent =\n        icon || iconOnly ? (\n            <div className={iconOnly ? '' : classes.iconWithText}>\n                <ChonkyIcon\n                    icon={icon ? icon : ChonkyIconName.fallbackIcon}\n                    fixedWidth={true}\n                />\n            </div>\n        ) : null;\n\n    const className = c({\n        [externalClassName ?? '']: true,\n        [classes.baseButton]: true,\n        [classes.iconOnlyButton]: iconOnly,\n        [classes.activeButton]: !!active,\n    });\n    return (\n        <Button\n            className={className}\n            onClick={onClick}\n            title={tooltip ? tooltip : text}\n            disabled={disabled || !onClick}\n        >\n            {iconComponent}\n            {text && !iconOnly && <span>{text}</span>}\n            {dropdown && (\n                <div className={classes.iconDropdown}>\n                    <ChonkyIcon\n                        icon={icon ? icon : ChonkyIconName.dropdown}\n                        fixedWidth={true}\n                    />\n                </div>\n            )}\n        </Button>\n    );\n})"
 		},
 		{
-			"id": 1586,
+			"id": 1590,
 			"name": "ToolbarDropdownButton",
 			"kind": 32,
 			"kindString": "Variable",
@@ -18674,7 +18725,7 @@
 						"types": [
 							{
 								"type": "reference",
-								"id": 1573,
+								"id": 1577,
 								"name": "ToolbarDropdownButtonProps"
 							},
 							{
@@ -18749,7 +18800,7 @@
 			"defaultValue": "[\n    '3g2',\n    '3gp',\n    '3gpp',\n    'asf',\n    'asx',\n    'avi',\n    'dvb',\n    'f4v',\n    'fli',\n    'flv',\n    'fvt',\n    'h261',\n    'h263',\n    'h264',\n    'jpgm',\n    'jpgv',\n    'jpm',\n    'm1v',\n    'm2v',\n    'm4u',\n    'm4v',\n    'mj2',\n    'mjp2',\n    'mk3d',\n    'mks',\n    'mkv',\n    'mng',\n    'mov',\n    'movie',\n    'mp4',\n    'mp4v',\n    'mpe',\n    'mpeg',\n    'mpg',\n    'mpg4',\n    'mxu',\n    'ogv',\n    'pyv',\n    'qt',\n    'smv',\n    'ts',\n    'uvh',\n    'uvm',\n    'uvp',\n    'uvs',\n    'uvu',\n    'uvv',\n    'uvvh',\n    'uvvm',\n    'uvvp',\n    'uvvs',\n    'uvvu',\n    'uvvv',\n    'viv',\n    'vob',\n    'webm',\n    'wm',\n    'wmv',\n    'wmx',\n    'wvx',\n]"
 		},
 		{
-			"id": 1354,
+			"id": 1358,
 			"name": "c",
 			"kind": 32,
 			"kindString": "Variable",
@@ -18760,7 +18811,7 @@
 			"sources": [
 				{
 					"fileName": "src/util/styles.ts",
-					"line": 128,
+					"line": 133,
 					"character": 14
 				}
 			],
@@ -21784,7 +21835,7 @@
 			}
 		},
 		{
-			"id": 1460,
+			"id": 1464,
 			"name": "useCommonEntryStyles",
 			"kind": 32,
 			"kindString": "Variable",
@@ -21797,6 +21848,140 @@
 					"fileName": "src/components/file-list/GridEntryPreview.tsx",
 					"line": 214,
 					"character": 33
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 1465,
+					"name": "__type",
+					"kind": 65536,
+					"kindString": "Type literal",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 1466,
+							"name": "__call",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"parameters": [
+								{
+									"id": 1467,
+									"name": "data",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true,
+										"isOptional": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "typeParameter",
+										"name": "C"
+									}
+								],
+								"name": "Classes"
+							}
+						}
+					]
+				}
+			},
+			"defaultValue": "makeLocalChonkyStyles((theme) => ({\n    selectionIndicator: {\n        display: (state: FileEntryState) => (state.selected ? 'block' : 'none'),\n        background:\n            'repeating-linear-gradient(' +\n            '45deg,' +\n            'rgba(0,153,255,.14),' +\n            'rgba(0,153,255,.14) 10px,' +\n            'rgba(0,153,255,.25) 0,' +\n            'rgba(0,153,255,.25) 20px' +\n            ')',\n        backgroundColor: 'rgba(0,153,255,.14)',\n        position: 'absolute',\n        height: '100%',\n        width: '100%',\n        zIndex: 10,\n    },\n    focusIndicator: {\n        display: (state: FileEntryState) => (state.focused ? 'block' : 'none'),\n        boxShadow: 'inset rgba(0, 0, 0, 1) 0 0 0 2px',\n        position: 'absolute',\n        height: '100%',\n        width: '100%',\n        zIndex: 11,\n    },\n}))"
+		},
+		{
+			"id": 1651,
+			"name": "useFileEntryStyles",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isExported": true,
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "src/components/file-list/GridEntry.tsx",
+					"line": 50,
+					"character": 24
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 1652,
+					"name": "__type",
+					"kind": 65536,
+					"kindString": "Type literal",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 1653,
+							"name": "__call",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"parameters": [
+								{
+									"id": 1654,
+									"name": "data",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true,
+										"isOptional": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "typeParameter",
+										"name": "C"
+									}
+								],
+								"name": "Classes"
+							}
+						}
+					]
+				}
+			},
+			"defaultValue": "makeLocalChonkyStyles((theme) => ({\n    gridFileEntry: {\n        flexDirection: 'column',\n        display: 'flex',\n        height: '100%',\n    },\n    gridFileEntryPreview: {\n        flexGrow: 1,\n    },\n    gridFileEntryNameContainer: {\n        fontSize: theme.gridFileEntry.fontSize,\n        wordBreak: 'break-word',\n        textAlign: 'center',\n        paddingTop: 5,\n    },\n    gridFileEntryName: {\n        backgroundColor: (state: FileEntryState) =>\n            state.selected ? 'rgba(0,153,255, .25)' : 'transparent',\n        textDecoration: (state: FileEntryState) =>\n            state.focused ? 'underline' : 'none',\n        borderRadius: 3,\n        padding: [2, 4],\n    },\n}))"
+		},
+		{
+			"id": 1460,
+			"name": "useFileStyles",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isExported": true,
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "src/components/file-list/GridEntryPreview.tsx",
+					"line": 172,
+					"character": 19
 				}
 			],
 			"type": {
@@ -21848,144 +22033,10 @@
 					]
 				}
 			},
-			"defaultValue": "makeLocalChonkyStyles((theme) => ({\n    selectionIndicator: {\n        display: (state: FileEntryState) => (state.selected ? 'block' : 'none'),\n        background:\n            'repeating-linear-gradient(' +\n            '45deg,' +\n            'rgba(0,153,255,.14),' +\n            'rgba(0,153,255,.14) 10px,' +\n            'rgba(0,153,255,.25) 0,' +\n            'rgba(0,153,255,.25) 20px' +\n            ')',\n        backgroundColor: 'rgba(0,153,255,.14)',\n        position: 'absolute',\n        height: '100%',\n        width: '100%',\n        zIndex: 10,\n    },\n    focusIndicator: {\n        display: (state: FileEntryState) => (state.focused ? 'block' : 'none'),\n        boxShadow: 'inset rgba(0, 0, 0, 1) 0 0 0 2px',\n        position: 'absolute',\n        height: '100%',\n        width: '100%',\n        zIndex: 11,\n    },\n}))"
-		},
-		{
-			"id": 1641,
-			"name": "useFileEntryStyles",
-			"kind": 32,
-			"kindString": "Variable",
-			"flags": {
-				"isExported": true,
-				"isConst": true
-			},
-			"sources": [
-				{
-					"fileName": "src/components/file-list/GridEntry.tsx",
-					"line": 50,
-					"character": 24
-				}
-			],
-			"type": {
-				"type": "reflection",
-				"declaration": {
-					"id": 1642,
-					"name": "__type",
-					"kind": 65536,
-					"kindString": "Type literal",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 1643,
-							"name": "__call",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {
-								"isExported": true
-							},
-							"parameters": [
-								{
-									"id": 1644,
-									"name": "data",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {
-										"isExported": true,
-										"isOptional": true
-									},
-									"type": {
-										"type": "intrinsic",
-										"name": "unknown"
-									}
-								}
-							],
-							"type": {
-								"type": "reference",
-								"typeArguments": [
-									{
-										"type": "typeParameter",
-										"name": "C"
-									}
-								],
-								"name": "Classes"
-							}
-						}
-					]
-				}
-			},
-			"defaultValue": "makeLocalChonkyStyles((theme) => ({\n    gridFileEntry: {\n        flexDirection: 'column',\n        display: 'flex',\n        height: '100%',\n    },\n    gridFileEntryPreview: {\n        flexGrow: 1,\n    },\n    gridFileEntryNameContainer: {\n        fontSize: theme.gridFileEntry.fontSize,\n        wordBreak: 'break-word',\n        textAlign: 'center',\n        paddingTop: 5,\n    },\n    gridFileEntryName: {\n        backgroundColor: (state: FileEntryState) =>\n            state.selected ? 'rgba(0,153,255, .25)' : 'transparent',\n        textDecoration: (state: FileEntryState) =>\n            state.focused ? 'underline' : 'none',\n        borderRadius: 3,\n        padding: [2, 4],\n    },\n}))"
-		},
-		{
-			"id": 1456,
-			"name": "useFileStyles",
-			"kind": 32,
-			"kindString": "Variable",
-			"flags": {
-				"isExported": true,
-				"isConst": true
-			},
-			"sources": [
-				{
-					"fileName": "src/components/file-list/GridEntryPreview.tsx",
-					"line": 172,
-					"character": 19
-				}
-			],
-			"type": {
-				"type": "reflection",
-				"declaration": {
-					"id": 1457,
-					"name": "__type",
-					"kind": 65536,
-					"kindString": "Type literal",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 1458,
-							"name": "__call",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {
-								"isExported": true
-							},
-							"parameters": [
-								{
-									"id": 1459,
-									"name": "data",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {
-										"isExported": true,
-										"isOptional": true
-									},
-									"type": {
-										"type": "intrinsic",
-										"name": "unknown"
-									}
-								}
-							],
-							"type": {
-								"type": "reference",
-								"typeArguments": [
-									{
-										"type": "typeParameter",
-										"name": "C"
-									}
-								],
-								"name": "Classes"
-							}
-						}
-					]
-				}
-			},
 			"defaultValue": "makeLocalChonkyStyles((theme) => ({\n    previewFile: {\n        boxShadow: (state: FileEntryState) => {\n            const shadows: string[] = [];\n            if (state.selected) shadows.push('inset rgba(0,153,255, .65) 0 0 0 3px');\n            if (state.focused) shadows.push('inset rgba(0, 0, 0, 1) 0 0 0 3px');\n            shadows.push('inset rgba(255, 255, 255, 0.5) 0 0 0 999px');\n            return shadows.join(', ');\n        },\n        backgroundColor: (state: FileEntryState) => state.color,\n        borderRadius: theme.gridFileEntry.borderRadius,\n        position: 'relative',\n        overflow: 'hidden',\n    },\n    dndIndicator: {\n        zIndex: 14,\n    },\n    fileIcon: {\n        transform: 'translateX(-50%) translateY(-50%)',\n        fontSize: theme.gridFileEntry.iconSize,\n        opacity: (state: FileEntryState) =>\n            state.thumbnailUrl && !state.focused ? 0 : 1,\n        color: (state: FileEntryState) =>\n            state.focused\n                ? theme.gridFileEntry.iconColorFocused\n                : theme.gridFileEntry.iconColor,\n        position: 'absolute',\n        left: '50%',\n        zIndex: 12,\n        top: '50%',\n    },\n    thumbnail: {\n        borderRadius: theme.gridFileEntry.borderRadius,\n        position: 'absolute',\n        zIndex: 6,\n        bottom: 5,\n        right: 5,\n        left: 5,\n        top: 5,\n    },\n}))"
 		},
 		{
-			"id": 1451,
+			"id": 1455,
 			"name": "useFolderStyles",
 			"kind": 32,
 			"kindString": "Variable",
@@ -22003,7 +22054,7 @@
 			"type": {
 				"type": "reflection",
 				"declaration": {
-					"id": 1452,
+					"id": 1456,
 					"name": "__type",
 					"kind": 65536,
 					"kindString": "Type literal",
@@ -22012,7 +22063,7 @@
 					},
 					"signatures": [
 						{
-							"id": 1453,
+							"id": 1457,
 							"name": "__call",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -22021,7 +22072,7 @@
 							},
 							"parameters": [
 								{
-									"id": 1454,
+									"id": 1458,
 									"name": "data",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -22052,7 +22103,7 @@
 			"defaultValue": "makeLocalChonkyStyles((theme) => ({\n    previewFile: {\n        borderRadius: theme.gridFileEntry.borderRadius,\n        position: 'relative',\n        overflow: 'hidden',\n    },\n    folderBackSideTop: {\n        backgroundColor: (state: FileEntryState) => state.color,\n        boxShadow: (state: FileEntryState) => {\n            let color = 'rgba(255, 255, 255, 0.1)';\n            if (state.focused) color = 'rgba(0, 0, 0, 0.3)';\n            else if (state.selected) color = 'rgba(0, 153, 255, .4)';\n            return `inset ${color} 0 0 0 999px`;\n        },\n        borderTopLeftRadius: theme.gridFileEntry.borderRadius,\n        borderTopRightRadius: 10,\n        position: 'absolute',\n        right: '60%',\n        height: 13,\n        top: -10,\n        left: 0,\n        '&:after': {\n            borderColor: '#fff #fff transparent transparent',\n            borderWidth: [0, 15, 10, 0],\n            borderStyle: 'solid',\n            position: 'absolute',\n            display: 'block',\n            content: '\"\"',\n            right: 0,\n            top: 0,\n        },\n    },\n    folderBackSideMid: {\n        backgroundColor: (state: FileEntryState) => state.color,\n        boxShadow: (state: FileEntryState) => {\n            let color = 'rgba(255, 255, 255, 0.1)';\n            if (state.focused) color = 'rgba(0, 0, 0, 0.3)';\n            else if (state.selected) color = 'rgba(0, 153, 255, .4)';\n            return `inset ${color} 0 0 0 999px`;\n        },\n        borderTopRightRadius: theme.gridFileEntry.borderRadius,\n        position: 'absolute',\n        bottom: 0,\n        right: 0,\n        left: 0,\n        top: 10,\n    },\n    folderFrontSide: {\n        boxShadow: (state: FileEntryState) => {\n            const shadows: string[] = [];\n            if (state.focused) shadows.push('inset rgba(0, 0, 0, 1) 0 0 0 3px');\n            if (state.selected) shadows.push('inset rgba(0,153,255, .65) 0 0 0 3px');\n            shadows.push('inset rgba(255, 255, 255, 0.4) 0 0 0 999px');\n            return shadows.join(', ');\n        },\n        backgroundColor: (state: FileEntryState) => state.color,\n        borderRadius: theme.gridFileEntry.borderRadius,\n        position: 'absolute',\n        overflow: 'hidden',\n        bottom: 0,\n        right: 0,\n        left: 0,\n        top: 10,\n    },\n    fileIcon: {\n        fontSize: important(theme.gridFileEntry.childrenCountSize),\n    },\n}))"
 		},
 		{
-			"id": 1691,
+			"id": 1695,
 			"name": "useLocalStyles",
 			"kind": 32,
 			"kindString": "Variable",
@@ -22070,7 +22121,7 @@
 			"type": {
 				"type": "reflection",
 				"declaration": {
-					"id": 1692,
+					"id": 1696,
 					"name": "__type",
 					"kind": 65536,
 					"kindString": "Type literal",
@@ -22079,7 +22130,7 @@
 					},
 					"signatures": [
 						{
-							"id": 1693,
+							"id": 1697,
 							"name": "__call",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -22088,7 +22139,7 @@
 							},
 							"parameters": [
 								{
-									"id": 1694,
+									"id": 1698,
 									"name": "data",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -22119,7 +22170,7 @@
 			"defaultValue": "makeLocalChonkyStyles((theme) => ({\n    fileListWrapper: {\n        minHeight: ChonkyActions.EnableGridView.fileViewConfig.entryHeight + 2,\n    },\n}))"
 		},
 		{
-			"id": 1384,
+			"id": 1388,
 			"name": "useStyles",
 			"kind": 32,
 			"kindString": "Variable",
@@ -22199,6 +22250,11 @@
 					"character": 15
 				},
 				{
+					"fileName": "src/components/file-list/FileListEmpty.tsx",
+					"line": 37,
+					"character": 15
+				},
+				{
 					"fileName": "src/components/file-list/FileEntryName.tsx",
 					"line": 41,
 					"character": 15
@@ -22216,11 +22272,6 @@
 				{
 					"fileName": "src/components/file-list/FileEntry.tsx",
 					"line": 81,
-					"character": 15
-				},
-				{
-					"fileName": "src/components/file-list/FileListEmpty.tsx",
-					"line": 37,
 					"character": 15
 				},
 				{
@@ -22273,7 +22324,7 @@
 			]
 		},
 		{
-			"id": 1555,
+			"id": 1559,
 			"name": "ChonkyPresentationLayer",
 			"kind": 64,
 			"kindString": "Function",
@@ -22283,7 +22334,7 @@
 			},
 			"signatures": [
 				{
-					"id": 1556,
+					"id": 1560,
 					"name": "ChonkyPresentationLayer",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -22292,7 +22343,7 @@
 					},
 					"parameters": [
 						{
-							"id": 1557,
+							"id": 1561,
 							"name": "__namedParameters",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -22303,7 +22354,7 @@
 							"type": {
 								"type": "reflection",
 								"declaration": {
-									"id": 1558,
+									"id": 1562,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
@@ -22312,7 +22363,7 @@
 									},
 									"children": [
 										{
-											"id": 1559,
+											"id": 1563,
 											"name": "children",
 											"kind": 32,
 											"kindString": "Variable",
@@ -22337,7 +22388,7 @@
 											"title": "Variables",
 											"kind": 32,
 											"children": [
-												1559
+												1563
 											]
 										}
 									],
@@ -22367,7 +22418,7 @@
 			]
 		},
 		{
-			"id": 1423,
+			"id": 1427,
 			"name": "ClickableWrapper",
 			"kind": 64,
 			"kindString": "Function",
@@ -22377,7 +22428,7 @@
 			},
 			"signatures": [
 				{
-					"id": 1424,
+					"id": 1428,
 					"name": "ClickableWrapper",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -22386,7 +22437,7 @@
 					},
 					"parameters": [
 						{
-							"id": 1425,
+							"id": 1429,
 							"name": "props",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -22398,7 +22449,7 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"id": 1405,
+										"id": 1409,
 										"name": "ClickableWrapperProps"
 									}
 								],
@@ -22421,7 +22472,7 @@
 			]
 		},
 		{
-			"id": 1549,
+			"id": 1553,
 			"name": "DnDFileListDragLayer",
 			"kind": 64,
 			"kindString": "Function",
@@ -22431,7 +22482,7 @@
 			},
 			"signatures": [
 				{
-					"id": 1550,
+					"id": 1554,
 					"name": "DnDFileListDragLayer",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -22462,7 +22513,7 @@
 			]
 		},
 		{
-			"id": 1661,
+			"id": 1636,
 			"name": "FileListEmpty",
 			"kind": 64,
 			"kindString": "Function",
@@ -22472,7 +22523,7 @@
 			},
 			"signatures": [
 				{
-					"id": 1662,
+					"id": 1637,
 					"name": "FileListEmpty",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -22481,7 +22532,7 @@
 					},
 					"parameters": [
 						{
-							"id": 1663,
+							"id": 1638,
 							"name": "props",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -22493,7 +22544,7 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"id": 1658,
+										"id": 1633,
 										"name": "FileListEmptyProps"
 									}
 								],
@@ -22567,7 +22618,7 @@
 			]
 		},
 		{
-			"id": 1618,
+			"id": 1622,
 			"name": "ToolbarDropdown",
 			"kind": 64,
 			"kindString": "Function",
@@ -22577,7 +22628,7 @@
 			},
 			"signatures": [
 				{
-					"id": 1619,
+					"id": 1623,
 					"name": "ToolbarDropdown",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -22586,7 +22637,7 @@
 					},
 					"parameters": [
 						{
-							"id": 1620,
+							"id": 1624,
 							"name": "props",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -22621,7 +22672,7 @@
 			]
 		},
 		{
-			"id": 1622,
+			"id": 1626,
 			"name": "ToolbarInfo",
 			"kind": 64,
 			"kindString": "Function",
@@ -22631,7 +22682,7 @@
 			},
 			"signatures": [
 				{
-					"id": 1623,
+					"id": 1627,
 					"name": "ToolbarInfo",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -22653,7 +22704,7 @@
 			]
 		},
 		{
-			"id": 1625,
+			"id": 1629,
 			"name": "ToolbarSearch",
 			"kind": 64,
 			"kindString": "Function",
@@ -22663,7 +22714,7 @@
 			},
 			"signatures": [
 				{
-					"id": 1626,
+					"id": 1630,
 					"name": "ToolbarSearch",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -22842,7 +22893,7 @@
 			]
 		},
 		{
-			"id": 1360,
+			"id": 1364,
 			"name": "findClosestChonkyFileId",
 			"kind": 64,
 			"kindString": "Function",
@@ -22852,7 +22903,7 @@
 			},
 			"signatures": [
 				{
-					"id": 1361,
+					"id": 1365,
 					"name": "findClosestChonkyFileId",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -22861,7 +22912,7 @@
 					},
 					"parameters": [
 						{
-							"id": 1362,
+							"id": 1366,
 							"name": "element",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -23113,7 +23164,7 @@
 			]
 		},
 		{
-			"id": 1675,
+			"id": 1679,
 			"name": "getGridConfig",
 			"kind": 64,
 			"kindString": "Function",
@@ -23123,7 +23174,7 @@
 			},
 			"signatures": [
 				{
-					"id": 1676,
+					"id": 1680,
 					"name": "getGridConfig",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -23132,7 +23183,7 @@
 					},
 					"parameters": [
 						{
-							"id": 1677,
+							"id": 1681,
 							"name": "width",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -23145,7 +23196,7 @@
 							}
 						},
 						{
-							"id": 1678,
+							"id": 1682,
 							"name": "fileCount",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -23158,7 +23209,7 @@
 							}
 						},
 						{
-							"id": 1679,
+							"id": 1683,
 							"name": "viewConfig",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -23172,7 +23223,7 @@
 							}
 						},
 						{
-							"id": 1680,
+							"id": 1684,
 							"name": "isMobileBreakpoint",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -23187,7 +23238,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 1667,
+						"id": 1671,
 						"name": "GridConfig"
 					}
 				}
@@ -23263,7 +23314,7 @@
 			]
 		},
 		{
-			"id": 1530,
+			"id": 1534,
 			"name": "getItemStyles",
 			"kind": 64,
 			"kindString": "Function",
@@ -23273,7 +23324,7 @@
 			},
 			"signatures": [
 				{
-					"id": 1531,
+					"id": 1535,
 					"name": "getItemStyles",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -23282,94 +23333,8 @@
 					},
 					"parameters": [
 						{
-							"id": 1532,
-							"name": "initialCursorOffset",
-							"kind": 32768,
-							"kindString": "Parameter",
-							"flags": {
-								"isExported": true
-							},
-							"type": {
-								"type": "reference",
-								"typeArguments": [
-									{
-										"type": "reflection",
-										"declaration": {
-											"id": 1533,
-											"name": "__type",
-											"kind": 65536,
-											"kindString": "Type literal",
-											"flags": {
-												"isExported": true
-											},
-											"children": [
-												{
-													"id": 1534,
-													"name": "x",
-													"kind": 32,
-													"kindString": "Variable",
-													"flags": {
-														"isExported": true
-													},
-													"sources": [
-														{
-															"fileName": "src/components/file-list/DnDFileListDragLayer.tsx",
-															"line": 28,
-															"character": 37
-														}
-													],
-													"type": {
-														"type": "intrinsic",
-														"name": "number"
-													}
-												},
-												{
-													"id": 1535,
-													"name": "y",
-													"kind": 32,
-													"kindString": "Variable",
-													"flags": {
-														"isExported": true
-													},
-													"sources": [
-														{
-															"fileName": "src/components/file-list/DnDFileListDragLayer.tsx",
-															"line": 28,
-															"character": 48
-														}
-													],
-													"type": {
-														"type": "intrinsic",
-														"name": "number"
-													}
-												}
-											],
-											"groups": [
-												{
-													"title": "Variables",
-													"kind": 32,
-													"children": [
-														1534,
-														1535
-													]
-												}
-											],
-											"sources": [
-												{
-													"fileName": "src/components/file-list/DnDFileListDragLayer.tsx",
-													"line": 28,
-													"character": 34
-												}
-											]
-										}
-									}
-								],
-								"name": "Nullable"
-							}
-						},
-						{
 							"id": 1536,
-							"name": "initialFileOffset",
+							"name": "initialCursorOffset",
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {
@@ -23400,8 +23365,8 @@
 													"sources": [
 														{
 															"fileName": "src/components/file-list/DnDFileListDragLayer.tsx",
-															"line": 29,
-															"character": 35
+															"line": 28,
+															"character": 37
 														}
 													],
 													"type": {
@@ -23420,8 +23385,8 @@
 													"sources": [
 														{
 															"fileName": "src/components/file-list/DnDFileListDragLayer.tsx",
-															"line": 29,
-															"character": 46
+															"line": 28,
+															"character": 48
 														}
 													],
 													"type": {
@@ -23443,8 +23408,8 @@
 											"sources": [
 												{
 													"fileName": "src/components/file-list/DnDFileListDragLayer.tsx",
-													"line": 29,
-													"character": 32
+													"line": 28,
+													"character": 34
 												}
 											]
 										}
@@ -23455,7 +23420,7 @@
 						},
 						{
 							"id": 1540,
-							"name": "currentFileOffset",
+							"name": "initialFileOffset",
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {
@@ -23486,7 +23451,7 @@
 													"sources": [
 														{
 															"fileName": "src/components/file-list/DnDFileListDragLayer.tsx",
-															"line": 30,
+															"line": 29,
 															"character": 35
 														}
 													],
@@ -23497,6 +23462,92 @@
 												},
 												{
 													"id": 1543,
+													"name": "y",
+													"kind": 32,
+													"kindString": "Variable",
+													"flags": {
+														"isExported": true
+													},
+													"sources": [
+														{
+															"fileName": "src/components/file-list/DnDFileListDragLayer.tsx",
+															"line": 29,
+															"character": 46
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Variables",
+													"kind": 32,
+													"children": [
+														1542,
+														1543
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "src/components/file-list/DnDFileListDragLayer.tsx",
+													"line": 29,
+													"character": 32
+												}
+											]
+										}
+									}
+								],
+								"name": "Nullable"
+							}
+						},
+						{
+							"id": 1544,
+							"name": "currentFileOffset",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "reflection",
+										"declaration": {
+											"id": 1545,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {
+												"isExported": true
+											},
+											"children": [
+												{
+													"id": 1546,
+													"name": "x",
+													"kind": 32,
+													"kindString": "Variable",
+													"flags": {
+														"isExported": true
+													},
+													"sources": [
+														{
+															"fileName": "src/components/file-list/DnDFileListDragLayer.tsx",
+															"line": 30,
+															"character": 35
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												},
+												{
+													"id": 1547,
 													"name": "y",
 													"kind": 32,
 													"kindString": "Variable",
@@ -23521,8 +23572,8 @@
 													"title": "Variables",
 													"kind": 32,
 													"children": [
-														1542,
-														1543
+														1546,
+														1547
 													]
 												}
 											],
@@ -23546,7 +23597,7 @@
 							{
 								"type": "reflection",
 								"declaration": {
-									"id": 1544,
+									"id": 1548,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
@@ -23555,7 +23606,7 @@
 									},
 									"children": [
 										{
-											"id": 1545,
+											"id": 1549,
 											"name": "display",
 											"kind": 32,
 											"kindString": "Variable",
@@ -23581,7 +23632,7 @@
 											"title": "Variables",
 											"kind": 32,
 											"children": [
-												1545
+												1549
 											]
 										}
 									]
@@ -23590,7 +23641,7 @@
 							{
 								"type": "reflection",
 								"declaration": {
-									"id": 1546,
+									"id": 1550,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
@@ -23599,7 +23650,7 @@
 									},
 									"children": [
 										{
-											"id": 1548,
+											"id": 1552,
 											"name": "WebkitTransform",
 											"kind": 32,
 											"kindString": "Variable",
@@ -23620,7 +23671,7 @@
 											"defaultValue": "transform"
 										},
 										{
-											"id": 1547,
+											"id": 1551,
 											"name": "transform",
 											"kind": 32,
 											"kindString": "Variable",
@@ -23645,8 +23696,8 @@
 											"title": "Variables",
 											"kind": 32,
 											"children": [
-												1548,
-												1547
+												1552,
+												1551
 											]
 										}
 									]
@@ -23665,7 +23716,7 @@
 			]
 		},
 		{
-			"id": 1379,
+			"id": 1383,
 			"name": "getRandomInt",
 			"kind": 64,
 			"kindString": "Function",
@@ -23675,7 +23726,7 @@
 			},
 			"signatures": [
 				{
-					"id": 1380,
+					"id": 1384,
 					"name": "getRandomInt",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -23684,7 +23735,7 @@
 					},
 					"parameters": [
 						{
-							"id": 1381,
+							"id": 1385,
 							"name": "min",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -23697,7 +23748,7 @@
 							}
 						},
 						{
-							"id": 1382,
+							"id": 1386,
 							"name": "max",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -23989,7 +24040,7 @@
 			]
 		},
 		{
-			"id": 1350,
+			"id": 1354,
 			"name": "important",
 			"kind": 64,
 			"kindString": "Function",
@@ -23999,7 +24050,7 @@
 			},
 			"signatures": [
 				{
-					"id": 1351,
+					"id": 1355,
 					"name": "important",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -24008,7 +24059,7 @@
 					},
 					"typeParameter": [
 						{
-							"id": 1352,
+							"id": 1356,
 							"name": "T",
 							"kind": 131072,
 							"kindString": "Type parameter",
@@ -24019,7 +24070,7 @@
 					],
 					"parameters": [
 						{
-							"id": 1353,
+							"id": 1357,
 							"name": "value",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -24053,13 +24104,13 @@
 			"sources": [
 				{
 					"fileName": "src/util/styles.ts",
-					"line": 126,
+					"line": 131,
 					"character": 22
 				}
 			]
 		},
 		{
-			"id": 1673,
+			"id": 1677,
 			"name": "isMobileDevice",
 			"kind": 64,
 			"kindString": "Function",
@@ -24069,7 +24120,7 @@
 			},
 			"signatures": [
 				{
-					"id": 1674,
+					"id": 1678,
 					"name": "isMobileDevice",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -24175,7 +24226,7 @@
 			]
 		},
 		{
-			"id": 1343,
+			"id": 1347,
 			"name": "makeGlobalChonkyStyles",
 			"kind": 64,
 			"kindString": "Function",
@@ -24185,7 +24236,7 @@
 			},
 			"signatures": [
 				{
-					"id": 1344,
+					"id": 1348,
 					"name": "makeGlobalChonkyStyles",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -24194,7 +24245,7 @@
 					},
 					"typeParameter": [
 						{
-							"id": 1345,
+							"id": 1349,
 							"name": "C",
 							"kind": 131072,
 							"kindString": "Type parameter",
@@ -24209,7 +24260,7 @@
 					],
 					"parameters": [
 						{
-							"id": 1346,
+							"id": 1350,
 							"name": "makeStyles",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -24219,7 +24270,7 @@
 							"type": {
 								"type": "reflection",
 								"declaration": {
-									"id": 1347,
+									"id": 1351,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
@@ -24228,7 +24279,7 @@
 									},
 									"signatures": [
 										{
-											"id": 1348,
+											"id": 1352,
 											"name": "__call",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -24237,7 +24288,7 @@
 											},
 											"parameters": [
 												{
-													"id": 1349,
+													"id": 1353,
 													"name": "theme",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -24274,7 +24325,7 @@
 									"sources": [
 										{
 											"fileName": "src/util/styles.ts",
-											"line": 99,
+											"line": 104,
 											"character": 15
 										}
 									]
@@ -24291,13 +24342,13 @@
 			"sources": [
 				{
 					"fileName": "src/util/styles.ts",
-					"line": 98,
+					"line": 103,
 					"character": 35
 				}
 			]
 		},
 		{
-			"id": 1333,
+			"id": 1337,
 			"name": "makeLocalChonkyStyles",
 			"kind": 64,
 			"kindString": "Function",
@@ -24307,7 +24358,7 @@
 			},
 			"signatures": [
 				{
-					"id": 1334,
+					"id": 1338,
 					"name": "makeLocalChonkyStyles",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -24316,7 +24367,7 @@
 					},
 					"typeParameter": [
 						{
-							"id": 1335,
+							"id": 1339,
 							"name": "C",
 							"kind": 131072,
 							"kindString": "Type parameter",
@@ -24331,7 +24382,7 @@
 					],
 					"parameters": [
 						{
-							"id": 1336,
+							"id": 1340,
 							"name": "styles",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -24341,7 +24392,7 @@
 							"type": {
 								"type": "reflection",
 								"declaration": {
-									"id": 1337,
+									"id": 1341,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
@@ -24350,7 +24401,7 @@
 									},
 									"signatures": [
 										{
-											"id": 1338,
+											"id": 1342,
 											"name": "__call",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -24359,7 +24410,7 @@
 											},
 											"parameters": [
 												{
-													"id": 1339,
+													"id": 1343,
 													"name": "theme",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -24396,7 +24447,7 @@
 									"sources": [
 										{
 											"fileName": "src/util/styles.ts",
-											"line": 95,
+											"line": 100,
 											"character": 11
 										}
 									]
@@ -24407,7 +24458,7 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 1340,
+							"id": 1344,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
@@ -24416,7 +24467,7 @@
 							},
 							"signatures": [
 								{
-									"id": 1341,
+									"id": 1345,
 									"name": "__call",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -24425,7 +24476,7 @@
 									},
 									"parameters": [
 										{
-											"id": 1342,
+											"id": 1346,
 											"name": "data",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -24466,7 +24517,7 @@
 			"sources": [
 				{
 					"fileName": "src/util/styles.ts",
-					"line": 94,
+					"line": 99,
 					"character": 34
 				}
 			]
@@ -27785,7 +27836,7 @@
 			]
 		},
 		{
-			"id": 1388,
+			"id": 1392,
 			"name": "useClickHandler",
 			"kind": 64,
 			"kindString": "Function",
@@ -27795,7 +27846,7 @@
 			},
 			"signatures": [
 				{
-					"id": 1389,
+					"id": 1393,
 					"name": "useClickHandler",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -27804,7 +27855,7 @@
 					},
 					"parameters": [
 						{
-							"id": 1390,
+							"id": 1394,
 							"name": "onSingleClick",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -27816,7 +27867,7 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"id": 1415,
+										"id": 1419,
 										"name": "MouseClickEventHandler"
 									}
 								],
@@ -27824,7 +27875,7 @@
 							}
 						},
 						{
-							"id": 1391,
+							"id": 1395,
 							"name": "onDoubleClick",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -27836,7 +27887,7 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"id": 1415,
+										"id": 1419,
 										"name": "MouseClickEventHandler"
 									}
 								],
@@ -27859,7 +27910,7 @@
 			]
 		},
 		{
-			"id": 1365,
+			"id": 1369,
 			"name": "useContextMenuDismisser",
 			"kind": 64,
 			"kindString": "Function",
@@ -27869,7 +27920,7 @@
 			},
 			"signatures": [
 				{
-					"id": 1366,
+					"id": 1370,
 					"name": "useContextMenuDismisser",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -27891,7 +27942,7 @@
 			]
 		},
 		{
-			"id": 1363,
+			"id": 1367,
 			"name": "useContextMenuTrigger",
 			"kind": 64,
 			"kindString": "Function",
@@ -27901,7 +27952,7 @@
 			},
 			"signatures": [
 				{
-					"id": 1364,
+					"id": 1368,
 					"name": "useContextMenuTrigger",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -28178,7 +28229,7 @@
 			]
 		},
 		{
-			"id": 1472,
+			"id": 1476,
 			"name": "useDndIcon",
 			"kind": 64,
 			"kindString": "Function",
@@ -28188,7 +28239,7 @@
 			},
 			"signatures": [
 				{
-					"id": 1473,
+					"id": 1477,
 					"name": "useDndIcon",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -28197,7 +28248,7 @@
 					},
 					"parameters": [
 						{
-							"id": 1474,
+							"id": 1478,
 							"name": "dndState",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -28206,7 +28257,7 @@
 							},
 							"type": {
 								"type": "reference",
-								"id": 1367,
+								"id": 1371,
 								"name": "DndEntryState"
 							}
 						}
@@ -28214,7 +28265,7 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 1475,
+							"id": 1479,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
@@ -28223,7 +28274,7 @@
 							},
 							"children": [
 								{
-									"id": 1477,
+									"id": 1481,
 									"name": "dndIconColor",
 									"kind": 32,
 									"kindString": "Variable",
@@ -28243,7 +28294,7 @@
 									}
 								},
 								{
-									"id": 1476,
+									"id": 1480,
 									"name": "dndIconName",
 									"kind": 32,
 									"kindString": "Variable",
@@ -28288,8 +28339,8 @@
 									"title": "Variables",
 									"kind": 32,
 									"children": [
-										1477,
-										1476
+										1481,
+										1480
 									]
 								}
 							]
@@ -28306,7 +28357,7 @@
 			]
 		},
 		{
-			"id": 1566,
+			"id": 1570,
 			"name": "useFileActionProps",
 			"kind": 64,
 			"kindString": "Function",
@@ -28316,7 +28367,7 @@
 			},
 			"signatures": [
 				{
-					"id": 1567,
+					"id": 1571,
 					"name": "useFileActionProps",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -28325,7 +28376,7 @@
 					},
 					"parameters": [
 						{
-							"id": 1568,
+							"id": 1572,
 							"name": "fileActionId",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -28341,7 +28392,7 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 1569,
+							"id": 1573,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
@@ -28350,7 +28401,7 @@
 							},
 							"children": [
 								{
-									"id": 1571,
+									"id": 1575,
 									"name": "active",
 									"kind": 32,
 									"kindString": "Variable",
@@ -28370,7 +28421,7 @@
 									}
 								},
 								{
-									"id": 1572,
+									"id": 1576,
 									"name": "disabled",
 									"kind": 32,
 									"kindString": "Variable",
@@ -28390,7 +28441,7 @@
 									}
 								},
 								{
-									"id": 1570,
+									"id": 1574,
 									"name": "icon",
 									"kind": 32,
 									"kindString": "Variable",
@@ -28431,9 +28482,9 @@
 									"title": "Variables",
 									"kind": 32,
 									"children": [
-										1571,
-										1572,
-										1570
+										1575,
+										1576,
+										1574
 									]
 								}
 							],
@@ -28457,7 +28508,7 @@
 			]
 		},
 		{
-			"id": 1563,
+			"id": 1567,
 			"name": "useFileActionTrigger",
 			"kind": 64,
 			"kindString": "Function",
@@ -28467,7 +28518,7 @@
 			},
 			"signatures": [
 				{
-					"id": 1564,
+					"id": 1568,
 					"name": "useFileActionTrigger",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -28476,7 +28527,7 @@
 					},
 					"parameters": [
 						{
-							"id": 1565,
+							"id": 1569,
 							"name": "fileActionId",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -28504,7 +28555,7 @@
 			]
 		},
 		{
-			"id": 1355,
+			"id": 1359,
 			"name": "useFileBrowserHandle",
 			"kind": 64,
 			"kindString": "Function",
@@ -28514,7 +28565,7 @@
 			},
 			"signatures": [
 				{
-					"id": 1356,
+					"id": 1360,
 					"name": "useFileBrowserHandle",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -28523,7 +28574,7 @@
 					},
 					"parameters": [
 						{
-							"id": 1357,
+							"id": 1361,
 							"name": "ref",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -28558,7 +28609,7 @@
 			]
 		},
 		{
-			"id": 1498,
+			"id": 1502,
 			"name": "useFileClickHandlers",
 			"kind": 64,
 			"kindString": "Function",
@@ -28568,7 +28619,7 @@
 			},
 			"signatures": [
 				{
-					"id": 1499,
+					"id": 1503,
 					"name": "useFileClickHandlers",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -28577,7 +28628,7 @@
 					},
 					"parameters": [
 						{
-							"id": 1500,
+							"id": 1504,
 							"name": "file",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -28597,7 +28648,7 @@
 							}
 						},
 						{
-							"id": 1501,
+							"id": 1505,
 							"name": "displayIndex",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -28613,7 +28664,7 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 1502,
+							"id": 1506,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
@@ -28622,7 +28673,7 @@
 							},
 							"children": [
 								{
-									"id": 1504,
+									"id": 1508,
 									"name": "onDoubleClick",
 									"kind": 32,
 									"kindString": "Variable",
@@ -28642,7 +28693,7 @@
 									}
 								},
 								{
-									"id": 1505,
+									"id": 1509,
 									"name": "onKeyboardClick",
 									"kind": 32,
 									"kindString": "Variable",
@@ -28662,7 +28713,7 @@
 									}
 								},
 								{
-									"id": 1503,
+									"id": 1507,
 									"name": "onSingleClick",
 									"kind": 32,
 									"kindString": "Variable",
@@ -28687,9 +28738,9 @@
 									"title": "Variables",
 									"kind": 32,
 									"children": [
-										1504,
-										1505,
-										1503
+										1508,
+										1509,
+										1507
 									]
 								}
 							]
@@ -28706,7 +28757,7 @@
 			]
 		},
 		{
-			"id": 1490,
+			"id": 1494,
 			"name": "useFileEntryDnD",
 			"kind": 64,
 			"kindString": "Function",
@@ -28716,7 +28767,7 @@
 			},
 			"signatures": [
 				{
-					"id": 1491,
+					"id": 1495,
 					"name": "useFileEntryDnD",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -28725,7 +28776,7 @@
 					},
 					"parameters": [
 						{
-							"id": 1492,
+							"id": 1496,
 							"name": "file",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -28745,7 +28796,7 @@
 							}
 						},
 						{
-							"id": 1493,
+							"id": 1497,
 							"name": "selected",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -28761,7 +28812,7 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 1494,
+							"id": 1498,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
@@ -28770,7 +28821,7 @@
 							},
 							"children": [
 								{
-									"id": 1497,
+									"id": 1501,
 									"name": "dndState",
 									"kind": 32,
 									"kindString": "Variable",
@@ -28786,12 +28837,12 @@
 									],
 									"type": {
 										"type": "reference",
-										"id": 1367,
+										"id": 1371,
 										"name": "DndEntryState"
 									}
 								},
 								{
-									"id": 1496,
+									"id": 1500,
 									"name": "drag",
 									"kind": 32,
 									"kindString": "Variable",
@@ -28817,7 +28868,7 @@
 									}
 								},
 								{
-									"id": 1495,
+									"id": 1499,
 									"name": "drop",
 									"kind": 32,
 									"kindString": "Variable",
@@ -28848,9 +28899,9 @@
 									"title": "Variables",
 									"kind": 32,
 									"children": [
-										1497,
-										1496,
-										1495
+										1501,
+										1500,
+										1499
 									]
 								}
 							]
@@ -28867,7 +28918,7 @@
 			]
 		},
 		{
-			"id": 1464,
+			"id": 1468,
 			"name": "useFileEntryHtmlProps",
 			"kind": 64,
 			"kindString": "Function",
@@ -28877,7 +28928,7 @@
 			},
 			"signatures": [
 				{
-					"id": 1465,
+					"id": 1469,
 					"name": "useFileEntryHtmlProps",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -28886,7 +28937,7 @@
 					},
 					"parameters": [
 						{
-							"id": 1466,
+							"id": 1470,
 							"name": "file",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -28927,7 +28978,7 @@
 			]
 		},
 		{
-			"id": 1467,
+			"id": 1471,
 			"name": "useFileEntryState",
 			"kind": 64,
 			"kindString": "Function",
@@ -28937,7 +28988,7 @@
 			},
 			"signatures": [
 				{
-					"id": 1468,
+					"id": 1472,
 					"name": "useFileEntryState",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -28946,7 +28997,7 @@
 					},
 					"parameters": [
 						{
-							"id": 1469,
+							"id": 1473,
 							"name": "file",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -28966,7 +29017,7 @@
 							}
 						},
 						{
-							"id": 1470,
+							"id": 1474,
 							"name": "selected",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -28979,7 +29030,7 @@
 							}
 						},
 						{
-							"id": 1471,
+							"id": 1475,
 							"name": "focused",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -28994,7 +29045,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 1441,
+						"id": 1445,
 						"name": "FileEntryState"
 					}
 				}
@@ -29008,7 +29059,7 @@
 			]
 		},
 		{
-			"id": 1481,
+			"id": 1485,
 			"name": "useFileNameComponent",
 			"kind": 64,
 			"kindString": "Function",
@@ -29018,7 +29069,7 @@
 			},
 			"signatures": [
 				{
-					"id": 1482,
+					"id": 1486,
 					"name": "useFileNameComponent",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -29027,7 +29078,7 @@
 					},
 					"parameters": [
 						{
-							"id": 1483,
+							"id": 1487,
 							"name": "file",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -29062,7 +29113,7 @@
 			]
 		},
 		{
-			"id": 1596,
+			"id": 1600,
 			"name": "useFolderChainItems",
 			"kind": 64,
 			"kindString": "Function",
@@ -29072,7 +29123,7 @@
 			},
 			"signatures": [
 				{
-					"id": 1597,
+					"id": 1601,
 					"name": "useFolderChainItems",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -29083,7 +29134,7 @@
 						"type": "array",
 						"elementType": {
 							"type": "reference",
-							"id": 1590,
+							"id": 1594,
 							"name": "FolderChainItem"
 						}
 					}
@@ -29217,7 +29268,7 @@
 			]
 		},
 		{
-			"id": 1331,
+			"id": 1335,
 			"name": "useIsMobileBreakpoint",
 			"kind": 64,
 			"kindString": "Function",
@@ -29227,7 +29278,7 @@
 			},
 			"signatures": [
 				{
-					"id": 1332,
+					"id": 1336,
 					"name": "useIsMobileBreakpoint",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -29243,13 +29294,13 @@
 			"sources": [
 				{
 					"fileName": "src/util/styles.ts",
-					"line": 90,
+					"line": 95,
 					"character": 34
 				}
 			]
 		},
 		{
-			"id": 1392,
+			"id": 1396,
 			"name": "useKeyDownHandler",
 			"kind": 64,
 			"kindString": "Function",
@@ -29259,7 +29310,7 @@
 			},
 			"signatures": [
 				{
-					"id": 1393,
+					"id": 1397,
 					"name": "useKeyDownHandler",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -29268,7 +29319,7 @@
 					},
 					"parameters": [
 						{
-							"id": 1394,
+							"id": 1398,
 							"name": "onKeyboardClick",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -29278,7 +29329,7 @@
 							},
 							"type": {
 								"type": "reference",
-								"id": 1419,
+								"id": 1423,
 								"name": "KeyboardClickEventHandler"
 							}
 						}
@@ -29298,7 +29349,7 @@
 			]
 		},
 		{
-			"id": 1478,
+			"id": 1482,
 			"name": "useModifierIconComponents",
 			"kind": 64,
 			"kindString": "Function",
@@ -29308,7 +29359,7 @@
 			},
 			"signatures": [
 				{
-					"id": 1479,
+					"id": 1483,
 					"name": "useModifierIconComponents",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -29317,7 +29368,7 @@
 					},
 					"parameters": [
 						{
-							"id": 1480,
+							"id": 1484,
 							"name": "file",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -29706,7 +29757,7 @@
 			]
 		},
 		{
-			"id": 1484,
+			"id": 1488,
 			"name": "useThumbnailUrl",
 			"kind": 64,
 			"kindString": "Function",
@@ -29716,7 +29767,7 @@
 			},
 			"signatures": [
 				{
-					"id": 1485,
+					"id": 1489,
 					"name": "useThumbnailUrl",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -29725,7 +29776,7 @@
 					},
 					"parameters": [
 						{
-							"id": 1486,
+							"id": 1490,
 							"name": "file",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -29748,7 +29799,7 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 1487,
+							"id": 1491,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
@@ -29757,7 +29808,7 @@
 							},
 							"children": [
 								{
-									"id": 1489,
+									"id": 1493,
 									"name": "thumbnailLoading",
 									"kind": 32,
 									"kindString": "Variable",
@@ -29777,7 +29828,7 @@
 									}
 								},
 								{
-									"id": 1488,
+									"id": 1492,
 									"name": "thumbnailUrl",
 									"kind": 32,
 									"kindString": "Variable",
@@ -29808,8 +29859,8 @@
 									"title": "Variables",
 									"kind": 32,
 									"children": [
-										1489,
-										1488
+										1493,
+										1492
 									]
 								}
 							]
@@ -29826,7 +29877,7 @@
 			]
 		},
 		{
-			"id": 1700,
+			"id": 1705,
 			"name": "validateActionTypes",
 			"kind": 64,
 			"kindString": "Function",
@@ -29836,7 +29887,7 @@
 			},
 			"signatures": [
 				{
-					"id": 1701,
+					"id": 1706,
 					"name": "validateActionTypes",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -29845,7 +29896,7 @@
 					},
 					"typeParameter": [
 						{
-							"id": 1705,
+							"id": 1710,
 							"name": "T",
 							"kind": 131072,
 							"kindString": "Type parameter",
@@ -29855,7 +29906,7 @@
 							"type": {
 								"type": "reflection",
 								"declaration": {
-									"id": 1702,
+									"id": 1707,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
@@ -29864,7 +29915,7 @@
 									},
 									"indexSignature": [
 										{
-											"id": 1703,
+											"id": 1708,
 											"name": "__index",
 											"kind": 8192,
 											"kindString": "Index signature",
@@ -29873,7 +29924,7 @@
 											},
 											"parameters": [
 												{
-													"id": 1704,
+													"id": 1709,
 													"name": "action",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -29906,7 +29957,7 @@
 					],
 					"parameters": [
 						{
-							"id": 1706,
+							"id": 1711,
 							"name": "actionMap",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -29919,7 +29970,7 @@
 								"constraint": {
 									"type": "reflection",
 									"declaration": {
-										"id": 1702,
+										"id": 1707,
 										"name": "__type",
 										"kind": 65536,
 										"kindString": "Type literal",
@@ -29928,7 +29979,7 @@
 										},
 										"indexSignature": [
 											{
-												"id": 1703,
+												"id": 1708,
 												"name": "__index",
 												"kind": 8192,
 												"kindString": "Index signature",
@@ -29937,7 +29988,7 @@
 												},
 												"parameters": [
 													{
-														"id": 1704,
+														"id": 1709,
 														"name": "action",
 														"kind": 32768,
 														"kindString": "Parameter",
@@ -29975,7 +30026,7 @@
 						"constraint": {
 							"type": "reflection",
 							"declaration": {
-								"id": 1702,
+								"id": 1707,
 								"name": "__type",
 								"kind": 65536,
 								"kindString": "Type literal",
@@ -29984,7 +30035,7 @@
 								},
 								"indexSignature": [
 									{
-										"id": 1703,
+										"id": 1708,
 										"name": "__index",
 										"kind": 8192,
 										"kindString": "Index signature",
@@ -29993,7 +30044,7 @@
 										},
 										"parameters": [
 											{
-												"id": 1704,
+												"id": 1709,
 												"name": "action",
 												"kind": 32768,
 												"kindString": "Parameter",
@@ -35711,7 +35762,7 @@
 			}
 		},
 		{
-			"id": 1653,
+			"id": 1663,
 			"name": "disabledDndState",
 			"kind": 2097152,
 			"kindString": "Object literal",
@@ -35721,7 +35772,7 @@
 			},
 			"children": [
 				{
-					"id": 1656,
+					"id": 1666,
 					"name": "dndCanDrop",
 					"kind": 32,
 					"kindString": "Variable",
@@ -35742,7 +35793,7 @@
 					"defaultValue": "false"
 				},
 				{
-					"id": 1654,
+					"id": 1664,
 					"name": "dndIsDragging",
 					"kind": 32,
 					"kindString": "Variable",
@@ -35763,7 +35814,7 @@
 					"defaultValue": "false"
 				},
 				{
-					"id": 1655,
+					"id": 1665,
 					"name": "dndIsOver",
 					"kind": 32,
 					"kindString": "Variable",
@@ -35789,9 +35840,9 @@
 					"title": "Variables",
 					"kind": 32,
 					"children": [
-						1656,
-						1654,
-						1655
+						1666,
+						1664,
+						1665
 					]
 				}
 			],
@@ -36769,7 +36820,7 @@
 			}
 		},
 		{
-			"id": 1522,
+			"id": 1526,
 			"name": "layerStyles",
 			"kind": 2097152,
 			"kindString": "Object literal",
@@ -36779,7 +36830,7 @@
 			},
 			"children": [
 				{
-					"id": 1529,
+					"id": 1533,
 					"name": "height",
 					"kind": 32,
 					"kindString": "Variable",
@@ -36800,7 +36851,7 @@
 					"defaultValue": "\"100%\""
 				},
 				{
-					"id": 1526,
+					"id": 1530,
 					"name": "left",
 					"kind": 32,
 					"kindString": "Variable",
@@ -36821,7 +36872,7 @@
 					"defaultValue": "0"
 				},
 				{
-					"id": 1524,
+					"id": 1528,
 					"name": "pointerEvents",
 					"kind": 32,
 					"kindString": "Variable",
@@ -36842,7 +36893,7 @@
 					"defaultValue": "\"none\""
 				},
 				{
-					"id": 1523,
+					"id": 1527,
 					"name": "position",
 					"kind": 32,
 					"kindString": "Variable",
@@ -36863,7 +36914,7 @@
 					"defaultValue": "\"fixed\""
 				},
 				{
-					"id": 1527,
+					"id": 1531,
 					"name": "top",
 					"kind": 32,
 					"kindString": "Variable",
@@ -36884,7 +36935,7 @@
 					"defaultValue": "0"
 				},
 				{
-					"id": 1528,
+					"id": 1532,
 					"name": "width",
 					"kind": 32,
 					"kindString": "Variable",
@@ -36905,7 +36956,7 @@
 					"defaultValue": "\"100%\""
 				},
 				{
-					"id": 1525,
+					"id": 1529,
 					"name": "zIndex",
 					"kind": 32,
 					"kindString": "Variable",
@@ -36931,13 +36982,13 @@
 					"title": "Variables",
 					"kind": 32,
 					"children": [
-						1529,
-						1526,
-						1524,
-						1523,
-						1527,
+						1533,
+						1530,
 						1528,
-						1525
+						1527,
+						1531,
+						1532,
+						1529
 					]
 				}
 			],
@@ -38071,60 +38122,8 @@
 					}
 				},
 				{
-					"id": 1325,
+					"id": 1329,
 					"name": "gridFileEntry",
-					"kind": 2097152,
-					"kindString": "Object literal",
-					"flags": {
-						"isExported": true
-					},
-					"children": [
-						{
-							"id": 1326,
-							"name": "fontSize",
-							"kind": 32,
-							"kindString": "Variable",
-							"flags": {
-								"isExported": true
-							},
-							"sources": [
-								{
-									"fileName": "src/util/styles.ts",
-									"line": 81,
-									"character": 16
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "number"
-							},
-							"defaultValue": "13"
-						}
-					],
-					"groups": [
-						{
-							"title": "Variables",
-							"kind": 32,
-							"children": [
-								1326
-							]
-						}
-					],
-					"sources": [
-						{
-							"fileName": "src/util/styles.ts",
-							"line": 80,
-							"character": 17
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "object"
-					}
-				},
-				{
-					"id": 1327,
-					"name": "listFileEntry",
 					"kind": 2097152,
 					"kindString": "Object literal",
 					"flags": {
@@ -38151,9 +38150,61 @@
 								"name": "number"
 							},
 							"defaultValue": "13"
+						}
+					],
+					"groups": [
+						{
+							"title": "Variables",
+							"kind": 32,
+							"children": [
+								1330
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/util/styles.ts",
+							"line": 85,
+							"character": 17
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "object"
+					}
+				},
+				{
+					"id": 1331,
+					"name": "listFileEntry",
+					"kind": 2097152,
+					"kindString": "Object literal",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 1334,
+							"name": "fontSize",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "src/util/styles.ts",
+									"line": 91,
+									"character": 16
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"defaultValue": "13"
 						},
 						{
-							"id": 1329,
+							"id": 1333,
 							"name": "iconFontSize",
 							"kind": 32,
 							"kindString": "Variable",
@@ -38163,7 +38214,7 @@
 							"sources": [
 								{
 									"fileName": "src/util/styles.ts",
-									"line": 85,
+									"line": 90,
 									"character": 20
 								}
 							],
@@ -38174,7 +38225,7 @@
 							"defaultValue": "\"1em\""
 						},
 						{
-							"id": 1328,
+							"id": 1332,
 							"name": "propertyFontSize",
 							"kind": 32,
 							"kindString": "Variable",
@@ -38184,7 +38235,7 @@
 							"sources": [
 								{
 									"fileName": "src/util/styles.ts",
-									"line": 84,
+									"line": 89,
 									"character": 24
 								}
 							],
@@ -38200,16 +38251,16 @@
 							"title": "Variables",
 							"kind": 32,
 							"children": [
-								1330,
-								1329,
-								1328
+								1334,
+								1333,
+								1332
 							]
 						}
 					],
 					"sources": [
 						{
 							"fileName": "src/util/styles.ts",
-							"line": 83,
+							"line": 88,
 							"character": 17
 						}
 					],
@@ -38220,7 +38271,7 @@
 				},
 				{
 					"id": 1323,
-					"name": "toolbar",
+					"name": "margins",
 					"kind": 2097152,
 					"kindString": "Object literal",
 					"flags": {
@@ -38229,7 +38280,7 @@
 					"children": [
 						{
 							"id": 1324,
-							"name": "fontSize",
+							"name": "rootLayoutMargin",
 							"kind": 32,
 							"kindString": "Variable",
 							"flags": {
@@ -38239,14 +38290,14 @@
 								{
 									"fileName": "src/util/styles.ts",
 									"line": 78,
-									"character": 16
+									"character": 24
 								}
 							],
 							"type": {
 								"type": "intrinsic",
 								"name": "number"
 							},
-							"defaultValue": "13"
+							"defaultValue": "4"
 						}
 					],
 					"groups": [
@@ -38269,6 +38320,102 @@
 						"type": "intrinsic",
 						"name": "object"
 					}
+				},
+				{
+					"id": 1325,
+					"name": "toolbar",
+					"kind": 2097152,
+					"kindString": "Object literal",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 1328,
+							"name": "fontSize",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "src/util/styles.ts",
+									"line": 83,
+									"character": 16
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"defaultValue": "13"
+						},
+						{
+							"id": 1327,
+							"name": "lineHeight",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "src/util/styles.ts",
+									"line": 82,
+									"character": 18
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"defaultValue": "\"28px\""
+						},
+						{
+							"id": 1326,
+							"name": "size",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "src/util/styles.ts",
+									"line": 81,
+									"character": 12
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"defaultValue": "28"
+						}
+					],
+					"groups": [
+						{
+							"title": "Variables",
+							"kind": 32,
+							"children": [
+								1328,
+								1327,
+								1326
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/util/styles.ts",
+							"line": 80,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "object"
+					}
 				}
 			],
 			"groups": [
@@ -38277,9 +38424,10 @@
 					"kind": 2097152,
 					"children": [
 						1321,
-						1325,
-						1327,
-						1323
+						1329,
+						1331,
+						1323,
+						1325
 					]
 				}
 			],
@@ -38320,55 +38468,55 @@
 			"kind": 256,
 			"children": [
 				66,
-				1554,
+				1558,
 				229,
-				1405,
+				1409,
 				202,
-				1506,
-				1521,
-				1430,
-				1367,
+				1510,
+				1525,
+				1434,
+				1371,
 				482,
-				1697,
+				1702,
 				126,
 				139,
 				198,
 				147,
 				1217,
 				1229,
-				1588,
+				1592,
 				72,
-				1629,
-				1437,
-				1371,
+				1639,
+				1441,
+				1375,
 				63,
-				1658,
-				1664,
-				1682,
-				1689,
-				1615,
-				1426,
-				1627,
-				1590,
-				1667,
-				1551,
-				1399,
+				1633,
+				1668,
+				1686,
+				1693,
+				1619,
+				1430,
+				1631,
+				1594,
+				1671,
+				1555,
+				1403,
 				472,
-				1395,
+				1399,
 				465,
 				491,
 				488,
 				958,
 				210,
-				1649,
-				1611,
-				1581,
+				1659,
+				1615,
+				1585,
 				480,
-				1376,
-				1598,
-				1573,
-				1621,
-				1624
+				1380,
+				1602,
+				1577,
+				1625,
+				1628
 			]
 		},
 		{
@@ -38379,18 +38527,18 @@
 				1245,
 				1248,
 				276,
-				1696,
+				1701,
 				1319,
 				274,
-				1513,
+				1517,
 				177,
 				159,
-				1695,
+				1700,
 				173,
 				201,
 				184,
 				92,
-				1441,
+				1445,
 				93,
 				101,
 				97,
@@ -38401,14 +38549,14 @@
 				113,
 				109,
 				193,
-				1419,
+				1423,
 				191,
-				1415,
+				1419,
 				495,
 				206,
 				235,
 				225,
-				1617
+				1621
 			]
 		},
 		{
@@ -38416,51 +38564,52 @@
 			"kind": 32,
 			"children": [
 				1272,
-				1359,
-				1358,
+				1363,
+				1362,
 				1265,
 				1274,
 				1273,
-				1636,
+				1646,
 				658,
-				1517,
-				1516,
+				1521,
+				1520,
 				624,
-				1560,
-				1589,
-				1632,
-				1690,
-				1616,
-				1429,
-				1628,
-				1681,
-				1640,
+				1564,
+				1593,
+				1642,
+				1694,
+				1620,
 				1433,
-				1455,
-				1450,
-				1553,
-				1271,
+				1632,
+				1699,
 				1685,
-				1645,
-				1707,
-				1657,
-				1614,
-				1587,
-				1383,
-				1613,
-				1586,
+				1650,
+				1437,
+				1459,
+				1454,
+				1557,
+				1271,
+				1689,
+				1655,
+				1712,
+				1667,
+				1618,
+				1591,
+				1387,
+				1617,
+				1590,
 				1165,
 				1270,
-				1354,
+				1358,
 				1266,
 				805,
 				957,
+				1464,
+				1651,
 				1460,
-				1641,
-				1456,
-				1451,
-				1691,
-				1384
+				1455,
+				1695,
+				1388
 			]
 		},
 		{
@@ -38468,31 +38617,31 @@
 			"kind": 64,
 			"children": [
 				1246,
-				1555,
-				1423,
-				1549,
-				1661,
+				1559,
+				1427,
+				1553,
+				1636,
 				501,
-				1618,
 				1622,
-				1625,
+				1626,
+				1629,
 				508,
 				520,
-				1360,
+				1364,
 				513,
 				399,
-				1675,
+				1679,
 				403,
-				1530,
-				1379,
+				1534,
+				1383,
 				407,
 				411,
 				523,
-				1350,
-				1673,
+				1354,
+				1677,
 				504,
-				1343,
-				1333,
+				1347,
+				1337,
 				999,
 				977,
 				313,
@@ -38552,31 +38701,31 @@
 				1006,
 				1029,
 				1192,
-				1388,
-				1365,
-				1363,
+				1392,
+				1369,
+				1367,
 				1208,
 				1160,
-				1472,
-				1566,
-				1563,
-				1355,
-				1498,
-				1490,
-				1464,
-				1467,
-				1481,
-				1596,
+				1476,
+				1570,
+				1567,
+				1359,
+				1502,
+				1494,
+				1468,
+				1471,
+				1485,
+				1600,
 				1267,
 				1173,
-				1331,
-				1392,
-				1478,
+				1335,
+				1396,
+				1482,
 				1196,
 				1167,
 				1189,
-				1484,
-				1700
+				1488,
+				1705
 			]
 		},
 		{
@@ -38588,9 +38737,9 @@
 				529,
 				572,
 				1249,
-				1653,
+				1663,
 				760,
-				1522,
+				1526,
 				1275,
 				1320
 			]

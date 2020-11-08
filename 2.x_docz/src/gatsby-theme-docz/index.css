@@ -23,8 +23,8 @@
 .prism-code *,
 div[data-testid='live-editor'] * {
     font-family: Inconsolata, monospace !important;
-    line-height: 17px;
-    font-size: 12px;
+    line-height: 17px !important;
+    font-size: 12px !important;
 }
 
 h1 {
