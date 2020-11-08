@@ -13,7 +13,6 @@ import { LinkButton } from '../components/LinkButton';
 import { Title } from '../components/Title';
 import {
     DiscordLink,
-    Docs2x,
     GitHubLink,
     MostRecentDocs,
     MostRecentStorybook,
@@ -27,7 +26,7 @@ const useStyles = makeStyles((theme: Theme) =>
         buttonWrapper: {
             textAlign: 'center',
             margin: 'auto',
-            maxWidth: 600,
+            maxWidth: 700,
         },
     })
 );
@@ -43,7 +42,6 @@ export const Links: React.FC<LinksProps> = (props) => {
                 <LinkButton linkData={NpmLink} />
                 <LinkButton linkData={DiscordLink} />
                 <LinkButton linkData={MostRecentDocs} />
-                <LinkButton linkData={Docs2x} />
                 <LinkButton linkData={MostRecentStorybook} />
             </Box>
         </>

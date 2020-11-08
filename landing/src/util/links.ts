@@ -1,8 +1,8 @@
-import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
-import { faCode } from '@fortawesome/free-solid-svg-icons/faCode';
 import { faDiscord } from '@fortawesome/free-brands-svg-icons/faDiscord';
+import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 import { faNpm } from '@fortawesome/free-brands-svg-icons/faNpm';
 import { faBook } from '@fortawesome/free-solid-svg-icons/faBook';
+import { faCode } from '@fortawesome/free-solid-svg-icons/faCode';
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons/faLaptopCode';
 
 export interface LinkData {
@@ -38,16 +38,16 @@ export const DiscordLink: LinkData = {
 };
 
 export const Docs2x: LinkData = {
-    title: '2.x Docs (Preview)',
-    description: 'Documentation preview for the new version',
+    title: '2.x Docs',
+    description: 'Documentation for the most recent version',
     url: 'https://chonky.io/docs/2.x/',
     color: '#d12123',
     icon: faBook,
 };
 
 export const Storybook2x: LinkData = {
-    title: '2.x Storybook (Preview)',
-    description: 'Interactive code examples for the current version of Chonky',
+    title: '2.x Storybook',
+    description: 'Interactive code examples for the most recent version',
     url: 'https://chonky.io/storybook/2.x/',
     color: '#733eda',
     icon: faLaptopCode,
@@ -56,16 +56,17 @@ export const Storybook2x: LinkData = {
 export const DemoSource2x: LinkData = {
     title: '2.x Demo Source Code',
     description: '',
-    url: 'https://github.com/TimboKZ/chonky-website/blob/master/2.x_storybook/src/demos/VFSMutable.tsx',
+    url:
+        'https://github.com/TimboKZ/chonky-website/blob/master/2.x_storybook/src/demos/VFSMutable.tsx',
     color: '#733eda',
     icon: faCode,
 };
 
 export const Docs1x: LinkData = {
-    title: '1.x Docs (Current)',
-    description: 'Documentation for the current Hooks version of Chonky',
+    title: '1.x Docs (Legacy)',
+    description: 'Documentation for the legacy Hooks version of Chonky',
     url: 'https://chonky.io/docs/1.x/',
-    color: '#2e86de',
+    color: '#616971',
     icon: faBook,
 };
 
@@ -77,6 +78,6 @@ export const Docs0x: LinkData = {
     icon: faBook,
 };
 
-export const MostRecentDocs = Docs1x;
+export const MostRecentDocs = Docs2x;
 
 export const MostRecentStorybook = Storybook2x;

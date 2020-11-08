@@ -177,7 +177,7 @@ const developerFeatures: FeatureData[] = [
         title: 'Backend agnostic',
         description:
             'Chonky focuses only on file browser UI. It does not make any' +
-            ' assumptions about the server backend (or lack thereof).',
+            ' assumptions about your server backend (or lack thereof).',
     },
     {
         icon: <CodeIcon />,
