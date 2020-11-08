@@ -14,25 +14,28 @@ more!
 
 To get a sense of how powerful file actions are, consider this - most of the built-in
 Chonky features, such as file selections & context menu handling, are implemented using
-Chonky file actions. In theory, the definitions for these actions could come from user
-code, but Chonky provides these features out-of-the-box for convenience.
+file actions. In theory, the definitions for these actions could come from user code,
+but Chonky provides these features out-of-the-box for convenience.
 
 ## What can they do?
 
-Basic functionality:
+Using simple file action definitions, you can do the following:
 
 -   Change file sort function.
 -   Change current file view.
 -   Toggle boolean options.
 -   Transform selection.
 -   Add buttons to toolbar or context menu.
+-   Response to keyboard shortcuts.
 -   Trigger the user-defined action handler.
 
-Using action effects, we can go further:
+If you dive deeper and make use of [file action effects](/file-actions/effects), you can
+go further:
 
--   Read and modify Chonky's internal Redux state.
 -   Dispatch other file actions.
 -   Prevent user-defined action handler from being triggered.
+-   Read and modify Chonky's internal Redux state. This allows you to change Chonky's
+    behaviour in arbitrary ways.
 
 ## Enabling file actions
 

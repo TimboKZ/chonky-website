@@ -5,17 +5,17 @@
  */
 
 import {
-    ChonkyActions,
-    ChonkyFileActionData,
-    FileArray,
+    defineFileAction,
     FileBrowser,
     FileList,
     FileNavbar,
     FileToolbar,
+    FileViewMode,
     setChonkyDefaults,
 } from 'chonky';
 import { ChonkyIconFA } from 'chonky-icon-fontawesome';
-import React, { useMemo, useState } from 'react';
+import {OpenFilesPayload} from 'chonky/lib/types/action-payloads.types';
+import React from 'react';
 
 import { useStoryLinks } from '../util';
 
@@ -23,81 +23,25 @@ setChonkyDefaults({ iconComponent: ChonkyIconFA });
 
 const storyName = 'Scratchpad';
 export const Scratchpad: React.FC = () => {
-    const [selectionString, setSelectionString] = useState('');
-    const files: FileArray = useMemo(
-        () => [
-            null, // Loading animation will be shown for this file
-            {
-                id: 'nTe',
-                name: 'Normal file.yml',
-                size: 890,
-                modDate: new Date('2012-01-01'),
-            },
-            null,
-            {
-                id: 'zxc',
-                name: 'Hidden file.mp4',
-                isHidden: true,
-                size: 890,
-            },
-            {
-                id: 'bnm',
-                name: 'Normal folder',
-                isDir: true,
-                childrenCount: 12,
-            },
-            {
-                id: 'vfr',
-                name: 'Symlink folder',
-                isDir: true,
-                isSymlink: true,
-                childrenCount: 0,
-            },
-            {
-                id: '7zp',
-                name: 'Encrypted file.7z',
-                isEncrypted: true,
-            },
-            {
-                id: 'qwe',
-                name: 'Not selectable.tar.gz',
-                ext: '.tar.gz', // Custom extension
-                selectable: false, // Disable selection
-                size: 54300000000,
-                modDate: new Date(),
-            },
-            {
-                id: 'rty',
-                name: 'Not openable.pem',
-                openable: false, // Prevent opening
-                size: 100000000,
-            },
-            {
-                id: 'btj',
-                name: 'Not draggable.csv',
-                draggable: false, // Prevent this files from being dragged
-            },
-            {
-                id: 'upq',
-                name: 'Not droppable',
-                isDir: true,
-                droppable: false, // Prevent files from being dropped into this folder
-            },
-            {
-                id: 'mRw',
-                name: 'Unknown file name',
-            },
-        ],
-        []
-    );
+    const files = [
+        { id: 'zxc', name: 'zxc' },
+        { id: 'vfd', name: 'zxc' },
+        { id: 'sdasd', name: 'zxc' },
+        { id: 'drwg', name: 'zxc' },
+    ];
 
-    const handleFileAction = (data: ChonkyFileActionData) => {
-        if (data.id === ChonkyActions.ChangeSelection.id) {
-            setSelectionString(
-                JSON.stringify(Array.from(data.payload.selection), null, 4)
-            );
-        }
-    };
+    const action = defineFileAction({
+        id: 'giant_thumbs',
+        button: {
+            name: 'Giant thumbs',
+            toolbar: true,
+        },
+        fileViewConfig: {
+            mode: FileViewMode.Grid,
+            entryHeight: 400,
+            entryWidth: 400,
+        },
+    });
 
     return (
         <div className="story-wrapper">
@@ -110,19 +54,26 @@ export const Scratchpad: React.FC = () => {
                     ])}
                 </div>
             </div>
-            <div style={{ height: 500 }}>
+            <div style={{ height: 300 }}>
                 <FileBrowser
                     files={files}
-                    onFileAction={handleFileAction}
-                    defaultSortActionId={null}
-                    defaultFileViewActionId={ChonkyActions.EnableListView.id}
+                    fileActions={[action]}
+                    defaultFileViewActionId={action.id}
+                    disableDragAndDrop={true}
                 >
                     <FileNavbar />
                     <FileToolbar />
                     <FileList />
                 </FileBrowser>
             </div>
-            <pre>{selectionString}</pre>
+            <FileBrowser
+                files={files}
+                disableDragAndDrop={true}
+            >
+                <FileNavbar />
+                <FileToolbar />
+                <FileList />
+            </FileBrowser>
         </div>
     );
 };

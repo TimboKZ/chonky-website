@@ -75,6 +75,19 @@ You have two mechanisms available to you:
 1. You can [define a custom action handler](/file-actions/action-handler) and listen
    for actions with the ID `ChonkyActions.ChangeSelection.id`. This is useful when you
    want to update React on every selection change.
-2. You can use [the file browser handle](/basics/browser-handle) to get or set the
-   selection at runtime. This is useful when you don't need to update React state when
-   selection changes.
+2. You can use [the file browser handle][handle] to get or set the selection at runtime.
+   This is useful when you don't need to update React state when selection changes.
+
+## How can I trigger an action programmatically?
+
+There are two ways to trigger file actions programatically:
+
+1. Using [the file browser handle][handle].
+2. Using [file action effects][effects].
+
+Note that in both cases, you should be careful with the action payload. If you don't
+provide a null payload to an action that expects non-null payload, Chonky might throw an
+error
+
+[handle]: /basics/browser-handle
+[effects]: /file-actions/effects

@@ -26,6 +26,7 @@ export default {
                 'File browser handle',
                 'Default config',
                 'Drag & drop',
+                'Using icons',
             ],
         },
         {
@@ -34,14 +35,17 @@ export default {
                 'File action basics',
                 'Built-in actions',
                 'Defining an action handler',
-                'Triggering actions',
                 'Defining custom actions',
                 'Understanding effects',
             ],
         },
         {
             name: 'API Reference',
-            menu: ['FileBrowser component'],
+            menu: [
+                'FileBrowser component',
+                'FileAction interface',
+                'Built-in actions',
+            ],
         },
     ],
     themeConfig: {
@@ -59,14 +63,6 @@ export default {
                         ' rgba(80,244,204,1) 75%, rgba(75,169,226,1) 100%)',
                 },
                 'div[data-testid="live-editor"]': {},
-            },
-            inlineCode: {
-                fontFamily: 'Inconsolata, monospace !important',
-                bg: 'rgba(127, 127, 127, 0.15)',
-                borderRadius: '3px',
-                fontSize: '0.8em',
-                p: '2px 4px',
-                m: '0px 2px',
             },
             pre: {
                 margin: '10px 0 !important',

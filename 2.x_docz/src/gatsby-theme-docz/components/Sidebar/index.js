@@ -1,14 +1,14 @@
 /** @jsx jsx */
 /** @jsxFrag React.Fragment */
-import React, { useEffect, useRef, useState } from 'react';
 import { Global } from '@emotion/core';
-import { Box, jsx } from 'theme-ui';
 import { useCurrentDoc, useMenus } from 'docz';
-
-import * as styles from './styles';
 import { NavSearch } from 'gatsby-theme-docz/src/components/NavSearch';
-import { NavLink } from '../NavLink';
+import React, { useEffect, useRef, useState } from 'react';
+import { Box, jsx } from 'theme-ui';
+
 import { NavGroup } from '../NavGroup';
+import { NavLink } from '../NavLink';
+import { global, overlay, wrapper } from './styles';
 
 export const Sidebar = React.forwardRef((props, ref) => {
     const [query, setQuery] = useState('');
@@ -22,13 +22,13 @@ export const Sidebar = React.forwardRef((props, ref) => {
         if (ref.current && currentDocRef.current) {
             ref.current.scrollTo(0, currentDocRef.current.offsetTop);
         }
-    }, []);
+    }, [ref]);
     return (
         <>
-            <Box onClick={props.onClick} sx={styles.overlay(props)}>
-                {props.open && <Global styles={styles.global} />}
+            <Box onClick={props.onClick} sx={overlay(props)}>
+                {props.open && <Global styles={global} />}
             </Box>
-            <Box ref={ref} sx={styles.wrapper(props)} data-testid="sidebar">
+            <Box ref={ref} sx={wrapper(props)} data-testid="sidebar">
                 <NavSearch
                     placeholder="Type to search..."
                     value={query}

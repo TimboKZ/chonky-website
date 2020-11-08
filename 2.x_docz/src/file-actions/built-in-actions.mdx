@@ -24,7 +24,8 @@ console.log(ChonkyActions.ClearSelection); // Logs the entire action object
 console.log(ChonkyActions.EnableListView.id); // Logs just the action ID
 ```
 
-You can enable built-in file actions by
+Not all built-in actions are enabled by default. You can explicitly enable file actions
+by passing them to `fileActions` prop on `FileBrowser` component:
 
 ```tsx
 import { ChonkyActions, FileBrowser } from 'chonky';

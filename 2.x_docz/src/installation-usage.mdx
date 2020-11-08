@@ -128,3 +128,19 @@ const myPayload: MouseFileClickPayload = {
     /* ... */
 };
 ```
+
+While this is not required, I really recommend you use the [`tsdef` library][tsdef] in
+your Typescript code. It provides many useful generic types and interfaces to make your
+TS code cleaner:
+
+```ts
+// Install
+npm install -D tsdef
+
+// Use
+import {AnyFunction, Nullable} from 'tsdef';
+
+const myFunctionOrNull = Nullable<AnyFunction>;
+```
+
+[tsdef]: https://github.com/joonhocho/tsdef

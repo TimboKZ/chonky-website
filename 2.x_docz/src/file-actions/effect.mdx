@@ -4,9 +4,106 @@ menu: File actions
 route: /file-actions/effects
 ---
 
-- Explain what effects are for
-- Explain payload, state
-- Explain dispatch and redux state
-- Explain redux imports - reduxActions, dispatch, selectors, thunks
-- Explain effect return value
+# Understanding effects
 
+Todos
+
+-   Explain dispatch and redux state
+-   Explain redux imports - reduxActions, dispatch, selectors, thunks
+-   Explain effect return value
+
+It is finally time to dive deep into Chonky's most powerful feature - **file action
+effects**. "Effect" in this context means a "side effect" of the action. It has nothing
+to do with React's `useEffect`.
+
+## Why are effects useful?
+
+On the [_Defining custom actions_][custom-actions] page, you saw how you could change
+some basic parts of Chonky's internal state, e.g. the current sorting function or
+the file selection. While the mechanisms presented on that page are useful, they only
+cover roughly 10% of Chonky's internal Redux state.
+
+There's no doubt advanced users will want to read or set other parts of Chonky's Redux
+state. At the same time, it is clearly impractical to provide explicit mechanisms to
+alter every part of the state, because it will result in a highly fragile API that
+will be hard to maintain.
+
+Enter action effects. They provide a generic mechanism for accessing and modifying
+Chonky's state by directly exposing its Redux state and Redux dispatch to developers.
+This creates many interesting opportunities, like completely changing the meaning of
+single & double clicks or chaining file actions. Unsurprisingly, many Chonky's built-in
+actions use effects to make things happen.
+
+There is an obvious downside to this approach - to make full use of action effects, one
+should have a good understanding of what is stored in Chonky's Redux state, and what
+Redux actions and thunks are available. While I agree that this is inconvenient, I also
+think it is much better than the alternative, which is to fork Chonky on GitHub and
+rewrite parts of code yourself.
+
+## Action effect definition
+
+Recall the `defineFileAction` helper method from the [_Defining custom
+actions_][custom-actions] page:
+
+```ts
+defineFileAction(action: FileAction, effect?: FileActionEffect) => FileAction;
+```
+
+The second parameter is what you use to define the effect. Formally, effects should
+follow the `FileActionEffect` type:
+
+```ts
+export type FileActionEffect<Action extends FileAction = any> = (data: {
+    action: Action;
+    payload: Action['__payloadType'];
+    state: FileActionState<{}>; // extra state is empty on purpose
+    reduxDispatch: ChonkyDispatch;
+    getReduxState: () => RootState;
+}) => MaybePromise<undefined | boolean | void>;
+```
+
+You should already know about `action`, `payload` and `state` parameters from the
+[_Defining an action handler_][handler] page.
+
+The new parameters are `reduxDispatch` and `getReduxState`. If you ever used
+[Redux][redux] with [`redux-thunk` middleware][redux-thunk], you know exactly what they
+do - `reduxDispatch` lets you dispatch Redux actions or thunks to Chonky's Redux
+store, and `getReduxState` lets you get Chonky's internal Redux state.
+
+Consider the definition of Chonky's built-in `OpenParentFolder` action:
+
+```ts
+import { ChonkyActions, ChonkyIconName, defineFileAction, FileHelper } from 'chonky';
+import { selectParentFolder } from 'chonky/lib/redux/selectors';
+import { thunkRequestFileAction } from 'chonky/lib/redux/thunks/dispatchers.thunks';
+
+const OpenParentFolder = defineFileAction(
+    {
+        id: 'open_parent_folder',
+        hotkeys: ['backspace'],
+        button: {
+            name: 'Go up a directory',
+            toolbar: true,
+            contextMenu: false,
+            icon: ChonkyIconName.openParentFolder,
+            iconOnly: true,
+        },
+    } as const,
+    ({ reduxDispatch, getReduxState }) => {
+        const parentFolder = selectParentFolder(getReduxState());
+        if (FileHelper.isOpenable(parentFolder)) {
+            reduxDispatch(
+                thunkRequestFileAction(ChonkyActions.OpenFiles, {
+                    targetFile: parentFolder,
+                    files: [parentFolder],
+                })
+            );
+        }
+    }
+);
+```
+
+[custom-actions]: /file-actions/custom-actions
+[handler]: /file-actions/action-handler
+[redux]: https://github.com/reduxjs/redux-thunk
+[redux-thunk]: https://github.com/reduxjs/redux-thunk
