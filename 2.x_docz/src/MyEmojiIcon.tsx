@@ -8,7 +8,7 @@ const myEmojiMap: { [iconName: string]: string } = {
     japanEmoji: '🗾',
 };
 
-const MyEmojiIcon: React.FC<ChonkyIconProps> = React.memo((props) => {
+export const MyEmojiIcon: React.FC<ChonkyIconProps> = React.memo((props) => {
     const emojiIcon = myEmojiMap[props.icon];
     if (emojiIcon) {
         return <span>{emojiIcon}</span>;

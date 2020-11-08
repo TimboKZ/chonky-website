@@ -4,10 +4,131 @@ menu: Basics
 route: /basics/icons
 ---
 
+import { MyEmojiIcon } from '../MyEmojiIcon';
+import { Playground } from 'docz';
+import {
+    FileBrowser,
+    FileContextMenu,
+    FileList,
+    FileNavbar,
+    FileToolbar,
+} from 'chonky';
+
 # Using icons
 
-Todos:
+## Icons in Chonky
 
--   Explain `ChonkyIconName`
--   Explain the icon component
--   Explain custom icon components
+While reading Chonky's documentation, you might have noticed some code examples defining
+icons for various things. For example, a file object could specify a custom icon to
+override the default icon:
+
+```ts
+import { ChonkyIconName, FileData } from 'chonky';
+
+const myFile: FileData = {
+    id: 'zxc',
+    name: 'My File.pdf',
+    icon: ChonkyIconName.pdf, // <----
+};
+```
+
+File action buttons can also specify icons:
+
+```ts
+import { ChonkyIconName, defineFileAction } from 'chonky';
+
+const myAction = defineFileAction({
+    id: 'my_action',
+    button: {
+        name: 'Run My Action',
+        toolbar: true,
+        icon: ChonkyIconName.flash, // <----
+    },
+});
+```
+
+The examples above use the `ChonkyIconName` enum. It defines a lot of common icon names.
+All of these icon names are supported bv Chonky's default icon component, `ChonkyIconFA`
+from the `chonky-icon-fontawesome` package.
+
+If you decide to provide a custom component, your component should support all of common
+icon names too. However, when it comes to defining custom icons, you are not limited to
+`ChonkyIconName` enum - the formal type of supported icons is:
+
+```
+type Icon = ChonkyIconName | string | any;
+```
+
+That is, in your custom icon component, you can use any string as an icon name, or even
+any object.
+
+## Defining a custom icon component
+
+On [_Installation & usage_](/installation-usage) page, you had to install a separate
+icon component and pass it to Chonky:
+
+```ts
+import { setChonkyDefaults } from 'chonky';
+import { ChonkyIconFA } from 'chonky-icon-fontawesome';
+
+setChonkyDefaults({ iconComponent: ChonkyIconFA });
+```
+
+As you probably guessed, you could pass any other component instead of `ChonkyIconFA`.
+The only catch is that your custom icon component should accept `ChonkyIconProps`:
+
+```ts
+export interface ChonkyIconProps {
+    icon: ChonkyIconName | string;
+    spin?: boolean;
+    className?: string;
+    fixedWidth?: boolean;
+    style?: React.CSSProperties;
+}
+```
+
+Consider this example - we want to define an icon that will support all standard
+Chonky icons, but also some emoji on top - a bento box 🍱, an angry face 😠, and... a
+map of Japan 🗾, why not? Here is how it would look like:
+
+```tsx
+import { ChonkyIconProps } from 'chonky';
+import { ChonkyIconFA } from 'chonky-icon-fontawesome';
+import React from 'react';
+
+const myEmojiMap: { [iconName: string]: string } = {
+    bentoEmoji: '🍱',
+    angryEmoji: '😠',
+    japanEmoji: '🗾',
+};
+
+export const MyEmojiIcon: React.FC<ChonkyIconProps> = React.memo((props) => {
+    const emojiIcon = myEmojiMap[props.icon];
+    if (emojiIcon) {
+        return <span>{emojiIcon}</span>;
+    }
+    return <ChonkyIconFA {...props} />;
+});
+```
+
+Now, let's actually use this component with Chonky:
+
+<Playground>
+    {() => {
+        const files = [
+            { id: 'lht', name: 'Bento.hdf5', icon: 'bentoEmoji' },
+            { id: 'zxc', name: 'Angry.face', icon: 'angryEmoji' },
+            { id: 'gtr', name: 'Japan.jpn', icon: 'japanEmoji' },
+        ];
+        return (
+            <div style={{ height: 300 }}>
+                <FileBrowser files={files} iconComponent={MyEmojiIcon}>
+                    <FileNavbar />
+                    <FileToolbar />
+                    <FileList />
+                    <FileContextMenu />
+                </FileBrowser>
+            </div>
+        );
+    }}
+</Playground>
