@@ -18,9 +18,9 @@ import {
 
 ## Icons in Chonky
 
-While reading Chonky's documentation, you might have noticed some code examples defining
-icons for various things. For example, a file object could specify a custom icon to
-override the default icon:
+While reading Chonky's documentation, you might have noticed that some code examples
+define icons for various things. For example, a file object could specify a custom icon
+to override the default icon:
 
 ```ts
 import { ChonkyIconName, FileData } from 'chonky';
@@ -47,23 +47,24 @@ const myAction = defineFileAction({
 });
 ```
 
-The examples above use the `ChonkyIconName` enum. It defines a lot of common icon names,
-you can find the whole list on [_ChonkyIconName API reference_](/api/chonky-icon-name)
-page.
+The examples above use the `ChonkyIconName` enum. This enum defines a lot of common icon
+names. You can find the whole list in [_ChonkyIconName API
+reference_](/api/chonky-icon-name).
 
-All of these icon names are supported by Chonky's default icon component, `ChonkyIconFA`
-from the `chonky-icon-fontawesome` package.
+Internally, Chonky's source code always uses this enum to specify icons. Unsurprisingly,
+Chonky's default icon component, `ChonkyIconFA` from the `chonky-icon-fontawesome`
+package, supports all of them. If you decide to provide a custom icon component, you
+should make sure it supports all of them too.
 
-If you decide to provide a custom component, your component should support all of common
-icon names too. However, when it comes to defining custom icons, you are not limited to
-`ChonkyIconName` enum - the formal type of supported icons is:
+However, when it comes to defining custom icons, you are not limited to
+`ChonkyIconName` enum - you can use any other string or any object you want. Formally,
+the custom icon type you can use is:
 
 ```
 type Icon = ChonkyIconName | string | any;
 ```
 
-That is, in your custom icon component, you can use any string as an icon name, or even
-any object.
+...which basically means you can use anything you want.
 
 ## Defining a custom icon component
 

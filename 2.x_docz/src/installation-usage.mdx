@@ -10,30 +10,33 @@ import { Playground } from 'docz';
 
 ## Installation
 
-You need to install `chonky` and its default icon component, `chonky-icon-fontawesome`.
-The icon component is packaged separately to decrease the bundle size. You can always
-replace it with a custom icon component later.
+You need to install `chonky` and its default icon component, `chonky-icon-fontawesome`:
 
 ```bash
 npm install chonky@latest chonky-icon-fontawesome@latest
 ```
 
-Note that `@latest` tag is not strictly required, but it's useful to include it to make
+The icon component is packaged separately to decrease the bundle size. You can always
+replace it with a custom icon component later.
+
+Note that `@latest` tag is not strictly required, but it's useful to include. It makes
 sure you get the most recent bug fixes when you re-install Chonky in an existing
 project.
 
 ## Basic usage
 
-First, add your icon component to Chonky somewhere at the top level of your application:
+As the first step, you should tell Chonky which icon component it should use. This is
+done using the `setChonkyDefaults` helper method:
 
 ```ts
 import { setChonkyDefaults } from 'chonky';
 import { ChonkyIconFA } from 'chonky-icon-fontawesome';
 
+// Somewhere in your `index.ts`:
 setChonkyDefaults({ iconComponent: ChonkyIconFA });
 ```
 
-Then you can use Chonky anywhere:
+Then you can use Chonky anywhere in your application:
 
 ```tsx
 import { FullFileBrowser } from 'chonky';
@@ -57,8 +60,8 @@ export const MyFileBrowser = () => {
 };
 ```
 
-Example below shows what running this code would give you. Note that Chonky will fill
-the height of its parent container, which in this case is `300px`.
+Example below shows a minimal setup of Chonky. Note that the file browser will fill the
+height of its parent container, which in this case is `300px`.
 
 <Playground>
     {() => {
@@ -82,11 +85,10 @@ the height of its parent container, which in this case is `300px`.
 ## Usage with Typescript
 
 Chonky was built using Typescript. For your static typing needs, many of the internal
-types and interfaces are exported. Some types are generic, to make it easier for you
-to integrate Chonky into you Typescript package.
+types and generic interfaces are exported.
 
 If you're also using Typescript, you can add Chonky types to your project using
-standard imports:
+standard ES6 imports:
 
 ```ts
 // FileArray is a TS type
@@ -109,7 +111,7 @@ const myPayload: MouseFileClickPayload = {
 };
 ```
 
-While this is not required, I really recommend you use the [`tsdef` library][tsdef] in
+While this is not required, I strongly recommend you use the [`tsdef` library][tsdef] in
 your Typescript code. It provides many useful generic types and interfaces to make your
 TS code cleaner:
 

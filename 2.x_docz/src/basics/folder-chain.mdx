@@ -10,9 +10,10 @@ import { FileBrowser, FileList, FileNavbar, FileToolbar } from 'chonky';
 # Setting current folder
 
 Like any other file browser, Chonky can display the path to the current folder in the
-navbar above the files. To enable this functionality, you will need to place the
-`<FileNavbar />` in your `FileBrowser` hierarchy and specify the `folderChain` prop on
-`FileBrowser`:
+navbar above the files.
+
+To enable this feature, you should place the `<FileNavbar />` component inside of your
+`FileBrowser`. Then, you need to specify the `folderChain` prop on `FileBrowser`:
 
 ```tsx
 const folderChain = [
@@ -40,7 +41,7 @@ inside it should follow the `FileData` type. Some notes:
 
 ### Example folder chain
 
-The live example below shows different possible file configurations.
+The live example below shows different possible folder chain configurations.
 
 <Playground>
     {() => {

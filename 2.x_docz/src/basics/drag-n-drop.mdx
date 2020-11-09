@@ -6,12 +6,12 @@ route: /basics/drag-n-drop
 
 # Drag & drop
 
-Chonky supports drag & drop (D&D) out-of-the-box. The relevant functionality is
+Chonky supports drag & drop (DnD) out-of-the-box. The relevant functionality is
 implemented using [react-dnd](https://react-dnd.github.io/react-dnd/docs/overview).
 
-## Disabling D&D
+## Disabling DnD
 
-If you want to disable D&D globally, you can use:
+If you want to disable DnD globally, you can use `setChonkyDefaults`:
 
 ```ts
 import { setChonkyDefaults } from 'chonky';
@@ -21,7 +21,7 @@ setChonkyDefaults({
 });
 ```
 
-To disable D&D on a specific file browser, you can use:
+To disable DnD on a specific file browser, you can use the `disableDragAndDrop` prop:
 
 ```tsx
 <FileBrowser files={[]} disableDragAndDrop={true}>
@@ -31,16 +31,15 @@ To disable D&D on a specific file browser, you can use:
 
 ## "Cannot have two HTML5 backends"
 
-For the majority of use cases, D&D will just work. However, when you start
-using hot-reloading, or if you want to use multiple `FileBrowser` instances on the
-same page, you will start seeing this error:
+For the majority of use cases, DnD will just work. However, if you want to use multiple
+`FileBrowser` instances on the same page, you will start seeing this error:
 
 ```python
 Error: Cannot have two HTML5 backends at the same time.
 ```
 
 This happens because of the way `react-dnd` works. It requires a `DndProvider` to be
-present somewhere in the component tree, above the component that actually uses D&D
+present somewhere in the component tree, above the component that actually uses DnD
 functionality. To support this, Chonky's internal component hierarchy looks like this:
 
 ```tree

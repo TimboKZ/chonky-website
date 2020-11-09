@@ -26,13 +26,15 @@ some useful resources which you can study yourself:
 ## Example of a common mistake
 
 Consider this example - you want to add a new file to the `files` array. The intuitive
-way is to just `.push()` a new file into the array. However, this will change the
+way is to just `.push()` the new file. However, this will change the
 array contents without updating array reference, which violates the principle of
-mutability. The correct approach would be to create a new array (and thus obtain a
-new array reference), then copy over all elements from the old array AND append your
-new file in the end.
+immutability.
 
-Here is the same idea explained in code:
+The correct approach would be to create a new array (and thus obtain a
+new array reference), then copy over all elements from the old array, appending the
+new file to the end of the array.
+
+Here's the code illustrating the above example:
 
 ```ts
 // Incorrect - mutating the array:

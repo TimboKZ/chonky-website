@@ -20,9 +20,9 @@ export const MyFileBrowser = () => {
 };
 ```
 
-`FullFileBrowser` is actually just a convenient alias to the code shown below. It is a
-good idea to use `FullFileBrowser` if you want all Chonky's features. Plus, using it
-means new componnets Chonky introduces will be enabled by default in your app!
+`FullFileBrowser` is actually just a convenient shorthand to the code shown below. It is
+a good idea to use `FullFileBrowser` if you want all Chonky's features. Plus, using it
+means new components Chonky introduces will be automatically enabled in your app!
 
 ```tsx
 import {
@@ -46,9 +46,10 @@ export const MyFileBrowser = () => {
 };
 ```
 
-However, there are cases where you would not want all Chonky's components, for example
-if you want to provide a custom implementation for something. You have the option of
-leaving out the components you don't need.
+<br />
+
+However, there are situations where you might want to disable some Chonky components,
+e.g. if you want to provide your own context menu.
 
 The only required component is `FileBrowser`, which should appear on top level. All
 other components are optional - for example, if you just want to show a list of files,

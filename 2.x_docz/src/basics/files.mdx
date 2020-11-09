@@ -40,22 +40,19 @@ const FilesExample = () => {
 };
 ```
 
-The `files` prop should be an array that can contain file descriptions or nulls. File
+The `files` prop should be an array of file descriptions or nulls. File
 descriptions are plain JS objects that follow the `FileData` type (more on it below).
 Nulls represent loading files - a placeholder loading animation will be shown in
-their place.
-
-`files` array should be **immutable**. If you're following the best Redux practices,
-you're good. If you don't know what immutability is, please read the _Immutability_
-section from the sidebar. This is important.
-
-You can see the formal type for the `files` prop below. Chonky exports this type for
-use in your application.
+their place. The formal type for this prop is defined as follows:
 
 ```ts
 type FileArray = Nullable<FileData>[];
 // i.e. Array of nulls and `FileData` objects mixed together
 ```
+
+The `files` array should be **immutable**. If you're not sure what this means, please
+read the [_Immutability_](/installation-usage) section from the sidebar. This is
+important.
 
 ## The `FileData` type
 
@@ -92,21 +89,23 @@ export interface FileData {
 }
 ```
 
+<br />
+
 <span style="color: red; font-weight: bold;">
     It is very important that file IDs are unique.
 </span>
 <br />
 <br />
 
-If file IDs are not unique, the consequences can be dire (e.g. your users can
-accidentally delete the wrong file). Chonky tries to protect you by scanning the files
-array for duplicate IDs, but you should put some extra checks in your code too. You
-can never be too safe.
+If file IDs are not unique, the consequences can be dire - e.g. your users can
+irrecoverably delete the wrong file. Chonky tries to protect you from this by scanning
+your file array for duplicate IDs, but you should put some extra checks in your code
+too. You can never be too safe.
 
 **The file extension is automatically extracted from the `name` field, so you don't
 need to provide an `ext` field yourself.** In the rare case where the automatic
 extension detection fails (for example: `file.tar.gz`), you can provide the `ext`
-field explicitly. Please make sure extension is included in both `name` and `ext`:
+field explicitly. Please make sure the extension is included in both `name` and `ext`:
 
 ```ts
 const myFile: FileData = {
@@ -114,6 +113,7 @@ const myFile: FileData = {
     name: 'file.tar.gz',
     ext: '.tar.gz',
 };
+
 console.log(myFile.name.endsWith(myFile.ext)); // Should always print `true`
 ```
 

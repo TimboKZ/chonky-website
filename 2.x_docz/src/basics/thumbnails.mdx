@@ -61,10 +61,9 @@ thumbnails on client-side. See below for a live example.
 
 ## The not so easy way
 
-There are situations where thumbnails will not be available beforehand. For
-example, you could have a system that generates thumbnails on demand, in a lazy-loading
-fashion. In this case, you can pass a custom `thumbnailGenerator` prop to the
-`FileBrowser` component:
+There are situations where thumbnails will not be available beforehand. For example, you
+could have a server that generates thumbnails on-demand. In this case, you can pass a
+custom `thumbnailGenerator` prop to the `FileBrowser` component:
 
 ```tsx
 const files = [
@@ -100,12 +99,12 @@ type ThumbnailGenerator = (file: FileData) => MaybeThumbnail | Promise<MaybeThum
 
 You'll be happy to find out your thumbnail generator will always be called in a
 lazy-loading fashion. That is, the thumbnail will only be requested when your file
-actually appears on your user's screen. This feature comes very handy when you need
-to display many files (>10,000), but don't want to generate 10,000 thumbnails at the
-same time.
+actually appears on your user's screen. This feature comes very handy when you need to
+display many files (>10,000), but don't want to generate 10,000 thumbnails at the same
+time.
 
-Example below shows a thumbnail generator that generates random thumbnail for each
-file.
+Example below shows a thumbnail generator that provides a random thumbnail for every
+file:
 
 <Playground>
     {() => {
