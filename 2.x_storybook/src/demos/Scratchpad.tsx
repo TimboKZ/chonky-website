@@ -5,7 +5,9 @@
  */
 
 import {
+    ChonkyIconName,
     defineFileAction,
+    FileArray,
     FileBrowser,
     FileList,
     FileNavbar,
@@ -14,7 +16,6 @@ import {
     setChonkyDefaults,
 } from 'chonky';
 import { ChonkyIconFA } from 'chonky-icon-fontawesome';
-import {OpenFilesPayload} from 'chonky/lib/types/action-payloads.types';
 import React from 'react';
 
 import { useStoryLinks } from '../util';
@@ -42,6 +43,25 @@ export const Scratchpad: React.FC = () => {
             entryWidth: 400,
         },
     });
+    const folderChain: FileArray = [
+        {
+            id: 'zxc',
+            name: 'Bucket',
+            isDir: true,
+            folderChainIcon: ChonkyIconName.trash,
+        },
+        { id: 'dfg', name: 'Subfolder', isDir: true },
+        null,
+        { id: 'bfr', name: 'Home' },
+        {
+            id: 'ltr',
+            name: 'Documents',
+            openable: false,
+            folderChainIcon: ChonkyIconName.compact,
+        },
+        null,
+        { id: 'nrg', name: 'Payslips', openable: false },
+    ];
 
     return (
         <div className="story-wrapper">
@@ -57,23 +77,15 @@ export const Scratchpad: React.FC = () => {
             <div style={{ height: 300 }}>
                 <FileBrowser
                     files={files}
+                    folderChain={folderChain}
                     fileActions={[action]}
                     defaultFileViewActionId={action.id}
-                    disableDragAndDrop={true}
                 >
                     <FileNavbar />
                     <FileToolbar />
                     <FileList />
                 </FileBrowser>
             </div>
-            <FileBrowser
-                files={files}
-                disableDragAndDrop={true}
-            >
-                <FileNavbar />
-                <FileToolbar />
-                <FileList />
-            </FileBrowser>
         </div>
     );
 };

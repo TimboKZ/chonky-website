@@ -4,13 +4,11 @@
  * @license MIT
  */
 
-import './type-style.css';
-
-import path from 'path';
 import React, { useMemo } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Nilable } from 'tsdef';
 import { DeclarationReflection } from 'typedoc';
+import './type-style.css';
 
 import { useInterfaceData, useTypeComment } from './type-util';
 import { TypeChild } from './TypeChild';
@@ -36,10 +34,8 @@ export const TypeDocs: React.FC<InterfaceDocsProps> = ({
 
     const sourceLink = useMemo(
         () =>
-            path.join(
-                'https://github.com/TimboKZ/Chonky/tree/2.x/packages/chonky',
-                `${source.fileName}#L${source.line}`
-            ),
+            `https://github.com/TimboKZ/Chonky/tree/2.x/packages/chonky` +
+            `/${source.fileName}#L${source.line}`,
         [source]
     );
 
