@@ -68,12 +68,30 @@ const useFileActions = (
     }, [nameCount, setName]);
 };
 
-const useFilePickerLogic = () => {
+const useFilePickerLogic = (files: FileArray) => {
     const [names, setNames] = useState<(string | null)[]>([null, null, null]);
     const namesRef = useRef(names);
     useEffect(() => {
         namesRef.current = names;
     }, [names]);
+
+    const highlightedFiles = useMemo(() => {
+        const newFiles: FileArray = [...files];
+        const colors = ['#1abc9c', '#9b59b6', '#e67e22'];
+        for (let i = 0; i < newFiles.length; ++i) {
+            const file = newFiles[i];
+            if (!file) continue;
+            const fileNameIndex = names.indexOf(file.name);
+            if (fileNameIndex !== -1) {
+                newFiles[i] = {
+                    ...file,
+                    icon: ChonkyIconName.dndDragging,
+                    color: colors[fileNameIndex],
+                };
+            }
+        }
+        return [...newFiles];
+    }, [files, names]);
 
     const setName = useCallback(
         (index: number, name: string | null) =>
@@ -105,12 +123,15 @@ const useFilePickerLogic = () => {
         handleFileAction,
         names,
         setName,
+        highlightedFiles,
     };
 };
 
 const FilePicker = () => {
     const files = useFiles();
-    const { handleFileAction, names, setName } = useFilePickerLogic();
+    const { handleFileAction, names, setName, highlightedFiles } = useFilePickerLogic(
+        files
+    );
 
     const fileActions = useFileActions(names.length, setName);
 
@@ -142,7 +163,7 @@ const FilePicker = () => {
             <div>{nameComponents}</div>
             <div style={{ height: 400 }}>
                 <FileBrowser
-                    files={files}
+                    files={highlightedFiles}
                     fileActions={fileActions}
                     onFileAction={handleFileAction}
                     disableSelection={true}
