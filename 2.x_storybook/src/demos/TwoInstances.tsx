@@ -7,7 +7,7 @@
 import React from 'react';
 
 import { useStoryLinks } from '../util';
-import { VFSBrowser } from './VFSReadOnly';
+import { ReadOnlyVFSBrowser } from './VFSReadOnly';
 
 const storyName = 'Two Browser Instances';
 export const TwoInstances: React.FC = () => {
@@ -27,10 +27,10 @@ export const TwoInstances: React.FC = () => {
             </div>
             <div style={{ display: 'flex' }}>
                 <div style={{ flex: 1, width: 0, paddingRight: 4 }}>
-                    <VFSBrowser instanceId={`${storyName}-left`} />
+                    <ReadOnlyVFSBrowser instanceId={`${storyName}-left`} />
                 </div>
                 <div style={{ flex: 1, width: 0, paddingLeft: 4 }}>
-                    <VFSBrowser instanceId={`${storyName}-right`} />
+                    <ReadOnlyVFSBrowser instanceId={`${storyName}-right`} />
                 </div>
             </div>
         </div>

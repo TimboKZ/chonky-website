@@ -4,17 +4,7 @@
  * @license MIT
  */
 
-import {
-    ChonkyIconName,
-    defineFileAction,
-    FileArray,
-    FileBrowser,
-    FileList,
-    FileNavbar,
-    FileToolbar,
-    FileViewMode,
-    setChonkyDefaults,
-} from 'chonky';
+import { ChonkyIconName, FileArray, FullFileBrowser, setChonkyDefaults } from 'chonky';
 import { ChonkyIconFA } from 'chonky-icon-fontawesome';
 import React from 'react';
 
@@ -31,18 +21,6 @@ export const Scratchpad: React.FC = () => {
         { id: 'drwg', name: 'zxc' },
     ];
 
-    const action = defineFileAction({
-        id: 'giant_thumbs',
-        button: {
-            name: 'Giant thumbs',
-            toolbar: true,
-        },
-        fileViewConfig: {
-            mode: FileViewMode.Grid,
-            entryHeight: 400,
-            entryWidth: 400,
-        },
-    });
     const folderChain: FileArray = [
         {
             id: 'zxc',
@@ -74,17 +52,12 @@ export const Scratchpad: React.FC = () => {
                     ])}
                 </div>
             </div>
-            <div style={{ height: 300 }}>
-                <FileBrowser
+            <div style={{ height: 600 }}>
+                <FullFileBrowser
                     files={files}
                     folderChain={folderChain}
-                    fileActions={[action]}
-                    defaultFileViewActionId={action.id}
-                >
-                    <FileNavbar />
-                    <FileToolbar />
-                    <FileList />
-                </FileBrowser>
+                    darkMode={true}
+                />
             </div>
         </div>
     );

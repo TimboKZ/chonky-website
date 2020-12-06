@@ -81,7 +81,7 @@ export const useFileActionHandler = (
     );
 };
 
-export const VFSBrowser: React.FC<{ instanceId: string }> = (props) => {
+export const ReadOnlyVFSBrowser: React.FC<{ instanceId: string }> = (props) => {
     const [currentFolderId, setCurrentFolderId] = useState(rootFolderId);
     const files = useFiles(currentFolderId);
     const folderChain = useFolderChain(currentFolderId);
@@ -106,7 +106,7 @@ export const VFSBrowser: React.FC<{ instanceId: string }> = (props) => {
     );
 };
 
-const storyName = 'VFS (Read Only)';
+const storyName = 'Simple read-only VFS';
 export const ReadOnlyVirtualFileSystem: React.FC = () => {
     return (
         <div className="story-wrapper">
@@ -115,28 +115,26 @@ export const ReadOnlyVirtualFileSystem: React.FC = () => {
                     {storyName.replace('VFS', 'Virtual File System')}
                 </h1>
                 <p>
-                    This example simulates a file system on client-side, without any
-                    backend interactions. The "file system" is represented as a file map
-                    (a JS object), where keys are file IDs and values are objects of{' '}
-                    <code>FileData</code> type.
+                    This example uses the same file map as <em>Advanced mutable VFS</em>
+                    , except it is running in read-only mode. This means nothing will
+                    happen when you try to move or delete files.
                 </p>
                 <p>
-                    This example shows a <strong>read-only</strong> file system - you
-                    can open and enter folders, but you can't change the state of the
-                    file system in any way. Drag & drop will also <em>not</em> move any
-                    files.
+                    Read-only mode greatly simplifies the code, so it should be easier
+                    to follow, especially if you're new to Chonky. You can view it using
+                    the buttons below.
                 </p>
                 <div className="story-links">
                     {useStoryLinks([
                         { gitPath: '2.x_storybook/src/demos/VFSReadOnly.tsx' },
                         {
-                            name: 'File map source code',
+                            name: 'File map JSON',
                             gitPath: '2.x_storybook/src/demos/demo.fs_map.json',
                         },
                     ])}
                 </div>
             </div>
-            <VFSBrowser instanceId={storyName} />
+            <ReadOnlyVFSBrowser instanceId={storyName} />
         </div>
     );
 };

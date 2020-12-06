@@ -4,6 +4,10 @@
     margin: auto;
 }
 
+.story-wrapper-dark {
+    color: #fff;
+}
+
 .story-description {
     line-height: 24px;
 }

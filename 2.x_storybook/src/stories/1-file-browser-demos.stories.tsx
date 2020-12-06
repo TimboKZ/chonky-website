@@ -4,6 +4,7 @@ export default {
 
 export { MutableVirtualFileSystem } from '../demos/VFSMutable';
 export { ReadOnlyVirtualFileSystem } from '../demos/VFSReadOnly';
+export { DarkMode } from '../demos/DarkModeVFS';
 export { S3Browser } from '../demos/S3Browser';
 export { FilePickerInteractive } from '../demos/FilePickerInteractive';
 export { AdvancedDnd } from '../demos/AdvancedDnd';
