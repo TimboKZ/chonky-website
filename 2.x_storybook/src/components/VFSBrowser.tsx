@@ -8,18 +8,15 @@ import {
     ChonkyActions,
     ChonkyFileActionData,
     FileArray,
+    FileBrowserProps,
     FileData,
     FileHelper,
     FullFileBrowser,
 } from 'chonky';
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import DemoFsMap from '../demos/demo.fs_map.json';
+import Button from '@material-ui/core/Button';
 import { showActionNotification } from '../util';
-
-export interface VFSProps {
-    darkMode?: boolean;
-    instanceId?: string;
-}
 
 // We define a custom interface for file data because we want to add some custom fields
 // to Chonky's built-in `FileData` interface.
@@ -259,52 +256,57 @@ export const useFileActionHandler = (
     );
 };
 
-export const VFSBrowser: React.FC<VFSProps> = React.memo(
-    ({ darkMode, instanceId }) => {
-        const {
-            fileMap,
-            currentFolderId,
-            setCurrentFolderId,
-            resetFileMap,
-            deleteFiles,
-            moveFiles,
-            createFolder,
-        } = useCustomFileMap();
-        const files = useFiles(fileMap, currentFolderId);
-        const folderChain = useFolderChain(fileMap, currentFolderId);
-        const handleFileAction = useFileActionHandler(
-            setCurrentFolderId,
-            deleteFiles,
-            moveFiles,
-            createFolder
-        );
-        const fileActions = useMemo(
-            () => [ChonkyActions.CreateFolder, ChonkyActions.DeleteFiles],
-            []
-        );
-        const thumbnailGenerator = useCallback(
-            (file: FileData) =>
-                file.thumbnailUrl ? `https://chonky.io${file.thumbnailUrl}` : null,
-            []
-        );
+export type VFSProps = Partial<FileBrowserProps>;
 
-        return (
-            <>
-                <button onClick={resetFileMap} style={{ marginBottom: 10 }}>
-                    Reset file map
-                </button>
-                <div style={{ height: 400 }}>
-                    <FullFileBrowser
-                        instanceId={instanceId}
-                        files={files}
-                        folderChain={folderChain}
-                        fileActions={fileActions}
-                        onFileAction={handleFileAction}
-                        thumbnailGenerator={thumbnailGenerator}
-                        darkMode={darkMode}
-                    />
-                </div>
-            </>
-        );
-    }
-);
+export const VFSBrowser: React.FC<VFSProps> = React.memo((props) => {
+    const {
+        fileMap,
+        currentFolderId,
+        setCurrentFolderId,
+        resetFileMap,
+        deleteFiles,
+        moveFiles,
+        createFolder,
+    } = useCustomFileMap();
+    const files = useFiles(fileMap, currentFolderId);
+    const folderChain = useFolderChain(fileMap, currentFolderId);
+    const handleFileAction = useFileActionHandler(
+        setCurrentFolderId,
+        deleteFiles,
+        moveFiles,
+        createFolder
+    );
+    const fileActions = useMemo(
+        () => [ChonkyActions.CreateFolder, ChonkyActions.DeleteFiles],
+        []
+    );
+    const thumbnailGenerator = useCallback(
+        (file: FileData) =>
+            file.thumbnailUrl ? `https://chonky.io${file.thumbnailUrl}` : null,
+        []
+    );
+
+    return (
+        <>
+            <Button
+                size="small"
+                color="primary"
+                variant="contained"
+                onClick={resetFileMap}
+                style={{ marginBottom: 15 }}
+            >
+                Reset file map
+            </Button>
+            <div style={{ height: 400 }}>
+                <FullFileBrowser
+                    files={files}
+                    folderChain={folderChain}
+                    fileActions={fileActions}
+                    onFileAction={handleFileAction}
+                    thumbnailGenerator={thumbnailGenerator}
+                    {...props}
+                />
+            </div>
+        </>
+    );
+});

@@ -1,3 +1,4 @@
+import Button from '@material-ui/core/Button';
 import { ChonkyActions, ChonkyFileActionData } from 'chonky';
 import Noty from 'noty';
 import 'noty/lib/noty.css';
@@ -81,14 +82,18 @@ export const useStoryLinks = (links: StoryLinkData[]): ReactElement[] => {
                 }
 
                 components.push(
-                    <a
-                        key={`story-link-${i}`}
-                        target="_blank"
-                        rel="noreferrer noopener"
+                    <Button
                         href={href}
+                        size="small"
+                        color="primary"
+                        target="_blank"
+                        variant="contained"
+                        key={`story-link-${i}`}
+                        rel="noreferrer noopener"
+                        style={{ marginBottom: 15, marginRight: 15 }}
                     >
                         {name}
-                    </a>
+                    </Button>
                 );
             }
             return components;

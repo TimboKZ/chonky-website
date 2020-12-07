@@ -17,7 +17,6 @@
 
 .story-description h1,
 .story-description p,
-.story-links,
 .story-error {
     margin-bottom: 20px;
     margin-top: 0;
@@ -30,14 +29,6 @@
     font-size: 1.1em;
     padding: 2px 4px;
     color: #341121;
-}
-
-.story-links a {
-    background-color: #f2f2f2;
-    display: inline-block;
-    border-radius: 2px;
-    margin-right: 10px;
-    padding: 2px 8px;
 }
 
 .story-error {
