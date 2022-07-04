@@ -121,6 +121,7 @@ export const useCustomFileMap = () => {
                 newFileMap[currentFolderIdRef.current] = {
                     ...parent,
                     childrenIds: [...parent.childrenIds!, newFolderId],
+                    childrenCount: parent.childrenIds!.length + 1,
                 };
                 return newFileMap;
             }),
