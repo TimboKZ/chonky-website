@@ -1,3 +1,5 @@
+# This repository is discontinued, Chonky website now lives in the main Chonky repo: https://github.com/TimboKZ/Chonky
+
 # Chonky website
 
 This repo contains the source code for the landing page, documentation and storybooks
